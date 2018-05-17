@@ -1,0 +1,6 @@
+plugins
+.nuxt/
+dist/
+workbox-*
+sw.js
+static/

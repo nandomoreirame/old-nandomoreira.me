@@ -1,0 +1,137 @@
+<template>
+  <article class="postItem" :class="`${(count%6) === 0 ? 'postItem--featured' : ''}${!meta ? ' postItem--no-footer' : ''}`">
+    <nuxt-link class="postItem__link" :to="post.permalink" :title="post.title">
+      <div class="postItem__image-figure" v-if="post.image">
+        <div class="postItem__image" v-lazy:background-image="`${post.image}`"/>
+        <img :src="post.image" :alt="`imagem de ${post.title}`">
+      </div>
+      <div class="postItem__content">
+        <header class="postItem__header">
+          <h2 class="postItem__title">{{ post.title }}</h2>
+        </header>
+        <p v-if="post.description" itemprop="description" class="postItem__description">{{ post.description }}</p>
+        <footer v-if="meta" class="postItem__footer">
+          <small class="postItem__meta">
+            <span v-if="post.date" itemprop="datePublished" :content="post.date">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Publicado em {{ post.date | moment("MMMM") }} de {{ post.date | moment("YYYY") }}
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              por <strong itemprop="author">Fernando Moreira</strong>
+            </span>
+          </small>
+        </footer>
+      </div>
+    </nuxt-link>
+  </article>
+</template>
+
+<script>
+export default {
+  name: 'PostItem',
+  props: {
+    'post': {
+      required: true
+    },
+    'count': {
+      type: Number
+    },
+    'meta': {
+      default: true
+    }
+  },
+  methods: {
+    splitIdentifier: i => i.slice(-1) !== '/' ? `${i}/` : `${i}`
+  }
+}
+</script>
+
+<style lang="stylus">
+.postItem
+  display block
+  width 100%
+  margin 0 spacingSmall spacingBase
+  &__link
+    color baseColor
+    text-decoration none
+    flex-direction column
+    min-height 220px
+    background #fff
+    border-radius 5px
+    box-shadow boxShadowBase
+    transition box-shadow .2s timingFunction, transform .2s timingFunction
+    flex 1 1 100%
+    display flex
+    &:hover,
+    &:focus
+      box-shadow boxShadowHover
+      transform translate(0, -10px)
+  &__content
+    flex-grow 1
+    display flex
+    flex-direction column
+    justify-content space-between
+  &__header
+    padding spacingSmall spacingSmall spacingMini
+  &__description,
+  &__footer
+    position relative
+    display block
+    padding 0 spacingSmall
+  &--no-footer .postItem__link
+    padding-bottom spacingSmall
+  &__footer
+    margin 0
+    padding-bottom spacingSmall
+  &__meta
+    display block
+    opacity .6
+    font-size .65rem
+    line-height 1.2em
+    text-transform uppercase
+    margin 0
+    span
+      display block
+      margin-bottom 5px
+    svg
+      display inline-block
+      vertical-align middle
+      margin-right 4px
+      line-height 1
+      top -2px
+      position relative
+  &__title
+    font-size 1.4rem
+    margin-top 0
+    margin-bottom .5rem
+  &__description
+    font-size 1rem
+    line-height 1.4em
+  &__image-figure
+    position relative
+    img
+      display none
+  &__image
+    width 100%
+    height 250px
+    background #c5d2d9 no-repeat 50%
+    background-size cover
+  +above(md)
+    display flex
+    flex 1 1 percentage(1/3)
+  +above(lg)
+    flex 1 1 percentage(1/4)
+    &--featured
+      flex 1 1 100%
+      .postItem__link
+        flex-direction row
+      .postItem__image
+        position absolute
+        width 100%
+        height 100%
+        &-figure
+          flex 1 1 auto
+      .postItem__content
+        flex 0 1 357px
+</style>

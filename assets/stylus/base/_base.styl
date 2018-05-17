@@ -1,0 +1,71 @@
+html
+  font-size fontSizeUnit
+  word-spacing 1px
+  -moz-osx-font-smoothing grayscale
+  -webkit-font-smoothing antialiased
+  box-sizing border-box
+  font-feature-settings "calt" 1
+  text-rendering optimizeLegibility
+
+*, *:before, *:after
+  box-sizing inherit
+  margin 0
+  transition .4s cubic-bezier(0.18, 0.98, 0.45, 1)
+
+html,body
+  width 100%
+  height 100%
+
+body
+  font-family fontFamilyBase
+  font-size fontSizeBase
+  line-height lineHeightBase
+  font-weight fontWeightNormal
+  background-color primaryColor
+  letter-spacing letterSpacingBase
+  color baseColor
+  margin 0
+  padding 0
+  border 0px solid transparent
+  &.noscroll
+    overflow hidden
+  +above(sm)
+    border-width 20px
+    &:before
+      transition-property color, stroke, fill, border-color, background-color
+      z-index 100
+      content ''
+      user-select none
+      pointer-events none
+      position fixed
+      left 0
+      right 0
+      bottom 0
+      top 0
+      border inherit
+      border-bottom-width 0
+      border-color primaryColor
+      will-change border-color
+      transition border-width 0.4s cubic-bezier(0.18, 0.98, 0.45, 1),
+        border-color 1s cubic-bezier(0.18, 0.98, 0.45, 1)
+
+hr
+  border none
+  border-bottom 1px solid rgba(#000, .2)
+  max-width 80px
+  height 10px
+  margin spacingLarge auto
+  position relative
+
+figure
+  margin 0
+  padding 0
+
+.nuxt-link-exact-active
+  pointer-events none
+
+.MainContent
+  padding-bottom spacingSmall
+  background-color #f7f9fb
+  position relative
+  z-index 2

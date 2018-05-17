@@ -3,7 +3,7 @@ title: "Blog Wilson Luiz Prosdocimo com Jekyll"
 date: 2015-09-13
 description: "Meu amigo Wilson gostou muito da ideia de poder publicar o blog dele no github usando Jekyll. Pode-se dizer que eu sou um “Evangelista do Jekyll” porque ele é um convertido da minha palavra."
 keywords: "jekyll, projeto, portfolio"
-image: /images/uploads/wprosdocimo.com.br.png
+image: /images/posts/2015/09/wprosdocimo.jpg
 categories: sass
 tags: "jekyll, projeto, portfolio"
 ---
@@ -16,6 +16,8 @@ O link do projeto é: [wprosdocimo.com.br](http://wprosdocimo.com.br)
 
 O resultado foi bem bacana, veja logo abaixo.
 
-![Blog Wilson Luiz Prosdocimo - um blog com um pouco de tudo..](/images/uploads/wprosdocimo.com.br.png)
+![Blog Wilson Luiz Prosdocimo - um blog com um pouco de tudo..](/images/posts/2015/09/blog-wprosdocimo.png)
+
+![Blog Wilson Luiz Prosdocimo - um blog com um pouco de tudo..](/images/posts/2015/09/blog-wprosdocimo-single.png)
 
 /end

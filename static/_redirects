@@ -9,6 +9,7 @@
 /2012                         /                                                               301
 /2012/*                       /                                                               301
 /wp/v2/*                      /                                                               301
+
 /retinapro-com-br             /projects                                                       301
 /grgit                        /projects                                                       301
 /ferramentas-digital          /projects                                                       301
@@ -17,21 +18,26 @@
 /icthus-odonto                /projects                                                       301
 /onedev-studio                /projects                                                       301
 /portfolio                    /projects                                                       301
+
 /sobre                        /about                                                          301
 /br/sobre                     /about                                                          301
 /pt_br/sobre                  /about                                                          301
 /cv                           /about                                                          301
+
 /experiments                  /projects/experiments                                           301
 /experiment/*                 /projects/experiments                                           301
 /lab                          /projects/experiments                                           301
 /lab/*                        /projects/experiments                                           301
+
 /blog/page/*                  /blog                                                           301
 /tags/*                       /blog                                                           301
 /tag/*                        /blog                                                           301
 /tag/*                        /blog                                                           301
 /the-quick-brown-fox-jumps-over-a-lazy-dog /blog                                              301
+
 /comece-com-gulpjs            /comece-com-gulp                                                301
 /sass-atomic-design           /sass-e-atomic-design                                           301
+
 /lora                         https://nandomoreirame.github.io/lora/                          301
 /lora/*                       https://nandomoreirame.github.io/lora/:splat                    301
 /zetsu                        https://nandomoreirame.github.io/zetsu/                         301
@@ -49,3 +55,6 @@
 /lorem-gemidao-do-zap-ipsum   https://nandomoreirame.github.io/lorem-gemidao-do-zap-ipsum     301
 /open-source-guide            https://nandomoreirame.github.io/open-source-guide              301
 /open-source-guide/*          https://nandomoreirame.github.io/open-source-guide/:splat       301
+
+https://nandomoreira.netlify.com   https://nandomoreira.me                                    301
+https://nandomoreira.netlify.com/* https://nandomoreira.me/:splat                             301

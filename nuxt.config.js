@@ -86,15 +86,13 @@ module.exports = {
       max: 10000,
       maxAge: 1000 * 60 * 60
     }],
-    ['@nuxtjs/axios', {
-      baseURL: `${config.baseUrl}/content-api`
-    }],
     '@nuxtjs/sitemap',
     '@nuxtjs/manifest',
     ['@nuxtjs/pwa', {
       meta: {
         'viewport': 'width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes',
         'theme_color': config.themeColor,
+        'ogImage': config.imageDefault,
         'lang': 'pt_BR',
         'mobileApp': true,
         'mobileAppIOS': true

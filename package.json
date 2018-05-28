@@ -20,7 +20,7 @@
   "scripts": {
     "dev": "nuxt dev",
     "clean": "rimraf .nuxt && rimraf dist",
-    "build": "nuxt build",
+    "build": "NODE_ENV=production nuxt build",
     "prestart": "npm run build",
     "start": "nuxt start",
     "images": "imageoptim ./static/**/*.{png,jpg,jpeg}",

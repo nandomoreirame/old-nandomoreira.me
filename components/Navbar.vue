@@ -51,7 +51,7 @@
             title: 'Apps'
           },
           {
-            link: '/sobre/now',
+            link: '/now',
             title: 'Now'
           },
           {

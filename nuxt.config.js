@@ -6,6 +6,7 @@ const config = require('./config')
 module.exports = {
   dev: !config.isProduction,
   env: {
+    author: config.user,
     isProduction: config.isProduction,
     baseUrl: config.baseUrl,
     baseTitle: config.baseTitle,

@@ -25,28 +25,4 @@ module.exports = {
     phone: author.phone,
     twitter: author.twitter
   }
-  // i18n: {
-  //   locales: [
-  //     {
-  //       code: 'pt',
-  //       iso: 'pt-BR',
-  //       name: 'Português',
-  //       file: 'pt.js',
-  //       flag: 'pt.png'
-  //     },
-  //     {
-  //       code: 'en',
-  //       iso: 'en-US',
-  //       name: 'English',
-  //       file: 'en.js',
-  //       flag: 'en.png'
-  //     }
-  //   ],
-  //   defaultLocale: 'pt',
-  //   strategy: 'prefix_except_default',
-  //   // lazy: true,
-  //   // langDir: 'locales/',
-  //   seo: true,
-  //   parsePages: true
-  // }
 }

@@ -68,11 +68,9 @@ module.exports = {
   plugins: [
     // { src: '~/plugins/browser.js', ssr: false },
     { src: '~/plugins/plugins.js', ssr: false },
-    // { src: '~/plugins/i18n.js' },
     { src: '~/plugins/moment.js' }
   ],
   modules: [
-    // ['nuxt-i18n', config.i18n],
     ['@nuxtjs/google-analytics'],
     ['@nuxtjs/browserconfig', {
       TileColor: config.themeColor

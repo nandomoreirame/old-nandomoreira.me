@@ -41,7 +41,6 @@
     "marked": "^0.3.17",
     "moment": "^2.18.1",
     "nuxt": "1.0.0-rc11",
-    "nuxt-i18n": "^3.2.4",
     "nuxtent": "^1.2.1",
     "v-tooltip": "^2.0.0-rc.5",
     "vue-disqus": "^2.0.3",

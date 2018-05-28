@@ -69,10 +69,10 @@
 /open-source-guide            https://nandomoreirame.github.io/open-source-guide              301
 /open-source-guide/*          https://nandomoreirame.github.io/open-source-guide/:splat       301
 
-https://nandomoreira.netlify.com                  /?ref=netlify.com                           301
-https://nandomoreira.netlify.com/*                /:splat?ref=netlify.com                     301
-https://controla.la                               /?ref=controla.la                           301
-https://controla.la/*                             /:splat?ref=controla.la                     301
+https://nandomoreira.netlify.com      https://nandomoreira.me/?ref=netlify.com                301
+https://nandomoreira.netlify.com/*    https://nandomoreira.me/:splat?ref=netlify.com          301
+https://controla.la                   https://nandomoreira.me/?ref=controla.la                301
+https://controla.la/*                 https://nandomoreira.me/:splat?ref=controla.la          301
 
 /criando-formulario-de-contato-para-wordpress-com-odin-framework https://blog.onedev.studio/criando-formulario-de-contato-para-wordpress-com-odin-framework 301
 /wordpress-plugins-x-functions-php https://blog.onedev.studio/wordpress-plugins-x-functions-php 301

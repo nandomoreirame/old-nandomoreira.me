@@ -43,15 +43,15 @@
       return {
         navItems: [
           {
-            link: '/about',
+            link: '/sobre',
             title: 'Sobre'
           },
           {
-            link: '/about/apps',
+            link: '/sobre/apps',
             title: 'Apps'
           },
           {
-            link: '/about/now',
+            link: '/sobre/now',
             title: 'Now'
           },
           {
@@ -59,15 +59,15 @@
             title: 'Blog'
           },
           {
-            link: '/projects',
+            link: '/projetos',
             title: 'Projetos'
           },
           {
-            link: '/projects/open-source',
+            link: '/projetos/open-source',
             title: 'Open Source'
           },
           {
-            link: '/projects/experiments',
+            link: '/projetos/experimentos',
             title: 'Experimentos'
           }
         ]

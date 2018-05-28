@@ -56,7 +56,7 @@
       return {
         pageTitle: `O que estou fazendo agora | Fernando Moreira | Desenvolvedor front-end e WordPress em Curitiba/PR`,
         pageDescription: `Esta página agora é tirada da idéia de Derek Sivers em Nownownow, onde blogueiros e proprietários de sites do mundo compartilham o que eles estão fazendo.`,
-        pageUrl: `${process.env.baseUrl}/about/now`,
+        pageUrl: `${process.env.baseUrl}/now`,
         breadcrumbs: [
           {
             active: false,
@@ -65,12 +65,12 @@
           },
           {
             active: false,
-            url: '/about',
+            url: '/sobre',
             title: 'Sobre'
           },
           {
             active: true,
-            url: '/about/now',
+            url: '/now',
             title: 'O que estou fazendo agora'
           }
         ]

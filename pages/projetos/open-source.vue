@@ -3,14 +3,14 @@
     <page-header>
       <div slot="inner">
         <div class="container">
-          <h1 class="pageHeader__title" itemprop="headline">Projetos</h1>
+          <h1 class="pageHeader__title" itemprop="headline">I ❤️ Open Source</h1>
           <breadcrumb :breadcrumbs="breadcrumbs"/>
           <p v-if="pageDescription" itemprop="description" class="pageHeader__description" v-html="pageDescription"/>
         </div>
       </div>
     </page-header>
     <div class="project-list">
-      <project v-for="(project, i) in projects" :key="i" :count="i" :project="project"></project>
+      <project v-for="(project, i) in openSources" :key="i" :count="i" :project="project"></project>
     </div>
     <nuxt-child />
     <meta-tags :title="pageTitle" :description="pageDescription" :url="pageUrl"/>
@@ -20,12 +20,12 @@
 <script>
   import { mapState } from 'vuex'
   export default {
-    name: 'Projects',
+    name: 'OpenSource',
     data () {
       return {
-        pageTitle: `Projetos - Fernando Moreira | Desenvolvedor front-end e WordPress em Curitiba/PR`,
-        pageDescription: `Esses são alguns dos projetos que trabalhei, projetos pessoais e freelas para clientes.`,
-        pageUrl: `${process.env.baseUrl}/projects`,
+        pageTitle: `I ❤️ Open Source - Fernando Moreira | Desenvolvedor front-end e WordPress em Curitiba/PR`,
+        pageDescription: `Esses são alguns dos projetos open sources em que trabalhei.`,
+        pageUrl: `${process.env.baseUrl}/projetos/open-source`,
         breadcrumbs: [
           {
             active: false,
@@ -33,22 +33,27 @@
             title: 'Home'
           },
           {
-            active: true,
-            url: '/projects',
+            active: false,
+            url: '/projetos',
             title: 'Projetos'
+          },
+          {
+            active: true,
+            url: '/projetos/open-source',
+            title: 'Open Source'
           }
         ]
       }
     },
     async asyncData ({ app, store }) {
-      if (!store.state.projects.length) {
-        const projects = await app.$content('/projects').getAll()
-        store.commit('SET_PROJECTS', projects)
+      if (!store.state.openSources.length) {
+        const openSources = await app.$content('/open-source').getAll()
+        store.commit('SET_OPENSOURCES', openSources)
       }
     },
     computed: {
       ...mapState({
-        projects: state => state.projects
+        openSources: state => state.openSources
       })
     },
     components: {

@@ -107,7 +107,7 @@
       return {
         pageTitle: `Contato - Que tal me enviar um email? | Fernando Moreira | Desenvolvedor front-end e WordPress em Curitiba/PR`,
         pageDescription: `Gostaria de falar comigo? Que tal me enviar um email? Prometo que respondo na hora ;)`,
-        pageUrl: `${process.env.baseUrl}/contact`,
+        pageUrl: `${process.env.baseUrl}/contato`,
         breadcrumbs: [
           {
             active: false,
@@ -116,7 +116,7 @@
           },
           {
             active: true,
-            url: '/contact',
+            url: '/contato',
             title: 'Contato'
           }
         ]

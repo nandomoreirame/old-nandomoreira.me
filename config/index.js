@@ -20,7 +20,7 @@ module.exports = {
   githubRepo: 'https://github.com/nandomoreirame/nandomoreira.me',
   user: {
     name: author.name,
-    url: `${baseUrl}/about/`,
+    url: `${baseUrl}/sobre/`,
     email: author.email,
     phone: author.phone,
     twitter: author.twitter

@@ -10,24 +10,37 @@
 /2012/*                       /                                                               301
 /wp/v2/*                      /                                                               301
 
-/retinapro-com-br             /projects                                                       301
-/grgit                        /projects                                                       301
-/ferramentas-digital          /projects                                                       301
-/projects/*                   /projects                                                       301
-/project/*                    /projects                                                       301
-/icthus-odonto                /projects                                                       301
-/onedev-studio                /projects                                                       301
-/portfolio                    /projects                                                       301
+/retinapro-com-br             /projetos                                                       301
+/grgit                        /projetos                                                       301
+/ferramentas-digital          /projetos                                                       301
+/projects/*                   /projetos                                                       301
+/project/*                    /projetos                                                       301
+/icthus-odonto                /projetos                                                       301
+/onedev-studio                /projetos                                                       301
+/portfolio                    /projetos                                                       301
+/projects/remerterapias       /projetos                                                       301
+/remerterapias                /projetos                                                       301
+/projects/nandomoreira        /projetos                                                       301
+/nandomoreira                 /projetos                                                       301
+/abracce                      /projetos                                                       301
+/projects/wprosdocimo         /projetos                                                       301
+/ferramentas-digital          /projetos                                                       301
+/projects/ferramentas-digital /projetos                                                       301
 
-/sobre                        /about                                                          301
-/br/sobre                     /about                                                          301
-/pt_br/sobre                  /about                                                          301
-/cv                           /about                                                          301
+/about                        /sobre                                                          301
+/about/*                      /sobre/:splat                                                   301
+/br/sobre                     /sobre                                                          301
+/pt_br/sobre                  /sobre                                                          301
+/en/about                     /sobre                                                          301
+/cv                           /sobre                                                          301
+/sobre/now                    /now                                                            301
+/about/now                    /now                                                            301
 
-/experiments                  /projects/experiments                                           301
-/experiment/*                 /projects/experiments                                           301
-/lab                          /projects/experiments                                           301
-/lab/*                        /projects/experiments                                           301
+/experiments                  /projetos/experimentos                                          301
+/experiment/*                 /projetos/experimentos                                          301
+/lab                          /projetos/experimentos                                          301
+/lab/*                        /projetos/experimentos                                          301
+/pen-*                        /projetos/experimentos                                          301
 
 /blog/page/*                  /blog                                                           301
 /tags/*                       /blog                                                           301

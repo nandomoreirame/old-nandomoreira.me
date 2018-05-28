@@ -31,7 +31,7 @@
       return {
         pageTitle: `Apps que uso | Fernando Moreira | Desenvolvedor front-end e WordPress em Curitiba/PR`,
         pageDescription: `Segue uma lista de alguns apps que utilizo no meu dia a dia e considero como essenciais.`,
-        pageUrl: `${process.env.baseUrl}/about/apps`,
+        pageUrl: `${process.env.baseUrl}/sobre/apps`,
         breadcrumbs: [
           {
             active: false,
@@ -40,12 +40,12 @@
           },
           {
             active: false,
-            url: '/about',
+            url: '/sobre',
             title: 'Sobre'
           },
           {
             active: true,
-            url: '/about/apps',
+            url: '/sobre/apps',
             title: 'Apps que uso'
           }
         ]

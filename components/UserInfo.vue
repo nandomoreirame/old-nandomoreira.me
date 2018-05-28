@@ -5,7 +5,7 @@
     </figure>
     <div class="UserInfo__bio">
       <h4>O autor</h4>
-      <p><strong><nuxt-link title="Meu nome é Fernando Moreira Costa (muito prazer)" to="/about" itemprop="name">Fernando Moreira</nuxt-link></strong>, 29 anos, sou <strong itemprop="jobTitle">desenvolvedor front-end</strong> e especialista em <strong>WordPress</strong>. Esta sempre em busca de um código bem escrito e de um bom café.</p>
+      <p><strong><nuxt-link title="Meu nome é Fernando Moreira Costa (muito prazer)" to="/sobre" itemprop="name">Fernando Moreira</nuxt-link></strong>, 29 anos, sou <strong itemprop="jobTitle">desenvolvedor front-end</strong> e especialista em <strong>WordPress</strong>. Esta sempre em busca de um código bem escrito e de um bom café.</p>
     </div>
   </div>
 </template>

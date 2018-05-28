@@ -35,7 +35,7 @@
       return {
         pageTitle: `Meus experimentos | Fernando Moreira`,
         pageDescription: `Alguns experimentos legais que fiz no Codepen.io`,
-        pageUrl: `${process.env.baseUrl}/projects/experiments`,
+        pageUrl: `${process.env.baseUrl}/projetos/experimentos`,
         breadcrumbs: [
           {
             active: false,
@@ -44,7 +44,7 @@
           },
           {
             active: true,
-            url: '/projects/experiments',
+            url: '/projetos/experimentos',
             title: 'Meus experimentos'
           }
         ]

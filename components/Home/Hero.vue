@@ -1,7 +1,7 @@
 <template>
   <page-header :isHero="true" :image="`/images/uploads/hero-cover.jpg`">
     <div slot="inner" class="container" itemscope itemtype="http://schema.org/Person">
-      <h1>Oi, eu sou o <span><nuxt-link title="Meu nome é Fernando Moreira Costa (muito prazer)" to="/about" itemprop="name">Fernando</nuxt-link></span>!</h1>
+      <h1>Oi, eu sou o <span><nuxt-link title="Meu nome é Fernando Moreira Costa (muito prazer)" to="/sobre" itemprop="name">Fernando</nuxt-link></span>!</h1>
       <h2 role="presentation">
         Sou <strong itemprop="jobTitle">desenvolvedor front-end</strong> na <strong><a href="https://onedev.studio" target="_blank">Onedev.studio</a></strong> em <strong>Curitiba/PR</strong>.
         <small>Se você está em busca de um programador freelancer front-end, WordPress, PHP ou JavaScript entre em contato: <a href="mailto:nandomoreira.me@gmail.com">nandomoreira.me[arroba]gmail.com</a> ou através das redes sociais abaixo.</small>

@@ -39,7 +39,7 @@
       return {
         pageTitle: `Sobre | Fernando Moreira | Desenvolvedor front-end e WordPress em Curitiba/PR`,
         pageDescription: `Hoje sou especializado em desenvolvimento web usando WordPress com foco em front-end eu sempre cuido da usabilidade e performance de um site.`,
-        pageUrl: `${process.env.baseUrl}/about`,
+        pageUrl: `${process.env.baseUrl}/sobre`,
         breadcrumbs: [
           {
             active: false,
@@ -48,7 +48,7 @@
           },
           {
             active: true,
-            url: '/about',
+            url: '/sobre',
             title: 'Sobre'
           }
         ]

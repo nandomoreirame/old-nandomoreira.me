@@ -10,7 +10,7 @@ Brazilian, Married, 28 years old. <br>
 **Email**: [nandomoreira.me@gmail.com](mailto:nandomoreira.me@gmail.com) <br>
 **Blog**: [nandomoreira.me/blog](/blog)
 
-> Front-end developer, enthusiastic for performance and usability, always looking for the best design and good coffee ⏤ [read more about me &raquo;](/about)
+> Front-end developer, enthusiastic for performance and usability, always looking for the best design and good coffee ⏤ [read more about me &raquo;](/sobre)
 
 ---
 
@@ -65,16 +65,16 @@ Brazilian, Married, 28 years old. <br>
 
 ### Projects
 
-[nandomoreira.me/projects](/projects)
+[nandomoreira.me/projetos](/projetos)
 
 ---
 
 ### Projects Open Source
 
-[nandomoreira.me/projects/open-source](/projects/open-source)
+[nandomoreira.me/projetos/open-source](/projetos/open-source)
 
 ---
 
 ### Experiments
 
-[nandomoreira.me/projects/experiments](/projects/experiments)
+[nandomoreira.me/projetos/experimentos](/projetos/experimentos)

@@ -7,7 +7,7 @@
       <div class="container">
         <project :project="project"/>
         <div class="HomeSection__button">
-          <link-button buttonType="ghost-white" buttonPermalink="/projects">mais projetos →</link-button>
+          <link-button buttonType="ghost-white" buttonPermalink="/projetos">mais projetos →</link-button>
         </div>
       </div>
     </div>

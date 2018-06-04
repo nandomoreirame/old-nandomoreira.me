@@ -26,6 +26,13 @@
 /projects/wprosdocimo         /projetos                                                       301
 /ferramentas-digital          /projetos                                                       301
 /projects/ferramentas-digital /projetos                                                       301
+/projects/oggdigital          /projetos                                                       301
+/oggdigital                   /projetos                                                       301
+/projects/divinus-paes        /projetos                                                       301
+/divinus-paes                 /projetos                                                       301
+/projects/hidrautest          /projetos                                                       301
+/hidrautest                   /projetos                                                       301
+/open-source                  /projetos/open-source                                           301
 
 /about                        /sobre                                                          301
 /about/*                      /sobre/:splat                                                   301
@@ -41,6 +48,10 @@
 /lab                          /projetos/experimentos                                          301
 /lab/*                        /projetos/experimentos                                          301
 /pen-*                        /projetos/experimentos                                          301
+/pen-go-yo-jm                 /projetos/experimentos                                          301
+/pen-qy-vyqe                  /projetos/experimentos                                          301
+/pen-grwx-kq                  /projetos/experimentos                                          301
+/pen-g-pm-q-rz                /projetos/experimentos                                          301
 
 /blog/page/*                  /blog                                                           301
 /tags/*                       /blog                                                           301
@@ -59,21 +70,32 @@
 /mug/*                        https://nandomoreirame.github.io/mug/:splat                     301
 /simplest                     https://nandomoreirame.github.io/simplest/                      301
 /simplest/*                   https://nandomoreirame.github.io/simplest/:splat                301
+/simplest-jekyll-theme        https://nandomoreirame.github.io/simplest/                      301
 /nandomoreira-jekyll-theme    https://nandomoreirame.github.io/nandomoreira-jekyll-theme/     301
 /nandomoreira-jekyll-theme/*  https://nandomoreirame.github.io/nandomoreira-jekyll-theme/     301
 /end2end                      https://nandomoreirame.github.io/end2end                        301
 /end2end/*                    https://nandomoreirame.github.io/end2end/:splat                 301
 /dotX                         https://nandomoreirame.github.io/dotX                           301
 /dotX/*                       https://nandomoreirame.github.io/dotX/:splat                    301
+/dotx-jekyll-theme            https://nandomoreirame.github.io/dotX                           301
 /lorem-gemidao-do-zap-ipsum   https://nandomoreirame.github.io/lorem-gemidao-do-zap-ipsum     301
 /open-source-guide            https://nandomoreirame.github.io/open-source-guide              301
 /open-source-guide/*          https://nandomoreirame.github.io/open-source-guide/:splat       301
+/middleman-blog               https://nandomoreirame.github.io/middleman-blog                 301
+/middleman-blog/*             https://nandomoreirame.github.io/middleman-blog/:splat          301
+/chucknorris-jokes            https://nandomoreirame.github.io/chucknorris-jokes              301
+/chucknorris-jokes/*          https://nandomoreirame.github.io/chucknorris-jokes/:splat       301
 
-https://nandomoreira.netlify.com      https://nandomoreira.me/?ref=netlify.com                301
-https://nandomoreira.netlify.com/*    https://nandomoreira.me/:splat?ref=netlify.com          301
-https://controla.la                   https://nandomoreira.me/?ref=controla.la                301
-https://controla.la/*                 https://nandomoreira.me/:splat?ref=controla.la          301
+https://nandomoreira.netlify.com      https://nandomoreira.me/?ref=netlify.com                    301
+https://nandomoreira.netlify.com/*    https://nandomoreira.me/:splat?ref=netlify.com              301
+https://controla.la                   https://nandomoreira.me/?ref=controla.la                    301
+https://controla.la/*                 https://nandomoreira.me/:splat?ref=controla.la              301
+https://criarsite.curitiba.br         https://nandomoreira.me/?ref=criarsite.curitiba.br          301
+https://criarsite.curitiba.br/*       https://nandomoreira.me/:splat?ref=criarsite.curitiba.br    301
+https://criarsites.curitiba.br        https://nandomoreira.me/?ref=criarsites.curitiba.br         301
+https://criarsites.curitiba.br/*      https://nandomoreira.me/:splat?ref=criarsites.curitiba.br   301
 
+/como-testar-erros-na-funcao-wp-mail-no-wordpress-usando-hooks https://blog.onedev.studio/como-testar-erros-na-funcao-wp-mail-no-wordpress-usando-hooks 301
 /criando-formulario-de-contato-para-wordpress-com-odin-framework https://blog.onedev.studio/criando-formulario-de-contato-para-wordpress-com-odin-framework 301
 /wordpress-plugins-x-functions-php https://blog.onedev.studio/wordpress-plugins-x-functions-php 301
 /meu-ambiente-de-trabalho-em-7-itens https://blog.onedev.studio/meu-ambiente-de-trabalho-em-7-itens 301

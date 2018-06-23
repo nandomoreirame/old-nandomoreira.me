@@ -18,6 +18,7 @@
 /icthus-odonto                /projetos                                                       301
 /onedev-studio                /projetos                                                       301
 /portfolio                    /projetos                                                       301
+/portfolio/*                  /projetos                                                       301
 /projects/remerterapias       /projetos                                                       301
 /remerterapias                /projetos                                                       301
 /projects/nandomoreira        /projetos                                                       301
@@ -32,6 +33,7 @@
 /divinus-paes                 /projetos                                                       301
 /projects/hidrautest          /projetos                                                       301
 /hidrautest                   /projetos                                                       301
+/pizzariadetroit              /projetos                                                       301
 /open-source                  /projetos/open-source                                           301
 
 /about                        /sobre                                                          301
@@ -48,10 +50,6 @@
 /lab                          /projetos/experimentos                                          301
 /lab/*                        /projetos/experimentos                                          301
 /pen-*                        /projetos/experimentos                                          301
-/pen-go-yo-jm                 /projetos/experimentos                                          301
-/pen-qy-vyqe                  /projetos/experimentos                                          301
-/pen-grwx-kq                  /projetos/experimentos                                          301
-/pen-g-pm-q-rz                /projetos/experimentos                                          301
 
 /blog/page/*                  /blog                                                           301
 /tags/*                       /blog                                                           301
@@ -95,7 +93,7 @@ https://criarsite.curitiba.br/*       https://nandomoreira.me/:splat?ref=criarsi
 https://criarsites.curitiba.br        https://nandomoreira.me/?ref=criarsites.curitiba.br         301
 https://criarsites.curitiba.br/*      https://nandomoreira.me/:splat?ref=criarsites.curitiba.br   301
 
-/como-testar-erros-na-funcao-wp-mail-no-wordpress-usando-hooks https://blog.onedev.studio/como-testar-erros-na-funcao-wp-mail-no-wordpress-usando-hooks 301
+/como-testar-erros-na-funcao-wp-mail-no-wordpress-usando-hooks https://blog.onedev.studio/como-testar-erros-na-funcao-wp_mail-no-wordpress-usando-hooks 301
 /criando-formulario-de-contato-para-wordpress-com-odin-framework https://blog.onedev.studio/criando-formulario-de-contato-para-wordpress-com-odin-framework 301
 /wordpress-plugins-x-functions-php https://blog.onedev.studio/wordpress-plugins-x-functions-php 301
 /meu-ambiente-de-trabalho-em-7-itens https://blog.onedev.studio/meu-ambiente-de-trabalho-em-7-itens 301

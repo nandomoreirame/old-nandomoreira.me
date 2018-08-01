@@ -22,17 +22,17 @@
   flex-flow row wrap
   background #fff
   border-radius 5px
-  padding spacingBase
-  box-shadow boxShadowHover
-  margin spacingBase auto spacingSmall
+  padding $spacingBase
+  box-shadow $boxShadowHover
+  margin $spacingBase auto $spacingSmall
   &__bio
     width 100%
-    margin-top spacingSmall
+    margin-top $spacingSmall
     +above(sm)
-      padding-left spacingSmall
+      padding-left $spacingSmall
       margin-top 0
     h4
-      margin 0 0 spacingMini
+      margin 0 0 $spacingMini
       font-size 2rem
     p
       margin 0

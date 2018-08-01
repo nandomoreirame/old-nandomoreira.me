@@ -13,6 +13,6 @@ Vue.use(VueLazyload, {
 
 WebFont.load({
   google: {
-    families: ['Ubuntu:300,400,500,700', 'Suez+One']
+    families: ['Roboto:300,400,500,700', 'Montserrat:600,700,800']
   }
 })

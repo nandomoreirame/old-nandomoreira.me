@@ -61,8 +61,8 @@
   position relative
   flex-flow row
   flex-wrap wrap
-  margin-left -(spacingSmall)
-  margin-right -(spacingSmall)
+  margin-left -($spacingSmall)
+  margin-right -($spacingSmall)
   padding 40px 0 0
   &-enter-active,
   &-leave-active
@@ -76,19 +76,19 @@
   flex 1 1 300px
   flex-direction column
   overflow hidden
-  margin 0 spacingSmall spacingBase
+  margin 0 $spacingSmall $spacingBase
   min-height 300px
   background #fff 50%
   background-size cover
   border-radius 5px
-  box-shadow boxShadowBase
-  transition box-shadow .2s timingFunction, transform .2s timingFunction
+  box-shadow $boxShadowBase
+  transition box-shadow .2s $timingFunction, transform .2s $timingFunction
   text-align center
   a
     text-decoration none
   &__title
     font-size 1.2rem
-    padding spacingSmall spacingSmall spacingMini
+    padding $spacingSmall $spacingSmall $spacingMini
     margin 0
   &__figure
     margin 0
@@ -98,13 +98,13 @@
       height auto
   &:hover,
   &:focus
-    box-shadow boxShadowHover
+    box-shadow $boxShadowHover
     transform translate(0, -10px)
   &__meta
     display block
     text-align center
     font-size 14px
-    margin-bottom spacingSmall
+    margin-bottom $spacingSmall
   &__likes,
   &__views,
   &__comments

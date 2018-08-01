@@ -17,15 +17,15 @@
 
 <style lang="stylus">
 .alert
-  padding spacingSmall
-  margin-bottom spacingBase
-  background-color rgba(secondaryColor, .1)
-  border-radius borderRadiusBase
+  padding $spacingSmall
+  margin-bottom $spacingBase
+  background-color rgba($secondaryColor, .1)
+  border-radius $borderRadiusBase
   text-align center
-  box-shadow boxShadowBase
-  transition box-shadow .2s timingFunction, transform .2s timingFunction
+  box-shadow $boxShadowBase
+  transition box-shadow .2s $timingFunction, transform .2s $timingFunction
   &:hover,
   &:focus
-    box-shadow boxShadowHover
+    box-shadow $boxShadowHover
     transform translate(0, -10px)
 </style>

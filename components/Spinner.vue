@@ -1,5 +1,5 @@
 <template>
-  <div class="Spinner" :class="{ 'Spinner--small': isSmall }">
+  <div class="Spinner" v-if="isLoading" :class="{ 'Spinner--small': isSmall }">
     <svg class="Spinner__container" viewBox="0 0 52 52">
       <circle class="Spinner__path" cx="26px" cy="26px" r="20px" fill="none" stroke-width="4px"></circle>
     </svg>
@@ -10,7 +10,9 @@
   export default {
     name: 'Spinner',
     props: {
-      'isSmall': {
+      isLoading: {
+      },
+      isSmall: {
         type: Boolean,
         default: false
       }
@@ -28,7 +30,7 @@
     height 60px
     animation SpinnerRotate 2s linear infinite
   &__path
-    stroke rgba(primaryColor, .8)
+    stroke rgba($silverColor, .8)
     animation SpinnerDash 1.5s ease-in-out infinite
   &--small
     .Spinner__container

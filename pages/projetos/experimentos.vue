@@ -74,19 +74,19 @@
 .experiments-list
   display flex
   flex-flow row wrap
-  margin-left -(spacingSmall)
-  margin-right -(spacingSmall)
+  margin-left -($spacingSmall)
+  margin-right -($spacingSmall)
 .experiment
   border-radius 3px
   background-color #fff
   text-align center
-  box-shadow boxShadowBase
-  transition box-shadow .2s timingFunction, transform .2s timingFunction
+  box-shadow $boxShadowBase
+  transition box-shadow .2s $timingFunction, transform .2s $timingFunction
   padding 0
   margin 2rem 0
   flex 1 1 percentage(1/4)
   width 100%
-  margin 0 spacingSmall spacingBase
+  margin 0 $spacingSmall $spacingBase
   display inline-block
   border 1px solid #eee
   position relative
@@ -94,10 +94,10 @@
   @extend $clearfix
   &:hover,
   &:focus
-    box-shadow boxShadowHover
+    box-shadow $boxShadowHover
     transform translate(0, -10px)
   +above(md)
-    flex 1 0 ((containerWidth / 2) - 60px)
+    flex 1 0 (($containerWidth / 2) - 60px)
   &__image
     position relative
     width 100%
@@ -111,17 +111,17 @@
       top 0
       right 0
   &__description a
-    color baseColor
+    color $baseColor
     text-decoration none
   &__header
-    padding spacingSmall spacingBase
+    padding $spacingSmall $spacingBase
   &__meta
     text-transform uppercase
     opacity .65
     letter-spacing .1em
     font-size .8rem
-    padding-top spacingSmall
-    padding-bottom spacingSmall
+    padding-top $spacingSmall
+    padding-bottom $spacingSmall
   &__title
     font-size 1.375rem
     margin-top .2em

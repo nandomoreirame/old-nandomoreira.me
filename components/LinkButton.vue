@@ -45,7 +45,7 @@
   vertical-align middle
   position relative
   &:not(:last-child)
-    margin-right spacingMini
+    margin-right $spacingMini
   svg
     position relative
     top -2px
@@ -53,7 +53,7 @@
     margin-right 5px
     display inline-block
     vertical-align middle
-    transition .1s fill timingFunction, .1s color timingFunction, .1s stroke timingFunction
+    transition .1s fill $timingFunction, .1s color $timingFunction, .1s stroke $timingFunction
   &__link
   &--default &__link
     @extend $buttonDefault

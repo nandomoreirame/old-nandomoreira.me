@@ -90,9 +90,9 @@ export default {
   align-items center
   align-content center
   min-height 80px
-  padding 0 spacingSmall
-  transition all .25s timingFunction
-  background-color primaryColor
+  padding 0 $spacingSmall
+  transition all .25s $timingFunction
+  background-color $primaryColor
   &--fixed
     position fixed
     top 0
@@ -110,7 +110,7 @@ export default {
     overflow hidden
     opacity 1
     transform translate3d(0,0,0)
-    transition opacity .2s timingFunction, transform .2s timingFunction
+    transition opacity .2s $timingFunction, transform .2s $timingFunction
     &.nuxt-link-exact-active
       opacity 0
       transform translate3d(-100%,0,0)

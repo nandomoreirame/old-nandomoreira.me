@@ -26,14 +26,14 @@ export default {
 <style lang="stylus">
 .footer
   background-color transparent
-  margin 0 0 spacingLarge
+  margin 0 0 $spacingLarge
   @extend $clearfix
   +above(md)
     margin-bottom 0
   &__inner
     text-align center
-    padding-top spacingSmall
-    padding-bottom spacingSmall
+    padding-top $spacingSmall
+    padding-bottom $spacingSmall
     max-width lg
     margin-left auto
     margin-right auto
@@ -42,7 +42,7 @@ export default {
     a
       opacity .75
     small, a
-      color silverColor
+      color $silverColor
   svg
     display inline-block
     vertical-align middle

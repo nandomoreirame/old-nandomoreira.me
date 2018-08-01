@@ -31,9 +31,9 @@
 
 <style lang="stylus">
 .LastProject
-  background-color primaryColor
+  background-color $primaryColor
   .HomeSection__button
-    margin-bottom spacingBase
+    margin-bottom $spacingBase
     position relative
     bottom auto
   .HomeSection__header
@@ -47,18 +47,18 @@
     padding-bottom 0
   .project
     figure
-      margin-bottom spacingSmall
+      margin-bottom $spacingSmall
       +above(md)
         margin-bottom 0
     &.project--invert
-      padding-top spacingSmall
-      padding-bottom spacingSmall
+      padding-top $spacingSmall
+      padding-bottom $spacingSmall
       margin-top 0
       margin-bottom 0
       background-color transparent
     &, a
       color #fff
   .container
-    padding-top spacingBase
+    padding-top $spacingBase
     padding-bottom 0
 </style>

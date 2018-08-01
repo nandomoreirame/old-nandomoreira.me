@@ -51,21 +51,21 @@ export default {
 .postItem
   display block
   width 100%
-  margin 0 spacingSmall spacingBase
+  margin 0 $spacingSmall $spacingBase
   &__link
-    color baseColor
+    color $baseColor
     text-decoration none
     flex-direction column
     min-height 220px
     background #fff
     border-radius 5px
-    box-shadow boxShadowBase
-    transition box-shadow .2s timingFunction, transform .2s timingFunction
+    box-shadow $boxShadowBase
+    transition box-shadow .2s $timingFunction, transform .2s $timingFunction
     flex 1 1 100%
     display flex
     &:hover,
     &:focus
-      box-shadow boxShadowHover
+      box-shadow $boxShadowHover
       transform translate(0, -10px)
   &__content
     flex-grow 1
@@ -73,17 +73,17 @@ export default {
     flex-direction column
     justify-content space-between
   &__header
-    padding spacingSmall spacingSmall spacingMini
+    padding $spacingSmall $spacingSmall $spacingMini
   &__description,
   &__footer
     position relative
     display block
-    padding 0 spacingSmall
+    padding 0 $spacingSmall
   &--no-footer .postItem__link
-    padding-bottom spacingSmall
+    padding-bottom $spacingSmall
   &__footer
     margin 0
-    padding-bottom spacingSmall
+    padding-bottom $spacingSmall
   &__meta
     display block
     opacity .6

@@ -17,7 +17,7 @@
 <style lang="stylus">
 .Quote
   background-color rgba(#f1f8f7, .95)
-  padding spacingBase 0
+  padding $spacingBase 0
   p
     opacity 0.75
   .container

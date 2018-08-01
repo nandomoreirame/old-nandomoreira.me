@@ -2,18 +2,18 @@
   display block
   z-index 100
   .tooltip-inner
-    background grayColor
+    background $grayColor
     color white
-    font-size fontSizeMini
+    font-size $fontSizeMini
     border-radius 4px
-    padding (spacingMini / 2) spacingMini
+    padding ($spacingMini / 2) $spacingMini
   .tooltip-arrow
     width 0
     height 0
     border-style solid
     position absolute
     margin 5px
-    border-color grayColor
+    border-color $grayColor
   &[x-placement^="top"]
     margin-bottom 5px
     .tooltip-arrow

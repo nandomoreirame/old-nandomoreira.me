@@ -50,7 +50,7 @@
   @extend $clearfix
   &__inner
     padding 0
-    margin-bottom spacingLarge
+    margin-bottom $spacingLarge
     +above(md)
       padding 8rem 0
       margin-bottom 0
@@ -58,25 +58,25 @@
     text-align center
     +above(md)
       position absolute
-      bottom spacingBase
+      bottom $spacingBase
       left 0
       right 0
     a
       text-transform uppercase
   &__header
     text-align center
-    padding spacingSmall
-    margin 0 auto spacingBase
+    padding $spacingSmall
+    margin 0 auto $spacingBase
     position relative
-    max-width containerWidthSmall
-    border-bottom 8px solid baseColor
+    max-width $containerWidthSmall
+    border-bottom 8px solid $baseColor
     +above(md)
       position absolute
       top 0
       left 0
       right 0
     h2
-      color baseColor
+      color $baseColor
       margin 0
     &:before
       position absolute
@@ -85,7 +85,7 @@
       left 50%
       width 0
       height 0
-      border-top 20px baseColor solid
+      border-top 20px $baseColor solid
       border-right 20px solid transparent
       border-bottom 20px solid transparent
       border-left 20px solid transparent

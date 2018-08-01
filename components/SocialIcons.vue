@@ -64,18 +64,18 @@
 .social
   list-style none
   padding 0
-  margin spacingSmall 0 spacingMini
+  margin $spacingSmall 0 $spacingMini
   &__item
     display inline-block
     vertical-align middle
     text-align center
     line-height 1
     &:not(:last-child)
-      margin-right spacingSmall
+      margin-right $spacingSmall
   &__link
     display block
     opacity .8
-    transition .2s transform timingFunction, .2s opacity timingFunction
+    transition .2s transform $timingFunction, .2s opacity $timingFunction
     &:hover,
     &:focus
       transform scale(1.1) rotate(10deg)

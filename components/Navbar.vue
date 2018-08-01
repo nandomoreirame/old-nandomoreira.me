@@ -96,7 +96,7 @@
     left 0
     right 0
     bottom 0
-    background-color rgba(baseColor, .95)
+    background-color rgba($baseColor, .95)
     display none
     &--open
       display flex
@@ -115,9 +115,9 @@
     border-color #fff
     color #fff
     line-height 50px
-    padding-right spacingSmall
-    padding-left spacingSmall
-    margin-top spacingSmall
+    padding-right $spacingSmall
+    padding-left $spacingSmall
+    margin-top $spacingSmall
     +above(lg)
       margin 0
       line-height 35px
@@ -127,7 +127,7 @@
     margin 0
     display table-cell
     vertical-align middle
-    padding spacingSmall
+    padding $spacingSmall
     +below(lg)
       .link-button__link
         color #fff
@@ -137,8 +137,7 @@
       display inline-block
 
   &__nav-item
-    font-weight fontWeightRegular
-    letter-spacing -.01em
+    font-weight $fontWeightMedium
     line-height 1
     text-align center
     position relative
@@ -174,13 +173,12 @@
       &:after
         width 50%
         left 0
-        background tertiaryColor
+        background $tertiaryColor
 
   &__nav-link
     color #fff
     font-size 1.625rem
     text-decoration none
-    letter-spacing .05rem
     position relative
     text-transform lowercase
     display block
@@ -190,7 +188,7 @@
       opacity .75
       color #fff
     +above(lg)
-      font-size fontSizeSmall
+      font-size $fontSizeSmall
       display inline-block
       padding 0
       &:after
@@ -255,9 +253,9 @@
       padding .625rem 0
       font-size 1.4rem
       &:hover
-        color primaryColor
+        color $primaryColor
       +above(lg)
         font-size 14px
         padding .625rem .9375rem
-        color baseColor
+        color $baseColor
 </style>

@@ -32,7 +32,7 @@ body
 .resume,
 blockquote
   max-width md
-  margin spacingBase auto
+  margin $spacingBase auto
 .resume
   @extend $article
   h1
@@ -43,7 +43,7 @@ blockquote
     width 220px
     display inline-block
     position relative
-    margin spacingSmall spacingBase spacingBase 0
+    margin $spacingSmall $spacingBase $spacingBase 0
     line-height 1
     &:before
       content ''
@@ -54,11 +54,11 @@ blockquote
       height 100%
       top 0
       left 0
-      border 4px solid primaryColor
+      border 4px solid $primaryColor
       transform translate3d(-5%, -5%, 0)
-      transition border-color .2s timingFunction, transform .2s timingFunction
+      transition border-color .2s $timingFunction, transform .2s $timingFunction
     &:hover:before
-      border-color baseColor
+      border-color $baseColor
       transform translate3d(5%, 5%, 0)
     img
       position relative

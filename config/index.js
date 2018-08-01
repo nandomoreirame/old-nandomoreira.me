@@ -15,7 +15,7 @@ module.exports = {
   baseDescription: description,
   baseKeywords: 'front-end, front, wordpress, javascript, html, css, desenvolvedor, curitiba, ux, uxdesigner, designer',
   imageDefault: `${baseUrl}/images/uploads/social.jpg`,
-  themeColor: '#4dba87',
+  themeColor: '#3d5a80',
   GaUA: 'UA-52446115-1',
   githubRepo: 'https://github.com/nandomoreirame/nandomoreira.me',
   user: {

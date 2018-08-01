@@ -61,7 +61,7 @@ export default {
 .skills
   text-align center
   .social
-    margin-bottom spacingSmall
+    margin-bottom $spacingSmall
   &__list
     list-style none
     padding 0
@@ -73,8 +73,8 @@ export default {
     flex-wrap wrap
   &__item
     display inline-block
-    padding spacingMini
-    margin-bottom spacingMini
+    padding $spacingMini
+    margin-bottom $spacingMini
     flex: 1 0 percentage(1/6)
     small
       display block
@@ -84,12 +84,12 @@ export default {
       opacity .3
       width 60px
       height 60px
-      margin 0 auto spacingMini
+      margin 0 auto $spacingMini
       background-repeat no-repeat
       background-position center
       background-size 100% 60px
       text-indent -99999px
-      transition transform .12s timingFunction, opacity .12s timingFunction
+      transition transform .12s $timingFunction, opacity .12s $timingFunction
     &:last-child
       flex: 1 0 100%
       small

@@ -1,7 +1,7 @@
 <template>
   <div class="CtaWhatsApp">
     <h3>Entre em contato</h3>
-    <a href="mailto:nandomoreira.me@gmail.com">nandomoreira.me[arroba]gmail.com</a>
+    <a href="mailto:fernando@onedev.studio">fernando@onedev.studio</a>
     <social-icons iconColor="#435466"/>
     <link-button buttonType="ghost" buttonPermalink="https://api.whatsapp.com/send?1=pt_BR&amp;phone=5541984401163" :nuxtLink="false" linkTarget="_blank">
       <svg aria-labelledby="whatsapp-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor">
@@ -25,7 +25,7 @@
 
 <style lang="stylus" scoped>
 .CtaWhatsApp
-  padding spacingLarge 0 (spacingLarge*2)
+  padding $spacingLarge 0 ($spacingLarge*2)
   text-align center
   background-color #f7f8f9
   h3

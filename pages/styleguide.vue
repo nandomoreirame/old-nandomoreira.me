@@ -10,20 +10,19 @@
       <section class="styleguide__section">
         <h2>Typography</h2>
         <div class="typography">
-          <div class="typography__fonts typography__fonts--suez">
+          <div class="typography__fonts typography__fonts--Montserrat">
             <h2>AaBb</h2>
             <span>
-              <span>Suez One</span>
+              <span>Montserrat</span>
               <span> - </span>
               <span>Regular</span>
             </span>
           </div>
-          <div class="typography__fonts typography__fonts--ubuntu">
+          <div class="typography__fonts typography__fonts--Roboto">
             <h2>AaBb</h2>
             <span>
-              <span>Ubuntu</span>
+              <span>Roboto</span>
               <span> - </span>
-              <span class="r">Regular</span>
               <span class="l">Light</span>
               <span class="n">Medium</span>
               <span class="b">Bold</span>
@@ -142,15 +141,15 @@
 .styleguide
   padding-top 6.25rem
   &__section
-    padding-bottom spacingLarge
-    margin-bottom spacingLarge
-    border-bottom borderBase
+    padding-bottom $spacingLarge
+    margin-bottom $spacingLarge
+    border-bottom $borderBase
   &__color
     width 220px
     height 160px
     border-radius 10px
     position relative
-    box-shadow boxShadowBase
+    box-shadow $boxShadowBase
     display inline-block
     overflow hidden
     &:not(:last-child)
@@ -166,48 +165,48 @@
       width 100%
       padding 15px
       font-size .7rem
-      font-weight fontWeightRegular
+      font-weight $fontWeightNormal
       line-height 1.23
       text-align left
       color #4c484c
     &--primary:after
-      content ''+primaryColor+' - primaryColor'
+      content ''+$primaryColor+' - $primaryColor'
     &--secondary:after
-      content ''+secondaryColor+' - secondaryColor'
+      content ''+$secondaryColor+' - $secondaryColor'
     &--tertiary:after
-      content ''+tertiaryColor+' - tertiaryColor'
+      content ''+$tertiaryColor+' - $tertiaryColor'
     &--silver:after
-      content ''+silverColor+' - silverColor'
+      content ''+$silverColor+' - $silverColor'
     &--gray:after
-      content ''+grayColor+' - grayColor'
+      content ''+$grayColor+' - $grayColor'
     &--border:after
-      content ''+borderColor+' - borderColor'
+      content ''+$borderColor+' - $borderColor'
     &--base:after
-      content ''+baseColor+' - baseColor'
+      content ''+$baseColor+' - $baseColor'
     &--background:after
-      content ''+backgroundColor+' - backgroundColor'
+      content ''+$backgroundColor+' - $backgroundColor'
 
   .bgcolor
     &--primary
-      background-color primaryColor
+      background-color $primaryColor
     &--secondary
-      background-color secondaryColor
+      background-color $secondaryColor
     &--tertiary
-      background-color tertiaryColor
+      background-color $tertiaryColor
     &--silver
-      background-color silverColor
+      background-color $silverColor
     &--gray
-      background-color grayColor
+      background-color $grayColor
     &--border
-      background-color borderColor
+      background-color $borderColor
     &--base
-      background-color baseColor
+      background-color $baseColor
     &--background
-      background-color backgroundColor
+      background-color $backgroundColor
 
 .buttons__ghost-white
-  padding spacingBase
-  margin spacingSmall 0
+  padding $spacingBase
+  margin $spacingSmall 0
 
 .typography
   &__fonts
@@ -215,20 +214,20 @@
     border-radius 10px
     text-align center
     background-color #fff
-    padding spacingSmall spacingBase
+    padding $spacingSmall $spacingBase
     display inline-block
-    margin-right spacingSmall
-    box-shadow boxShadowBase
-    &--suez
+    margin-right $spacingSmall
+    box-shadow $boxShadowBase
+    &--Montserrat
       &, h2
-        font-family fontFamilyHeading
-    &--ubuntu
+        font-family $fontFamilyHeading
+    &--Roboto
       &, h2
-        font-family fontFamilyBase
+        font-family $fontFamilyBase
     h2
       font-size 90px
       line-height 0.78
-      color baseColor
+      color $baseColor
       margin 0 0 15px
     span
       span
@@ -236,11 +235,9 @@
         &:not(:last-child)
           margin-right 5px
       &.l
-        font-weight fontWeightLight
+        font-weight $fontWeightLight
       &.n
-        font-weight fontWeightNormal
-      &.r
-        font-weight fontWeightRegular
+        font-weight $fontWeightNormal
       &.b
-        font-weight fontWeightBold
+        font-weight $fontWeightBold
 </style>

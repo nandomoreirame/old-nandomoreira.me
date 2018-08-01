@@ -51,9 +51,9 @@ export default {
 
 <style lang="stylus" scoped>
 .comments
-  padding spacingBase 0
-  border-top borderBase
-  margin-top spacingBase
+  padding $spacingBase 0
+  border-top $borderBase
+  margin-top $spacingBase
   background-color #fff
   @extend $clearfix
   h3
@@ -67,7 +67,7 @@ export default {
     display block
     text-align center
     background-color #fff
-    padding spacingBase 0
+    padding $spacingBase 0
     position absolute
     z-index 10
     top 0

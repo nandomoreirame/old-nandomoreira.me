@@ -86,7 +86,7 @@
       position relative
       &:before,
       &:after
-        background-color #4dba87
+        background-color #3d5a80
         display block
         width 100%
         height .25rem
@@ -117,16 +117,16 @@
 
   &__whatIdoToday
     +above(md)
-      padding-left spacingBase
+      padding-left $spacingBase
       .aboutme__thumb
         margin-right 0
-        margin-left (spacingLarge * 2)
+        margin-left ($spacingLarge * 2)
   &__thisProject
     +above(md)
-      padding-right spacingBase
+      padding-right $spacingBase
       .aboutme__thumb
         margin-left 0
-        margin-right (spacingLarge * 2)
+        margin-right ($spacingLarge * 2)
 
   &__thisProject,
   &__whatIdoToday
@@ -137,14 +137,14 @@
         flex 0 0 50%
   &__whatIdoToday
     .aboutme__thumb:before
-      transform translate3d(-(spacingSmall/2), (spacingSmall/2), 0)
+      transform translate3d(-($spacingSmall/2), ($spacingSmall/2), 0)
       +above(md)
-        transform translate3d(-(spacingSmall), spacingSmall, 0)
+        transform translate3d(-($spacingSmall), $spacingSmall, 0)
   &__thisProject
     .aboutme__thumb:before
-      transform translate3d((spacingSmall/2), (spacingSmall/2), 0)
+      transform translate3d(($spacingSmall/2), ($spacingSmall/2), 0)
       +above(md)
-        transform translate3d(spacingSmall, spacingSmall, 0)
+        transform translate3d($spacingSmall, $spacingSmall, 0)
 
   &__howiam,
   &__imDoingNow,
@@ -154,11 +154,11 @@
     section
       margin 0 auto
       width 100%
-      padding spacingBase spacingSmall
+      padding $spacingBase $spacingSmall
       +above(sm)
-        padding spacingLarge spacingBase
+        padding $spacingLarge $spacingBase
       +above(md)
-        padding (spacingLarge * 2) spacingBase
+        padding ($spacingLarge * 2) $spacingBase
         display flex
         align-items center
         justify-content space-around
@@ -167,7 +167,7 @@
   &__imDoingNow,
   &__professionalHistory
     section
-      max-width containerWidth
+      max-width $containerWidth
 
   &__professionalHistory,
   &__imDoingNow
@@ -183,15 +183,15 @@
   &__thumb
     position relative
     display block
-    margin spacingSmall 0 spacingLarge
+    margin $spacingSmall 0 $spacingLarge
     line-height 1
     width 100%
     +above(sm)
-      margin spacingSmall 0 spacingLarge spacingLarge
+      margin $spacingSmall 0 $spacingLarge $spacingLarge
       display inline-block
-      margin-right spacingBase
+      margin-right $spacingBase
     +above(md)
-      margin-right spacingBase
+      margin-right $spacingBase
     &:before
       content ''
       display block
@@ -201,10 +201,10 @@
       height 100%
       top 0
       left 0
-      background-color primaryColor
-      transform translate3d((spacingSmall/2), -(spacingSmall/2), 0)
+      background-color $primaryColor
+      transform translate3d(($spacingSmall/2), -($spacingSmall/2), 0)
       +above(md)
-        transform translate3d(spacingSmall, -(spacingSmall), 0)
+        transform translate3d($spacingSmall, -($spacingSmall), 0)
     img
       position relative
       z-index 2
@@ -220,10 +220,10 @@
   section
     max-width xlg
     text-align center
-    padding spacingLarge spacingBase
+    padding $spacingLarge $spacingBase
     margin 0 auto
     +above(md)
-      padding (spacingLarge * 2) spacingBase
+      padding ($spacingLarge * 2) $spacingBase
   h2
-    margin 0 0 spacingLarge
+    margin 0 0 $spacingLarge
 </style>

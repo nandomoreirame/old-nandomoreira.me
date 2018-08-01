@@ -74,7 +74,7 @@
 <style lang="stylus">
 .LastShots
   .HomeSection__button
-    margin-bottom spacingBase
+    margin-bottom $spacingBase
     position relative
     bottom auto
   .HomeSection__inner
@@ -83,7 +83,7 @@
 .dribbble__loading
   display block
   text-align center
-  padding spacingBase 0
+  padding $spacingBase 0
 
 .loading
   &-enter-active,

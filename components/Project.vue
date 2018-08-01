@@ -67,19 +67,19 @@
 <style lang="stylus" scoped>
 .project
   min-height 450px
-  margin-top spacingLarge
-  padding-top spacingBig
-  padding-bottom spacingBig
+  margin-top $spacingLarge
+  padding-top $spacingBig
+  padding-bottom $spacingBig
   overflow hidden
   @extend $clearfix
   .grid
     align-items center
   &:not(:last-child)
-    margin-bottom spacingLarge
+    margin-bottom $spacingLarge
   &__title
     margin-top 0
   &__content
-    padding 0 spacingBase
+    padding 0 $spacingBase
     order 1
     +above(md)
       flex 0 0 50%
@@ -100,11 +100,11 @@
     &-browser
       display inline-block
       background-color #fff
-      box-shadow boxShadowBase
-      transition box-shadow .2s timingFunction, transform .2s timingFunction
+      box-shadow $boxShadowBase
+      transition box-shadow .2s $timingFunction, transform .2s $timingFunction
       &:hover,
       &:focus
-        box-shadow boxShadowHover
+        box-shadow $boxShadowHover
         transform translate(0, -10px)
     img
       display block
@@ -114,7 +114,7 @@
       display inline-block
       margin-right 5px
   &--invert
-    background-color lighten(borderColor, 5%)
+    background-color lighten($borderColor, 5%)
     +above(md)
       margin 0
       .project__content

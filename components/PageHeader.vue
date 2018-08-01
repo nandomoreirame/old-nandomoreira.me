@@ -35,8 +35,7 @@
 <style lang="stylus">
 .pageHeader
   padding 0
-  margin-bottom spacingBase
-  clip-path polygon(0 0, 100% 0, 100% 100%, 0 85%)
+  margin-bottom $spacingBase
   overflow hidden
   position relative
   @extend $clearfix
@@ -56,31 +55,30 @@
         right 0
         bottom 0
         left 0
-        background-color rgba(grayColor, .9)
+        background-color rgba($grayColor, .9)
     .container
       position relative
       z-index 2
   &__inner
-    background-color primaryColor
+    background-color $primaryColor
     padding 8rem 0 5rem
     position relative
     z-index 5
     +above(md)
-      padding 8rem 0
+      padding 8rem 0 4rem
   &__image
     opacity 0
     visibility hidden
     display none
   &__title
     text-transform uppercase
-    letter-spacing .1em
     font-size 1.8rem
     color #fff
     margin 0
     +above(md)
       font-size 2.5rem
   &__description
-    font-weight fontWeightLight
+    font-weight $fontWeightLight
     font-style 400
     font-size 1.25rem
     line-height 1.4

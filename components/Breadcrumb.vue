@@ -42,7 +42,7 @@ export default {
     padding-right .5rem
     &--active,
     &:hover
-      color tertiaryColor
+      color $tertiaryColor
       text-decoration underline
     &--active
       pointer-events none

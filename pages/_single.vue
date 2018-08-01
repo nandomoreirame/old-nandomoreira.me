@@ -109,32 +109,32 @@
     .container
       @extend $article
       border none
-      border-bottom borderBase
+      border-bottom $borderBase
       +below(md)
-        padding 0 spacingSmall spacingBase
+        padding 0 $spacingSmall $spacingBase
         background transparent none
         box-shadow none
         &:last-child
-          padding-top spacingBase
+          padding-top $spacingBase
           border-bottom none
 
 .Single__body
   p, h2, h3, h4, h5, figure,
   blockquote, pre, ul, ol
     display block
-    max-width containerWidthSmall
+    max-width $containerWidthSmall
     margin-left auto
     margin-right auto
   p, h2, h3, h4, h5, pre code
-    padding-left spacingBase
-    padding-right spacingBase
+    padding-left $spacingBase
+    padding-right $spacingBase
   ul, ol
-    padding-left spacingLarge
+    padding-left $spacingLarge
   img
     display block
-    margin 0 auto spacingMini
+    margin 0 auto $spacingMini
   figure
-    margin-bottom spacingSmall
+    margin-bottom $spacingSmall
   figure, p
     img
       height auto
@@ -146,12 +146,12 @@
         width 150%
         position relative
   pre
-    background baseColor
-    color silverColor
+    background $baseColor
+    color $silverColor
     overflow-x auto
-    margin-bottom spacingBase
+    margin-bottom $spacingBase
     code
-      background baseColor
-      padding-top spacingMini
-      padding-bottom spacingMini
+      background $baseColor
+      padding-top $spacingMini
+      padding-bottom $spacingMini
 </style>

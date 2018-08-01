@@ -70,7 +70,7 @@
   position relative
   flex-flow row
   flex-wrap wrap
-  margin-left -(spacingSmall)
-  margin-right -(spacingSmall)
+  margin-left -($spacingSmall)
+  margin-right -($spacingSmall)
   padding 40px 0 0
 </style>

@@ -1,24 +1,24 @@
 a
-  color linkColor
+  color $linkColor
   text-decoration underline
-  transition background-color 0.15s timingFunction,
-    color 0.15s timingFunction,
-    border 0.1s timingFunction,
-    outline 0.1s timingFunction
+  transition background-color 0.15s $timingFunction,
+    color 0.15s $timingFunction,
+    border 0.1s $timingFunction,
+    outline 0.1s $timingFunction
   border 0
   &:hover,
   &:active,
   &:focus
     text-decoration none
   &:focus
-    outline 3px solid rgba(primaryColor, 0.7)
+    outline 3px solid rgba($primaryColor, 0.7)
     outline-offset 2px
 
 em
   font-style italic
 
 strong, b
-  font-weight fontWeightBold
+  font-weight $fontWeightBold
 
 small
   font-size 80%
@@ -28,16 +28,16 @@ big
 
 h1, h2, h3, h4, h5, h6,
 p, dl, table, blockquote, figcaption
-  margin 0 0 spacingSmall 0
+  margin 0 0 $spacingSmall 0
   &:last-child
     margin-bottom 0
 
 h1, h2, h3, h4, h5, h6
-  color baseColor
+  color $baseColor
   letter-spacing -1*0.01rem
-  font-weight fontWeightNormal
-  font-family fontFamilyHeading
-  margin-top spacingBase
+  font-weight $fontWeightBold
+  font-family $fontFamilyHeading
+  margin-top $spacingBase
   a
     color inherit
     text-decoration none
@@ -76,45 +76,45 @@ sup
   top -1*0.5em
 
 ul, ol
-  padding-left spacingSmall
-  margin-bottom spacingSmall
+  padding-left $spacingSmall
+  margin-bottom $spacingSmall
   li
-    margin-bottom spacingMini
+    margin-bottom $spacingMini
   p
     margin 0
   li > ul,
   li > ol
-    margin-bottom spacingMini
+    margin-bottom $spacingMini
 
 figcaption
   text-align center
   font-style italic
-  line-height lineHeightBase
-  font-size fontSizeSmall
+  line-height $lineHeightBase
+  font-size $fontSizeSmall
 
 blockquote
-  color grayColor
-  font-size fontSizeBig
-  margin-top spacingBase
-  margin-bottom spacingBase
-  padding 0 spacingLarge
+  color $grayColor
+  font-size $fontSizeBig
+  margin-top $spacingBase
+  margin-bottom $spacingBase
+  padding 0 $spacingLarge
   text-align center
   line-height 1.7
   position relative
   p
-    font-weight fontWeightLight
+    font-weight $fontWeightLight
   & *:last-child
     margin 0
   small
     display block
   &:before
     content '“ '
-    left spacingBase
+    left $spacingBase
     top 0
     transform translate3d(0, -20%, 0)
   &:after
     content ' ”'
-    right spacingBase
+    right $spacingBase
     bottom 0
     transform translate3d(0, 10%, 0)
   &:before,
@@ -125,18 +125,18 @@ blockquote
     width 40px
     height 40px
     font-size 4em
-    color rgba(baseColor, .6)
+    color rgba($baseColor, .6)
     z-index 1
     font-family 'Droid Serif', georgia, serif
     pointer-events none
 
 pre,
 code
-  font-family fontFamilyMonospace
+  font-family $fontFamilyMonospace
 
 code
-  background rgba(grayColor, 0.05)
-  border-radius borderRadiusBase
+  background rgba($grayColor, 0.05)
+  border-radius $borderRadiusBase
   color inherit
   margin 0 0.2rem
   padding 0.2rem 0.5rem
@@ -145,13 +145,13 @@ code
   white-space nowrap
 
 pre
-  background rgba(grayColor, 0.05)
-  padding (spacingMini / 2)
-  font-size fontSizeSmall
+  background rgba($grayColor, 0.05)
+  padding ($spacingMini / 2)
+  font-size $fontSizeSmall
   > code
     font-size inherit
     background transparent
     border-radius 0
     display block
-    padding spacingMini spacingMini
+    padding $spacingMini $spacingMini
     white-space pre

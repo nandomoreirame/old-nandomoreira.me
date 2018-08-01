@@ -64,7 +64,8 @@ module.exports = {
   css: [
     { src: '~assets/stylus/index.styl', lang: 'stylus' }
   ],
-  loading: { color: '#435466' },
+  // loading: { color: '#435466' },
+  loading: '~/components/Preloader.vue',
   plugins: [
     // { src: '~/plugins/browser.js', ssr: false },
     { src: '~/plugins/plugins.js', ssr: false },

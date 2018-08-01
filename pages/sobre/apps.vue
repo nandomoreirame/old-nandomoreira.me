@@ -71,16 +71,16 @@
   max-width 180px
   position relative
   display block
-  margin-top spacingSmall
-  margin-bottom spacingLarge
+  margin-top $spacingSmall
+  margin-bottom $spacingLarge
   line-height 1
   +above(sm)
     display inline-block
-    margin-right spacingBase
+    margin-right $spacingBase
     float left
   +above(md)
     max-width 280px
-    margin-right spacingBase
+    margin-right $spacingBase
   &:before
     content ''
     display block
@@ -90,11 +90,11 @@
     height 100%
     top 0
     left 0
-    border 4px solid primaryColor
+    border 4px solid $primaryColor
     transform translate3d(-5%, -5%, 0)
-    transition border-color .2s timingFunction, transform .2s timingFunction
+    transition border-color .2s $timingFunction, transform .2s $timingFunction
   &:hover:before
-    border-color baseColor
+    border-color $baseColor
     transform translate3d(5%, 5%, 0)
   img
     position relative

@@ -132,11 +132,11 @@
 
 <style lang="stylus">
 .Form
-  margin spacingLarge auto
+  margin $spacingLarge auto
   @extend $clearfix
   &__group
     position relative
-    margin 0 0 spacingSmall
+    margin 0 0 $spacingSmall
   h4,
   &__label
     font-size 1.3rem
@@ -151,14 +151,14 @@
 .Form__field
   font-family inherit
   font-size inherit
-  color grayColor
+  color $grayColor
   display block
   width 100%
   appearance none
 
 .Form__field
-  padding spacingSmall
-  border 1px solid rgba(grayColor, .2)
+  padding $spacingSmall
+  border 1px solid rgba($grayColor, .2)
   background-color #fff
   border-radius .25em
   box-shadow inset 0 1px 1px rgba(0, 0, 0, 0.08)
@@ -166,8 +166,8 @@
     background #fff url("/images/required.svg") no-repeat top right
   &:focus
     outline none
-    border-color primaryColor
-    box-shadow 0 0 5px rgba(primaryColor, 0.2)
+    border-color $primaryColor
+    box-shadow 0 0 5px rgba($primaryColor, 0.2)
   &--error
     border-color #e94b35
   &--select
@@ -206,7 +206,7 @@ textarea.Form__field
     display inline-block
     position relative
     user-select none
-    margin-right spacingSmall
+    margin-right $spacingSmall
 
 .Form__radio,
 .Form__checkbox
@@ -233,11 +233,11 @@ textarea.Form__field
       width 20px
       height 20px
     &:before
-      border 1px solid rgba(grayColor, .2)
+      border 1px solid rgba($grayColor, .2)
       background #fff
       box-shadow inset 0 1px 1px rgba(0, 0, 0, 0.08)
     &:after
-      background-color primaryColor
+      background-color $primaryColor
       background-position center center
       background-repeat no-repeat
       box-shadow 0 0 5px rgba(44, 151, 222, 0.4)

@@ -34,7 +34,6 @@
         </div>
         <figure class="project__thumbnail grid__column">
           <a class="project__thumbnail-browser" :href="project.online ? project.url : '#'" :target="`${project.online ? '_blank' : '_self'}`">
-            <span class="project__thumbnail-browser-bar"><small>{{ project.url }}</small></span>
             <img v-lazy="project.thumbnail" :alt="`Thumbnail do projeto: ${project.name}`">
           </a>
         </figure>
@@ -107,23 +106,6 @@
       &:focus
         box-shadow boxShadowHover
         transform translate(0, -10px)
-      &-bar
-        display block
-        width 100%
-        height 26px
-        background url("/images/uploads/browser.svg") no-repeat 50%
-        background-size 100% 28px
-        position relative
-        overflow hidden
-        small
-          position absolute
-          left 25%
-          opacity .8
-          color baseColor
-          display inline-block
-          vertical-align top
-          line-height 25px
-          font-size .5rem
     img
       display block
       max-width 100%

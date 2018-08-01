@@ -1,9 +1,9 @@
 <template>
-  <div class="Spinner" v-if="isLoading" :class="{ 'Spinner--small': isSmall }">
+  <span class="Spinner" v-if="isLoading" :class="{ 'Spinner--small': isSmall }">
     <svg class="Spinner__container" viewBox="0 0 52 52">
       <circle class="Spinner__path" cx="26px" cy="26px" r="20px" fill="none" stroke-width="4px"></circle>
     </svg>
-  </div>
+  </span>
 </template>
 
 <script>
@@ -23,19 +23,21 @@
 <style lang="stylus">
 .Spinner
   position relative
-  display block
-  margin 0 auto
-  &__container
+  &, svg
+    display inline-block
+    vertical-align middle
+    padding 0
+    margin 0
+  svg
     width 60px
     height 60px
     animation SpinnerRotate 2s linear infinite
   &__path
-    stroke rgba($silverColor, .8)
+    stroke rgba($baseColor, .8)
     animation SpinnerDash 1.5s ease-in-out infinite
-  &--small
-    .Spinner__container
-      width 40px
-      height 40px
+  &--small svg
+    width 32px
+    height 32px
 
 @keyframes SpinnerRotate
   100%

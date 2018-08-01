@@ -2,7 +2,10 @@
   <transition name="preloader">
     <div class="preloader" v-if="loading">
       <div class="preloader__inner">
-        <spinner :isLoading="loading"/>
+        <p>
+          <spinner :isLoading="loading" :isSmall="true"/>
+          <span>Carregando...</span>
+        </p>
       </div>
     </div>
   </transition>
@@ -23,7 +26,7 @@ export default {
     finish () {
       setTimeout(() => {
         this.loading = false
-      }, 1200)
+      }, 800)
     }
   },
   components: {
@@ -37,9 +40,8 @@ export default {
   width 100%
   height 100%
   z-index 10000
-  background rgba($primaryColor, .75)
   display flex
-  align-items center
+  align-items flex-start
   justify-content center
   position fixed
   top 0
@@ -47,10 +49,23 @@ export default {
   bottom 0
   left 0
   text-align center
+  &__inner
+    padding 6px
+    background rgba($silverColor, .95)
+    box-shadow $boxShadowBase
+  p
+    color $baseColor
+    font-size $fontSizeSmall
+    span
+      display inline-block
+      vertical-align middle
+      margin 0 5px
   &-enter-active,
   &-leave-active
-    transition opacity .25s ease-in-out
+    transition all .35s ease-in-out
+    transform translate3d(0, 0, 0)
   &-enter,
   &-leave-active
     opacity 0
+    transform translate3d(0, -20%, 0)
 </style>

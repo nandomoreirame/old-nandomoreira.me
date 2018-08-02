@@ -81,10 +81,10 @@ module.exports = {
       linkify: true,
       breaks: true
     }],
-    ['@nuxtjs/component-cache', {
-      max: 10000,
-      maxAge: 1000 * 60 * 60
-    }],
+    // ['@nuxtjs/component-cache', {
+    //   max: 10000,
+    //   maxAge: 1000 * 60 * 60
+    // }],
     '@nuxtjs/sitemap',
     '@nuxtjs/manifest',
     ['@nuxtjs/pwa', {

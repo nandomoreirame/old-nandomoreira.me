@@ -26,12 +26,10 @@
 <style lang="stylus">
 .pageHeader
   &.pageHeader--hero
+    height 100vh
     text-align left
-    // background-color $backgroundColor
-    background $silverColor
-    background -moz-linear-gradient(45deg,  $silverColor 0%, lighten($silverColor, 10%) 100%)
-    background -webkit-linear-gradient(45deg,  $silverColor 0%, lighten($silverColor, 10%) 100%)
-    background linear-gradient(45deg,  $silverColor 0%, lighten($silverColor, 10%) 100%)
+    background darken($silverColor, 5%)
+    background linear-gradient(45deg, darken($silverColor, 5%) 0%, lighten($silverColor, 10%) 100%)
     width 100%
     margin 0
     .pageHeader__inner

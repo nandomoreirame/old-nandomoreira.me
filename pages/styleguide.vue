@@ -147,7 +147,7 @@
   &__color
     width 220px
     height 160px
-    border-radius 10px
+    border-radius 20px
     position relative
     box-shadow $boxShadowBase
     display inline-block
@@ -211,7 +211,7 @@
 .typography
   &__fonts
     min-height 146px
-    border-radius 10px
+    border-radius 20px
     text-align center
     background-color #fff
     padding $spacingSmall $spacingBase

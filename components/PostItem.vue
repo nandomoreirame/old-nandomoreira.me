@@ -58,7 +58,8 @@ export default {
     flex-direction column
     min-height 220px
     background #fff
-    border-radius 5px
+    border-radius 20px
+    overflow hidden
     box-shadow $boxShadowBase
     transition box-shadow .2s $timingFunction, transform .2s $timingFunction
     flex 1 1 100%

@@ -3,7 +3,7 @@
     <div class="preloader" v-if="loading">
       <div class="preloader__inner">
         <p>
-          <spinner :isLoading="loading" :isSmall="true"/>
+          <spinner :isLoading="loading" :isSmall="true" color="#fff"/>
           <span>Carregando...</span>
         </p>
       </div>
@@ -51,10 +51,10 @@ export default {
   text-align center
   &__inner
     padding 6px
-    background rgba($silverColor, .95)
+    background rgba($primaryColor, .95)
     box-shadow $boxShadowBase
   p
-    color $baseColor
+    color #fff
     font-size $fontSizeSmall
     span
       display inline-block

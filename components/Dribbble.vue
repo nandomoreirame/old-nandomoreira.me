@@ -80,7 +80,7 @@
   min-height 300px
   background #fff 50%
   background-size cover
-  border-radius 5px
+  border-radius 20px
   box-shadow $boxShadowBase
   transition box-shadow .2s $timingFunction, transform .2s $timingFunction
   text-align center

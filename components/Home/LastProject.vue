@@ -31,17 +31,17 @@
 
 <style lang="stylus">
 .LastProject
-  background-color $primaryColor
+  background-color #fff
   .HomeSection__button
     margin-bottom $spacingBase
     position relative
     bottom auto
   .HomeSection__header
-    border-color #fff
+    border-color $baseColor
     &:before
-      border-top-color #fff
+      border-top-color $baseColor
     h2
-      color #fff
+      color $baseColor
   .HomeSection__inner
     margin-bottom 0
     padding-bottom 0
@@ -57,7 +57,7 @@
       margin-bottom 0
       background-color transparent
     &, a
-      color #fff
+      color $baseColor
   .container
     padding-top $spacingBase
     padding-bottom 0

@@ -203,6 +203,7 @@
       left 0
       background-color $primaryColor
       transform translate3d(($spacingSmall/2), -($spacingSmall/2), 0)
+      border-radius 20px
       +above(md)
         transform translate3d($spacingSmall, -($spacingSmall), 0)
     img
@@ -212,6 +213,7 @@
       width 100%
       height auto
       display inline-block
+      border-radius 20px
 </style>
 
 <style lang="stylus" scoped>

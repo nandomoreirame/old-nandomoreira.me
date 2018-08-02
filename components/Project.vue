@@ -102,6 +102,8 @@
       background-color #fff
       box-shadow $boxShadowBase
       transition box-shadow .2s $timingFunction, transform .2s $timingFunction
+      border-radius 20px
+      overflow hidden
       &:hover,
       &:focus
         box-shadow $boxShadowHover
@@ -109,6 +111,7 @@
     img
       display block
       max-width 100%
+      border-radius 20px
   &__tags
     small
       display inline-block

@@ -65,4 +65,16 @@
     @extend $buttonLarge
   &--small &__link
     @extend $buttonSmall
+  &--whatsapp &__link
+    background #33d16b
+    background -moz-linear-gradient(45deg,  #33d16b 0%, lighten(#33d16b, 20%) 100%)
+    background -webkit-linear-gradient(45deg,  #33d16b 0%, lighten(#33d16b, 20%) 100%)
+    background linear-gradient(45deg,  #33d16b 0%, lighten(#33d16b, 20%) 100%)
+    border none
+    color #fff
+    &:hover
+      background #33d16b
+      background -moz-linear-gradient(45deg,  lighten(#33d16b, 20%) 0%, #33d16b 100%)
+      background -webkit-linear-gradient(45deg,  lighten(#33d16b, 20%) 0%, #33d16b 100%)
+      background linear-gradient(45deg,  lighten(#33d16b, 20%) 0%, #33d16b 100%)
 </style>

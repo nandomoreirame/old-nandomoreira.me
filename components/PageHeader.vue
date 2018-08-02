@@ -1,5 +1,5 @@
 <template>
-  <header class="pageHeader" :class="{ 'pageHeader--background': image, 'pageHeader--hero': isHero }" v-lazy:background-image="(image ? `${image}` : '')">
+  <header class="pageHeader" :class="{ 'pageHeader--background': image, 'pageHeader--hero': isHero }">
     <div class="pageHeader__inner">
       <slot name="inner"/>
     </div>
@@ -35,6 +35,7 @@
 <style lang="stylus">
 .pageHeader
   padding 0
+  margin-top $spacingBig
   margin-bottom $spacingBase
   overflow hidden
   position relative
@@ -60,12 +61,16 @@
       position relative
       z-index 2
   &__inner
-    background-color $primaryColor
-    padding 8rem 0 5rem
+    // background-color $primaryColor
+    background $primaryColor
+    background -moz-linear-gradient(45deg,  $primaryColor 0%, lighten($primaryColor, 20%) 100%)
+    background -webkit-linear-gradient(45deg,  $primaryColor 0%, lighten($primaryColor, 20%) 100%)
+    background linear-gradient(45deg,  $primaryColor 0%, lighten($primaryColor, 20%) 100%)
+    padding 6rem 0
     position relative
     z-index 5
-    +above(md)
-      padding 8rem 0 4rem
+    // +above(md)
+    //   padding 6rem 0
   &__image
     opacity 0
     visibility hidden

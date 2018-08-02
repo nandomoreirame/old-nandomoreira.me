@@ -1,11 +1,11 @@
 <template>
   <div class="home">
     <home-hero/>
-    <featured-posts :posts="featuredPosts"/>
     <last-project :project="lastProject"/>
     <last-shots/>
+    <featured-posts :posts="featuredPosts"/>
     <home-skills/>
-    <meta-tags/>
+    <meta-tags bodyClass="home"/>
   </div>
 </template>
 

@@ -29,11 +29,18 @@ export default {
     ogType: {
       type: String,
       default: 'profile'
+    },
+    bodyClass: {
+      type: String,
+      default: 'page'
     }
   },
   head () {
     return {
       title: this.title,
+      bodyAttrs: {
+        class: this.bodyClass
+      },
       meta: [
         { hid: 'og:type', property: 'og:type', content: this.ogType },
         { hid: 'og:title', property: 'og:title', content: this.title },

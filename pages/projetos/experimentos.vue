@@ -77,7 +77,8 @@
   margin-left -($spacingSmall)
   margin-right -($spacingSmall)
 .experiment
-  border-radius 3px
+  border-radius 20px
+  overflow hidden
   background-color #fff
   text-align center
   box-shadow $boxShadowBase

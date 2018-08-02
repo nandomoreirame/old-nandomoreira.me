@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <cta-whatsapp/>
-    <quote/>
+    <!-- <quote/> -->
     <div class="footer__inner">
       <small>
         Feito com o
@@ -17,7 +17,7 @@
 export default {
   name: 'pageFooter',
   components: {
-    Quote: () => import('~/components/Quote'),
+    // Quote: () => import('~/components/Quote'),
     CtaWhatsapp: () => import('~/components/CtaWhatsApp')
   }
 }
@@ -25,7 +25,10 @@ export default {
 
 <style lang="stylus">
 .footer
-  background-color transparent
+  background $primaryColor
+  background -moz-linear-gradient(45deg,  $primaryColor 0%, lighten($primaryColor, 20%) 100%)
+  background -webkit-linear-gradient(45deg,  $primaryColor 0%, lighten($primaryColor, 20%) 100%)
+  background linear-gradient(45deg,  $primaryColor 0%, lighten($primaryColor, 20%) 100%)
   margin 0 0 $spacingLarge
   @extend $clearfix
   +above(md)

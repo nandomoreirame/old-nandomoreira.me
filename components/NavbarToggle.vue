@@ -39,7 +39,7 @@
     position absolute
     height 5px
     width 50%
-    background #fff
+    background $baseColor
     opacity 1
     transform rotate(0deg)
     transition .25s ease-in-out

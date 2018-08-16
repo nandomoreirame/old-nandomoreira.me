@@ -156,5 +156,8 @@ module.exports = {
         return res.data.map(post => post.permalink)
       })
     }
-  }
+  },
+  serverMiddleware: [
+    '~/api/index.js'
+  ]
 }

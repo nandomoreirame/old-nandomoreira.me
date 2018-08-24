@@ -4,7 +4,7 @@
       <h1 class="Hero__brand">nando<span>moreira</span></h1>
       <h2 class="Hero__title">Olá! Eu sou um desenvolvedor web. Ajudo ONGs e pequenas empresas a criar sites personalizados de alta qualidade. <span>No meu tempo livre eu <a href="#" target="_blank">escrevo</a> e contribuo com projetos <a href="https://github.com/nandomoreirame" target="_blank">open source</a>.</span></h2>
       <div class="Hero__social">
-        <social-icons :iconSize="26"/>
+        <social-icons iconSize="26"/>
       </div>
       <footer class="Hero__footer">© 2018 Copyright. Site desenvolvido com <a href="https://nuxtjs.org/" target="_blank">Nuxtjs</a> e hospedado no <a href="https://netlify.com/" target="_blank">Netlify</a>.</footer>
     </div>

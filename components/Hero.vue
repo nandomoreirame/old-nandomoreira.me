@@ -30,15 +30,15 @@ export default {
   &:before
     content ''
     display block
-    width 90%
-    height 90%
+    width 60%
+    height 60%
     background-color $primary-color
     animation goright 2s timingFunction forwards
     pointer-events none
     z-index 1
     transition transform 0.4s timingFunction
     position fixed
-    bottom 5%
+    bottom 15%
     left 5%
     opacity 0.15
     // clip-path polygon(100% 100%, 0 100%, 15% 0)
@@ -116,7 +116,7 @@ export default {
 
 @keyframes goright
   0%
-    clip-path polygon(100% 65%, 0 100%, 0% 0)
+    clip-path polygon(100% 5%, 0 100%, 0% 0)
   100%
     clip-path polygon(100% 90%, 0 100%, 25% 0)
 </style>

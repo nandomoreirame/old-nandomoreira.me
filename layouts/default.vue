@@ -45,30 +45,10 @@ body
 
 a
   color $primary-color
-  position relative
   text-decoration none
-  display inline-block
-  transition color 0.4s cubic-bezier(0.565, 1.65, 0.765, 0.88)
-  &:before,
-  &:after
-    content ''
-    display block
-    width 50%
-    height 2px
-    background-color $primary-color
-    transition all 0.4s cubic-bezier(0.565, 1.65, 0.765, 0.88)
-    position absolute
-    bottom 0
-  &:before
-    left 50%
-  &:after
-    right 50%
   &:hover,
   &:focus
     color darken($primary-color, 20%)
-    &:before,
-    &:after
-      width 20%
 
 code,
 pre
@@ -105,4 +85,3 @@ h1, h2
 h3, h4
   font-weight 700
 </style>
-

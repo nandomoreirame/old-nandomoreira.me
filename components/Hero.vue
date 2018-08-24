@@ -30,19 +30,23 @@ export default {
   &:before
     content ''
     display block
-    width 100%
-    height 100%
+    width 90%
+    height 90%
     background-color $primary-color
-    animation goright 1s timingFunction forwards
-    transform translate3d(-100%, 100%, 0)
+    animation goright 2s timingFunction forwards
+    pointer-events none
+    z-index 1
     transition transform 0.4s timingFunction
     position fixed
-    bottom 0
-    left 0
+    bottom 5%
+    left 5%
     opacity 0.15
+    // clip-path polygon(100% 100%, 0 100%, 15% 0)
   &__inner
     padding 1.875rem /* 30/16 */
     max-width 60rem /* 960/16 */
+    position relative
+    z-index 2
     +above($mobile)
       padding 5rem /* 80/16 */
   &__social
@@ -74,6 +78,8 @@ export default {
           width 20%
   &__brand
     position fixed
+    z-index 10
+    pointer-events none
     top 20px
     margin-bottom .9375rem /* 15/16 */
     +above($tablet)
@@ -110,7 +116,7 @@ export default {
 
 @keyframes goright
   0%
-    transform translate3d(-100%, 100%, 0)
+    clip-path polygon(100% 65%, 0 100%, 0% 0)
   100%
-    transform translate3d(-25%, 50%, 0)
+    clip-path polygon(100% 90%, 0 100%, 25% 0)
 </style>

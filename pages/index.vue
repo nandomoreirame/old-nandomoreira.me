@@ -1,12 +1,14 @@
 <template>
-  <div>
-  </div>
+  <hero></hero>
 </template>
 
 <script>
 export default {
+  components: {
+    Hero: () => import('~/components/Hero')
+  }
 }
 </script>
 
-<style>
+<style lang="stylus">
 </style>

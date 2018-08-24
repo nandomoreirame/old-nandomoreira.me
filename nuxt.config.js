@@ -1,17 +1,25 @@
 const webpack = require('webpack')
 
+const {
+  title,
+  homepage,
+  description
+} = require('./package.json')
+
 const isProduction = process.env.NODE_ENV === 'production'
-const baseUrl = isProduction ? 'https://nandomoreira.me' : 'http://localhost:3000'
+const baseUrl = isProduction ? homepage : 'http://localhost:3000'
 
 module.exports = {
   dev: !isProduction,
   head: {
-    title: 'Fernando Moreira | Desenvolvedor front-end e WordPress em Curitiba/PR',
+    title,
     htmlAttrs: {
       dir: 'ltr'
     },
     meta: [
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
+      { hid: 'description', name: 'description', content: description },
       { name: 'og:locale', content: 'pt_BR' },
       { name: 'googlebot', content: 'index,follow' },
       { name: 'robots', content: 'index,follow,noodp' },
@@ -21,7 +29,7 @@ module.exports = {
       { name: 'generator', content: 'Visual Studio Code - Insiders' }
     ],
     link: [
-      { rel: 'author', href: `/humans.txt` },
+      { rel: 'author', href: `${baseUrl}/humans.txt` },
       { rel: 'index', href: `${baseUrl}/` }
     ],
     script: [
@@ -44,9 +52,7 @@ module.exports = {
             use: [ require('rupture')() ],
             preferPathResolver: 'webpack',
             import: [
-              '~assets/stylus/variables.styl',
-              '~assets/stylus/mixins.styl',
-              '~assets/stylus/placeholders.styl'
+              '~assets/stylus/config.styl'
             ]
           },
           context: '/'

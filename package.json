@@ -2,6 +2,7 @@
   "name": "nandomoreira.me",
   "version": "4.2.0",
   "private": true,
+  "title": "Fernando Moreira | Desenvolvedor front-end e WordPress em Curitiba/PR",
   "description": "Desenvolvedor front-end e entusiasta da experiência do usuário | Desenvolvedor Front-end em Curitiba | Desenvolvedor WordPress em Curitiba | UX Designer em Curitiba",
   "homepage": "https://nandomoreira.me",
   "repository": {
@@ -28,9 +29,9 @@
     "test": "echo \"no has test\""
   },
   "dependencies": {
-    "source-map-support": "^0.4.15",
     "@nuxtjs/google-analytics": "^2.0.2",
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "source-map-support": "^0.4.15"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -45,8 +46,8 @@
     "eslint-plugin-standard": "^3.0.1",
     "postcss-loader": "2.1.1",
     "rimraf": "^2.6.2",
-    "rupture": "^0.6.2",
+    "rupture": "^0.7.1",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1"
+    "stylus-loader": "^3.0.2"
   }
 }

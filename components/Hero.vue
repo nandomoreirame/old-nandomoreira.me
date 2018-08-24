@@ -27,6 +27,19 @@ export default {
   transition all 0.4s timingFunction
   display flex
   align-items center
+  &:before
+    content ''
+    display block
+    width 100%
+    height 100%
+    background-color $primary-color
+    animation goright 1s timingFunction forwards
+    transform translate3d(-100%, 100%, 0)
+    transition transform 0.4s timingFunction
+    position fixed
+    bottom 0
+    left 0
+    opacity 0.15
   &__inner
     padding 1.875rem /* 30/16 */
     max-width 60rem /* 960/16 */
@@ -69,4 +82,10 @@ export default {
     bottom .625rem /* 10/16 */
     opacity 0.75
     font-size .875rem /* 14/16 */
+
+@keyframes goright
+  0%
+    transform translate3d(-100%, 100%, 0)
+  100%
+    transform translate3d(-25%, 50%, 0)
 </style>

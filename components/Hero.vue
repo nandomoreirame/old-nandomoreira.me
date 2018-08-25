@@ -104,15 +104,14 @@ export default {
     margin 0
     padding 0
     font-size 1.3rem
-    font-weight 700
+    font-weight 900
     line-height 1.3em
-    letter-spacing -0.065rem
     animation-duration 1.2s
     animation-delay .6s
     +above($mobile)
       font-size 1.6rem
     +above($tablet)
-      font-size 2.4rem
+      font-size 2rem
     span
       font-weight 400
       opacity 0.9
@@ -125,6 +124,8 @@ export default {
     bottom .625rem /* 10/16 */
     opacity 0.75
     font-size .875rem /* 14/16 */
+    a
+      border-bottom 1px solid $primary-color
 
 @keyframes polygonFrames
   0%

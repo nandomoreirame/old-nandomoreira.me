@@ -8,7 +8,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@import url('//fonts.googleapis.com/css?family=Montserrat:400,700,900|Source+Sans+Pro:300,400')
+@import url('//fonts.googleapis.com/css?family=Poppins:400,700,800,900|Source+Sans+Pro:300,400')
 
 html,
 body,
@@ -31,7 +31,7 @@ html
   box-sizing inherit
 
 body
-  font-family 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif
+  font-family $font-family-base
   font-size 16px
   font-weight 400
   word-spacing 1px
@@ -75,9 +75,10 @@ textarea
   vertical-align top
 
 h1, h2, h3, h4
-  font-family:'Montserrat', sans-serif
+  font-family $font-family-heading
   line-height 1.3
   margin 0 0 30px
+  letter-spacing -0.03rem
 
 h1, h2
   font-weight 900

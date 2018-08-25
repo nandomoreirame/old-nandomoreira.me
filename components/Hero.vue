@@ -111,7 +111,7 @@ export default {
     +above($mobile)
       font-size 1.6rem
     +above($tablet)
-      font-size 2rem
+      font-size 2.2rem
     span
       font-weight 400
       opacity 0.9

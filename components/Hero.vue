@@ -1,8 +1,8 @@
 <template>
-  <section class="Hero">
+  <section :class="`Hero${(triangleOne) ? ' Hero--triangleOne' : ''}${(triangleTwo) ? ' Hero--triangleTwo' : ''}`">
     <div class="Hero__inner">
       <h1 class="Hero__brand">nando<span>moreira</span></h1>
-      <h2 class="Hero__title">Olá! Eu sou um desenvolvedor web. Ajudo ONGs e pequenas empresas a criar sites personalizados de alta qualidade. <span>No meu tempo livre eu <a href="https://blog.onedev.studio" target="_blank">escrevo</a> e contribuo com projetos <a href="https://github.com/nandomoreirame" target="_blank">open source</a>.</span></h2>
+      <h2 class="Hero__title">Olá! Eu sou um desenvolvedor web. <a href="http://agencia.nossacausa.com/" @mouseover="triangleOne = true" @mouseleave="triangleOne = false" target="_blank">Ajudo ONGs</a> e <a href="https://onedev.studio/" @mouseover="triangleTwo = true" @mouseleave="triangleTwo = false" target="_blank">pequenas empresas</a> a criar sites personalizados de alta qualidade. <span>No meu tempo livre eu <a href="https://blog.onedev.studio" @mouseover="triangleOne = true" @mouseleave="triangleOne = false" target="_blank">escrevo</a> e contribuo com projetos <a href="https://github.com/nandomoreirame" target="_blank" @mouseover="triangleTwo = true" @mouseleave="triangleTwo = false">open source</a>.</span></h2>
       <div class="Hero__social">
         <social-icons iconSize="26"/>
       </div>
@@ -14,6 +14,12 @@
 <script>
 export default {
   name: 'Hero',
+  data () {
+    return {
+      triangleOne: false,
+      triangleTwo: false
+    }
+  },
   components: {
     SocialIcons: () => import('~/components/SocialIcons')
   }
@@ -33,15 +39,21 @@ export default {
     width 60%
     height 60%
     background-color $primary-color
-    animation goright 2s timingFunction forwards
+    animation polygonFrames 2s timingFunction forwards
     pointer-events none
     z-index 1
-    transition transform 0.4s timingFunction
+    transition all 0.5s timingFunction
     position fixed
-    bottom 15%
+    bottom 10%
     left 5%
-    opacity 0.15
-    // clip-path polygon(100% 100%, 0 100%, 15% 0)
+    opacity 0.1
+    clip-path polygon(100% 5%, 0 100%, 5% 0)
+  &--triangleOne
+    &:before
+      clip-path polygon(100% 25%, 0 75%, 25% 0)
+  &--triangleTwo
+    &:before
+      clip-path polygon(100% 35%, 0 100%, 35% 0)
   &__inner
     padding 1.875rem /* 30/16 */
     max-width 60rem /* 960/16 */
@@ -114,9 +126,9 @@ export default {
     opacity 0.75
     font-size .875rem /* 14/16 */
 
-@keyframes goright
+@keyframes polygonFrames
   0%
-    clip-path polygon(100% 5%, 0 100%, 0% 0)
+    transform rotate(0deg)
   100%
-    clip-path polygon(100% 90%, 0 100%, 25% 0)
+    transform rotate(20deg)
 </style>

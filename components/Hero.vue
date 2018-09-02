@@ -2,7 +2,7 @@
   <section :class="`Hero${(triangleOne) ? ' Hero--triangleOne' : ''}${(triangleTwo) ? ' Hero--triangleTwo' : ''}`">
     <div class="Hero__inner">
       <h1 class="Hero__brand">nando<span>moreira</span></h1>
-      <h2 class="Hero__title">Olá! Eu sou um desenvolvedor web. <a href="http://agencia.nossacausa.com/" @mouseover="triangleOne = true" @mouseleave="triangleOne = false" target="_blank">Ajudo ONGs</a> e <a href="https://onedev.studio/" @mouseover="triangleTwo = true" @mouseleave="triangleTwo = false" target="_blank">pequenas empresas</a> a criar sites personalizados de alta qualidade. <span>No meu tempo livre eu <a href="https://blog.onedev.studio" @mouseover="triangleOne = true" @mouseleave="triangleOne = false" target="_blank">escrevo</a> e contribuo com projetos <a href="https://github.com/nandomoreirame" target="_blank" @mouseover="triangleTwo = true" @mouseleave="triangleTwo = false">open source</a>.</span></h2>
+      <h2 class="Hero__title">Olá! Eu sou um desenvolvedor web. <a href="http://agencia.nossacausa.com/" @mouseover="triangleOne = true" @mouseleave="triangleOne = false" target="_blank">Ajudo ONGs</a> e <a href="https://onedev.studio/" @mouseover="triangleTwo = true" @mouseleave="triangleTwo = false" target="_blank">pequenas empresas</a> a criar sites personalizados de alta qualidade. <span>No meu tempo livre eu <a href="https://blog.nandomoreira.me" @mouseover="triangleOne = true" @mouseleave="triangleOne = false" target="_blank">escrevo</a> e contribuo com projetos <a href="https://github.com/nandomoreirame" target="_blank" @mouseover="triangleTwo = true" @mouseleave="triangleTwo = false">open source</a>.</span></h2>
       <div class="Hero__social">
         <social-icons iconSize="26"/>
       </div>

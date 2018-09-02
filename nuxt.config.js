@@ -73,7 +73,7 @@ module.exports = {
     }
   },
   'google-analytics': {
-    id: isProduction ? 'UA-52446115-1' : 'UA-00000000-1',
+    id: isProduction ? 'UA-125092358-1' : 'UA-00000000-1',
     debug: {
       enabled: !isProduction,
       track: !isProduction,

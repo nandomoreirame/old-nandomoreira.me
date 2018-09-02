@@ -30,7 +30,13 @@ module.exports = {
     ],
     link: [
       { rel: 'author', href: `${baseUrl}/humans.txt` },
-      { rel: 'index', href: `${baseUrl}/` }
+      { rel: 'index', href: `${baseUrl}/` },
+      { rel: `shortcut icon`, href: `${baseUrl}/favicons/favicon.png`, type: `image/png` },
+      { rel: `apple-touch-icon`, sizes: `180x180`, href: `${baseUrl}/favicons/apple-touch-icon.png` },
+      { rel: `icon`, type: `image/png`, sizes: `32x32`, href: `${baseUrl}/favicons/favicon-32x32.png` },
+      { rel: `icon`, type: `image/png`, sizes: `16x16`, href: `${baseUrl}/favicons/favicon-16x16.png` },
+      { rel: `manifest`, href: `${baseUrl}/favicons/site.webmanifest` },
+      { rel: `mask-icon`, href: `${baseUrl}/favicons/safari-pinned-tab.svg`, color: `#5bbad5` }
     ],
     script: [
       // { src: (isProduction ? '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5869919cdfa51391' : ''), async: true }

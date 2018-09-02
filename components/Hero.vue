@@ -1,8 +1,8 @@
 <template>
   <section :class="`Hero${(triangleOne) ? ' Hero--triangleOne' : ''}${(triangleTwo) ? ' Hero--triangleTwo' : ''}`">
     <div class="Hero__inner">
-      <h1 class="Hero__brand">nando<span>moreira</span></h1>
-      <h2 class="Hero__title">Olá! Eu sou um desenvolvedor web. <a href="http://agencia.nossacausa.com/" @mouseover="triangleOne = true" @mouseleave="triangleOne = false" target="_blank">Ajudo ONGs</a> e <a href="https://onedev.studio/" @mouseover="triangleTwo = true" @mouseleave="triangleTwo = false" target="_blank">pequenas empresas</a> a criar sites personalizados de alta qualidade. <span>No meu tempo livre eu <a href="https://blog.nandomoreira.me" @mouseover="triangleOne = true" @mouseleave="triangleOne = false" target="_blank">escrevo</a> e contribuo com projetos <a href="https://github.com/nandomoreirame" target="_blank" @mouseover="triangleTwo = true" @mouseleave="triangleTwo = false">open source</a>.</span></h2>
+      <brand/>
+      <h2 class="Hero__title">Olá! Eu sou um desenvolvedor web. <a class="has-effect" href="http://agencia.nossacausa.com/" @mouseover="triangleOne = true" @mouseleave="triangleOne = false" target="_blank">Ajudo ONGs</a> e <a class="has-effect" href="https://onedev.studio/" @mouseover="triangleTwo = true" @mouseleave="triangleTwo = false" target="_blank">pequenas empresas</a> a criar sites personalizados de alta qualidade. <span>No meu tempo livre eu <a class="has-effect" href="https://blog.nandomoreira.me" @mouseover="triangleOne = true" @mouseleave="triangleOne = false" target="_blank">escrevo</a> e contribuo com projetos <a class="has-effect" href="https://github.com/nandomoreirame" target="_blank" @mouseover="triangleTwo = true" @mouseleave="triangleTwo = false">open source</a>.</span></h2>
       <div class="Hero__social">
         <social-icons iconSize="26"/>
       </div>
@@ -21,6 +21,7 @@ export default {
     }
   },
   components: {
+    Brand: () => import('~/components/Brand'),
     SocialIcons: () => import('~/components/SocialIcons')
   }
 }
@@ -56,50 +57,13 @@ export default {
       clip-path polygon(100% 35%, 0 100%, 35% 0)
   &__inner
     padding 1.875rem /* 30/16 */
-    max-width 60rem /* 960/16 */
-    position relative
+    max-width 103.125rem /* 1650/16 */
+    margin 0
     z-index 2
     +above($mobile)
       padding 5rem /* 80/16 */
   &__social
     margin-top .9375rem /* 15/16 */
-  &__brand,
-  &__title
-    a
-      position relative
-      display inline-block
-      transition color 0.4s cubic-bezier(0.565, 1.65, 0.765, 0.88)
-      &:before,
-      &:after
-        content ''
-        display block
-        width 50%
-        height 2px
-        background-color $primary-color
-        transition all 0.4s cubic-bezier(0.565, 1.65, 0.765, 0.88)
-        position absolute
-        bottom 0
-      &:before
-        left 50%
-      &:after
-        right 50%
-      &:hover,
-      &:focus
-        &:before,
-        &:after
-          width 20%
-  &__brand
-    position fixed
-    z-index 10
-    pointer-events none
-    top 20px
-    margin-bottom .9375rem /* 15/16 */
-    +above($tablet)
-      font-size 1.2rem
-    span
-      font-weight 400
-      opacity 0.9
-      color $primary-color
   &__title
     margin 0
     padding 0
@@ -108,6 +72,8 @@ export default {
     line-height 1.3em
     animation-duration 1.2s
     animation-delay .6s
+    max-width 56.25rem /* 900/16 */
+    text-align left
     +above($mobile)
       font-size 1.6rem
     +above($tablet)

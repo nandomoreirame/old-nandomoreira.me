@@ -1,12 +1,53 @@
 <template>
   <section :class="`Hero${(triangleOne) ? ' Hero--triangleOne' : ''}${(triangleTwo) ? ' Hero--triangleTwo' : ''}`">
     <div class="Hero__inner">
-      <brand/>
-      <h2 class="Hero__title">Olá! Eu sou um desenvolvedor web. <a class="has-effect" href="http://agencia.nossacausa.com/" @mouseover="triangleOne = true" @mouseleave="triangleOne = false" target="_blank">Ajudo ONGs</a> e <a class="has-effect" href="https://onedev.studio/" @mouseover="triangleTwo = true" @mouseleave="triangleTwo = false" target="_blank">pequenas empresas</a> a criar sites personalizados de alta qualidade. <span>No meu tempo livre eu <a class="has-effect" href="https://blog.nandomoreira.me" @mouseover="triangleOne = true" @mouseleave="triangleOne = false" target="_blank">escrevo</a> e contribuo com projetos <a class="has-effect" href="https://github.com/nandomoreirame" target="_blank" @mouseover="triangleTwo = true" @mouseleave="triangleTwo = false">open source</a>.</span></h2>
+      <site-header/>
+      <h2 class="Hero__title">
+        {{ $t('hero.hello') }}
+        {{ $t('hero.iam') }}
+
+        <a
+          class="has-effect"
+          href="http://agencia.nossacausa.com/"
+          @mouseover="triangleOne = true"
+          @mouseleave="triangleOne = false"
+          target="_blank">{{ $t('hero.ihelp') }}</a>
+
+        {{ $t('and') }}
+
+        <a
+          class="has-effect"
+          href="https://onedev.studio/"
+          @mouseover="triangleTwo = true"
+          @mouseleave="triangleTwo = false"
+          target="_blank">{{ $t('hero.smallBusiness') }}</a>
+
+        {{ $t('hero.qualitySites') }}
+
+        <span>
+          {{ $t('hero.freeTime') }}
+          <a
+            class="has-effect"
+            href="https://blog.nandomoreira.me"
+            @mouseover="triangleOne = true"
+            @mouseleave="triangleOne = false"
+            target="_blank">{{ $t('hero.iWrite') }}</a>
+
+          {{ $t('and') }}
+          {{ $t('hero.contribute') }}
+
+          <a
+            class="has-effect"
+            href="https://github.com/nandomoreirame"
+            target="_blank"
+            @mouseover="triangleTwo = true"
+            @mouseleave="triangleTwo = false">{{ $t('hero.openSource') }}</a>.
+        </span>
+      </h2>
       <div class="Hero__social">
         <social-icons iconSize="26"/>
       </div>
-      <footer class="Hero__footer">© 2018 Copyright. Site desenvolvido com <a href="https://nuxtjs.org/" target="_blank">Nuxtjs</a> e hospedado no <a href="https://netlify.com/" target="_blank">Netlify</a>.</footer>
+      <site-footer/>
     </div>
   </section>
 </template>
@@ -21,7 +62,8 @@ export default {
     }
   },
   components: {
-    Brand: () => import('~/components/Brand'),
+    SiteHeader: () => import('~/components/Header'),
+    SiteFooter: () => import('~/components/Footer'),
     SocialIcons: () => import('~/components/SocialIcons')
   }
 }
@@ -85,13 +127,15 @@ export default {
       display none
       +above($tablet)
         display block
-  &__footer
+
+  .Header,
+  .Footer
     position fixed
-    bottom .625rem /* 10/16 */
-    opacity 0.75
-    font-size .875rem /* 14/16 */
-    a
-      border-bottom 1px solid $primary-color
+    z-index 10
+  .Header
+    top 20px
+  .Footer
+    bottom 1.25rem /* 20/16 */
 
 @keyframes polygonFrames
   0%

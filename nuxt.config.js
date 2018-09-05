@@ -44,11 +44,18 @@ module.exports = {
   },
   loading: { color: '#3d5a80' },
   plugins: [
-    { src: '~/plugins/browser.js', ssr: false }
+    { src: '~/plugins/browser.js', ssr: false },
+    { src: '~/plugins/i18n.js' }
   ],
   modules: [
     ['@nuxtjs/google-analytics']
   ],
+  router: {
+    middleware: 'i18n'
+  },
+  generate: {
+    routes: ['/', '/sobre', '/en', '/en/about']
+  },
   build: {
     vendor: [],
     plugins: [

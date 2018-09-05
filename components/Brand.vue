@@ -1,19 +1,15 @@
 <template>
   <h1 class="Brand">
-    <nuxt-link to="/" class="has-effect">nando<span>moreira</span></nuxt-link>
+    <nuxt-link :to="$i18n.path('')" class="has-effect" exact>nando<span>moreira</span></nuxt-link>
   </h1>
 </template>
 
 <script>
-export default {
-}
+export default {}
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 .Brand
-  position fixed
-  z-index 10
-  top 20px
   margin-bottom .9375rem /* 15/16 */
   +above($tablet)
     font-size 1.2rem

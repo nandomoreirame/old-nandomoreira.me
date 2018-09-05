@@ -1,14 +1,4 @@
-<template>
-  <hero></hero>
-</template>
-
 <script>
-export default {
-  components: {
-    Hero: () => import('~/components/Hero')
-  }
-}
+import Index from '~/pages/_lang/index'
+export default Index
 </script>
-
-<style lang="stylus">
-</style>

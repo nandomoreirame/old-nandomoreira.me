@@ -8,7 +8,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@import url('//fonts.googleapis.com/css?family=Poppins:400,700,800,900|Source+Sans+Pro:300,400')
+@import url('//fonts.googleapis.com/css?family=Montserrat:400,700,800|Source+Sans+Pro:300,400')
 
 html,
 body,
@@ -49,29 +49,6 @@ a
   &:hover,
   &:focus
     color darken($primary-color, 20%)
-  &.has-effect
-    position relative
-    display inline-block
-    transition color 0.4s cubic-bezier(0.565, 1.65, 0.765, 0.88)
-    &:before,
-    &:after
-      content ''
-      display block
-      width 50%
-      height 2px
-      background-color $primary-color
-      transition all 0.4s cubic-bezier(0.565, 1.65, 0.765, 0.88)
-      position absolute
-      bottom 0
-    &:before
-      left 50%
-    &:after
-      right 50%
-    &:hover,
-    &:focus
-      &:before,
-      &:after
-        width 20%
 
 code,
 pre
@@ -104,7 +81,7 @@ h1, h2, h3, h4
   letter-spacing -0.03rem
 
 h1, h2
-  font-weight 900
+  font-weight 800
 
 h3, h4
   font-weight 700

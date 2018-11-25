@@ -45,19 +45,19 @@
 </template>
 
 <script>
-  export default {
-    name: 'SocialIcons',
-    props: {
-      'iconSize': {
-        type: String,
-        default: '32'
-      },
-      'iconColor': {
-        type: String,
-        default: '#415262'
-      }
+export default {
+  name: 'SocialIcons',
+  props: {
+    'iconSize': {
+      type: String,
+      default: '32'
+    },
+    'iconColor': {
+      type: String,
+      default: '#415262'
     }
   }
+}
 </script>
 
 <style lang="stylus">

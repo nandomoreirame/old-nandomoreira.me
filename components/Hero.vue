@@ -5,7 +5,7 @@
     <div class="hero__inner">
       <div class="hero__content">
         <h2 class="hero__title">
-          <span>Olá!</span> Eu sou um desenvolvedor web.
+          <span>Olá!</span> Eu sou um {desenvolvedor web}.
           <small>
             <a href="http://agencia.nossacausa.com/" target="_blank">Ajudo ONGs</a> e
             <a href="https://onedev.studio/" target="_blank">pequenas empresas</a>
@@ -64,30 +64,34 @@ export default {
       top 30px
       right 60px
   &__inner
-    height 100%
     max-width 53.75rem /* 860/16 */
     text-align center
     margin-right auto
     margin-left auto
-    padding-top 5rem /* 80/16 */
+    padding 5rem /* 80/16 */ 0
     +above($tablet)
-      padding-top 0
+      height 100%
+      padding 0
       display flex
       justify-content center
       align-items center
   &__title
     font-weight 800
-    font-size 3.875rem /* 62/16 */
+    font-size 2.625rem /* 42/16 */
     line-height 1.1
+    +above($tablet)
+      font-size 3.875rem /* 62/16 */
     a
       text-decoration underline
     span, small
       font-weight 400
     small
-      font-size 1.25rem /* 20/16 */
+      font-size 1.125rem /* 18/16 */
       display block
       line-height 1.5
       margin-top 1.875rem /* 30/16 */
+      +above($tablet)
+        font-size 1.25rem /* 20/16 */
       a
         font-weight 700
   &__footer

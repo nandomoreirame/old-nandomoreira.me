@@ -40,15 +40,17 @@ body
   -webkit-text-size-adjust 100%
   -moz-osx-font-smoothing grayscale
   -webkit-font-smoothing antialiased
-  background-color #f5f5f5
+  background-color #fff
   color $secondary-color
 
 a
   color $primary-color
+  transition color .12s ease-in-out,
+    border-color .12s ease-in-out
   text-decoration none
   &:hover,
   &:focus
-    color darken($primary-color, 20%)
+    color $secondary-color
 
 code,
 pre

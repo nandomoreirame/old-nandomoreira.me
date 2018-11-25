@@ -76,9 +76,6 @@ export default {
     display block
     opacity .8
     transition .2s transform timingFunction, .2s opacity timingFunction
-    &:before,
-    &:after
-      display none
     &:hover,
     &:focus
       transform scale(1.1) rotate(10deg)

@@ -10,5 +10,10 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
+.brand
+  font-size 22px
+  margin 0
+  span
+    color $secondary-color
 </style>

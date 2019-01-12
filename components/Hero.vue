@@ -5,8 +5,8 @@
     <div class="hero__inner">
       <div class="hero__content">
         <h2 class="hero__title">
-          <span>Olá!</span> Eu sou um {desenvolvedor web}.
-          <small>
+          <span class="hero__slide-in-top">Olá! Eu sou um</span> <strong class="hero__tracking-in-expand">{ desenvolvedor web }.</strong>
+          <small class="hero__fade-in-bottom">
             <a href="http://agencia.nossacausa.com/" target="_blank">Ajudo ONGs</a> e
             <a href="https://onedev.studio/" target="_blank">pequenas empresas</a>
             a criar sites personalizados de alta qualidade.
@@ -49,6 +49,7 @@ export default {
     width 100%
     display block
     margin 30px 0
+    // animation slideInTop 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0ms both
     +above($tablet)
       width auto
       display inline-block
@@ -94,9 +95,18 @@ export default {
         font-size 1.25rem /* 20/16 */
       a
         font-weight 700
+  &__slide-in-top
+    animation slideInTop 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 500ms both
+  &__tracking-in-expand
+    display block
+    animation trackingInExpand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1500ms both
+    font-weight 900
+  &__fade-in-bottom
+    animation fadeInBottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3000ms both
   &__footer
     width 100%
     text-align center
+    animation fadeInBottom 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 4000ms both
     +above($tablet)
       right 0
       bottom 0
@@ -104,4 +114,29 @@ export default {
     p
       font-size 14px
       opacity 0.75
+
+@keyframes slideInTop
+  0%
+    transform translateY(-1000px)
+    opacity 0
+  100%
+    transform translateY(0)
+    opacity 1
+
+@keyframes trackingInExpand
+  0%
+    letter-spacing -0.5em
+    opacity 0
+  40%
+    opacity 0.6
+  100%
+    opacity 1
+
+@keyframes fadeInBottom
+  0%
+    transform translateY(50px)
+    opacity 0
+  100%
+    transform translateY(0)
+    opacity 1
 </style>

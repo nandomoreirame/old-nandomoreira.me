@@ -29,6 +29,7 @@ module.exports = {
       { name: 'generator', content: 'Visual Studio Code - Insiders' }
     ],
     link: [
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Montserrat:400,700,800|Source+Sans+Pro:300,400' },
       { rel: 'author', href: `${baseUrl}/humans.txt` },
       { rel: 'index', href: `${baseUrl}/` },
       { rel: `shortcut icon`, href: `${baseUrl}/favicons/favicon.png`, type: `image/png` },
@@ -58,7 +59,8 @@ module.exports = {
             use: [ require('rupture')() ],
             preferPathResolver: 'webpack',
             import: [
-              '~assets/stylus/config.styl'
+              '~assets/stylus/config.styl',
+              '~assets/stylus/animations.styl'
             ]
           },
           context: '/'

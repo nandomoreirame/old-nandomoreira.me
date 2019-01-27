@@ -1,0 +1,33 @@
+<template>
+  <footer class="Footer">
+    <p>© 2018/{{ year }} Copyright. Site desenvolvido com <a href="https://nuxtjs.org/" target="_blank">Nuxtjs</a> e hospedado no <a href="https://netlify.com/" target="_blank">Netlify</a>.</p>
+  </footer>
+</template>
+
+<script>
+const _date = new Date()
+
+export default {
+  data () {
+    return {
+      year: _date.getFullYear()
+    }
+  }
+}
+</script>
+
+<style lang="stylus" scoped>
+.Footer
+  width 100%
+  text-align center
+  animation fadeInBottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 5500ms both
+  +above($tablet)
+    position fixed
+    z-index 100
+    right 0
+    bottom 0
+    left 0
+  p
+    font-size 14px
+    opacity 0.75
+</style>

@@ -1,21 +1,27 @@
 <template>
-  <nuxt></nuxt>
+  <main class="default">
+    <c-header/>
+    <nuxt></nuxt>
+    <c-footer/>
+  </main>
 </template>
 
 <script>
 export default {
+  components: {
+    CHeader: () => import('~/components/Header'),
+    CFooter: () => import('~/components/Footer')
+  }
 }
 </script>
 
 <style lang="stylus">
-@import url('//fonts.googleapis.com/css?family=Montserrat:400,700,800|Source+Sans+Pro:300,400')
-
 html,
 body,
 #__nuxt,
 #__layout,
 #__layout > div
-  margin 0
+.default
   width 100%
   height 100%
 
@@ -24,6 +30,7 @@ html
   -webkit-text-size-adjust 100%
   -ms-text-size-adjust 100%
   box-sizing border-box
+  overflow-x hidden
 
 *,
 *:before,
@@ -87,4 +94,8 @@ h1, h2
 
 h3, h4
   font-weight 700
+
+.default
+  +above($tablet)
+    padding-top 50px
 </style>

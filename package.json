@@ -19,6 +19,7 @@
     "url": "https://github.com/nandomoreirame/nandomoreira.me/issues"
   },
   "scripts": {
+    "watch": "npm run dev",
     "dev": "nuxt dev",
     "clean": "rimraf .nuxt && rimraf dist",
     "build": "NODE_ENV=production nuxt build",

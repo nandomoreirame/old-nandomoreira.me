@@ -5,6 +5,21 @@
   "title": "Fernando Moreira | Desenvolvedor front-end e WordPress em Curitiba/PR",
   "description": "Desenvolvedor front-end e entusiasta da experiência do usuário | Desenvolvedor Front-end em Curitiba | Desenvolvedor WordPress em Curitiba | UX Designer em Curitiba",
   "homepage": "https://nandomoreira.me",
+  "keywords": [
+    "WordPress",
+    "desenvolvedor",
+    "web",
+    "wp",
+    "programador",
+    "curitiba",
+    "freelancer",
+    "front-end",
+    "frontend",
+    "ux",
+    "designer",
+    "design",
+    "programmer"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/nandomoreirame/nandomoreira.me.git"
@@ -30,7 +45,9 @@
     "test": "echo \"no has test\""
   },
   "dependencies": {
+    "@fdaciuk/is": "^1.1.0",
     "@nuxtjs/google-analytics": "^2.0.2",
+    "axios": "^0.18.0",
     "nuxt": "latest",
     "source-map-support": "^0.4.15"
   },

@@ -1,11 +1,21 @@
 <template>
   <div>
-    <p>Oops, nada por aqui.</p>
+    <meta-tags :title="title" bodyClass="page-contact"/>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'Contact',
+  asyncData ({ params, error }) {
+    error({ statusCode: 404, message: 'Oops, nada por aqui' })
+  },
+  data: () => ({
+    title: `Contato ⎼ ${process.env.baseTitle}`
+  }),
+  components: {
+    metaTags: () => import('~/components/Meta')
+  }
 }
 </script>
 

@@ -3,7 +3,8 @@ const webpack = require('webpack')
 const {
   title,
   homepage,
-  description
+  description,
+  keywords
 } = require('./package.json')
 
 const isProduction = process.env.NODE_ENV === 'production'
@@ -11,6 +12,12 @@ const baseUrl = isProduction ? homepage : 'http://localhost:3000'
 
 module.exports = {
   dev: !isProduction,
+  env: {
+    baseUrl,
+    baseTitle: title,
+    baseDescription: description,
+    baseKeywords: keywords
+  },
   head: {
     title,
     htmlAttrs: {
@@ -29,7 +36,6 @@ module.exports = {
       { name: 'generator', content: 'Visual Studio Code - Insiders' }
     ],
     link: [
-      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Montserrat:400,700,800|Source+Sans+Pro:300,400' },
       { rel: 'author', href: `${baseUrl}/humans.txt` },
       { rel: 'index', href: `${baseUrl}/` },
       { rel: `shortcut icon`, href: `${baseUrl}/favicons/favicon.png`, type: `image/png` },
@@ -37,7 +43,8 @@ module.exports = {
       { rel: `icon`, type: `image/png`, sizes: `32x32`, href: `${baseUrl}/favicons/favicon-32x32.png` },
       { rel: `icon`, type: `image/png`, sizes: `16x16`, href: `${baseUrl}/favicons/favicon-16x16.png` },
       { rel: `manifest`, href: `${baseUrl}/favicons/site.webmanifest` },
-      { rel: `mask-icon`, href: `${baseUrl}/favicons/safari-pinned-tab.svg`, color: `#5bbad5` }
+      { rel: `mask-icon`, href: `${baseUrl}/favicons/safari-pinned-tab.svg`, color: `#5bbad5` },
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Montserrat:400,700,800|Source+Sans+Pro:300,400' }
     ],
     script: [
       // { src: (isProduction ? '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5869919cdfa51391' : ''), async: true }
@@ -79,6 +86,9 @@ module.exports = {
         })
       }
     }
+  },
+  generate: {
+    fallback: true
   },
   'google-analytics': {
     id: isProduction ? 'UA-125092358-1' : 'UA-00000000-1',

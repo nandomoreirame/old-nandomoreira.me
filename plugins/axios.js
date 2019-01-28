@@ -1,5 +1,12 @@
-import axios from 'axios'
+export default function ({ $axios, redirect }) {
+  $axios.onRequest(config => {
+    console.log('Making request to ' + config.url)
+  })
 
-export default axios.create({
-  baseURL: process.env.baseUrl
-})
+  $axios.onError(error => {
+    const code = parseInt(error.response && error.response.status)
+    if (code === 400) {
+      redirect('/400')
+    }
+  })
+}

@@ -9,10 +9,12 @@ const {
 
 const isProduction = process.env.NODE_ENV === 'production'
 const baseUrl = isProduction ? homepage : 'http://localhost:3000'
+const apiUrl = isProduction ? 'https://blog.nandomoreira.me/api.json' : 'http://127.0.0.1:4000/api.json'
 
 module.exports = {
   dev: !isProduction,
   env: {
+    apiUrl,
     baseUrl,
     baseTitle: title,
     baseDescription: description,
@@ -54,12 +56,17 @@ module.exports = {
     color: '#5bbc8f'
   },
   plugins: [
-    { src: '~/plugins/browser.js', ssr: false }
+    { src: '~/plugins/browser.js', ssr: false },
+    { src: '~/plugins/axios' }
   ],
   modules: [
     '@nuxtjs/pwa',
+    '@nuxtjs/axios',
     ['@nuxtjs/google-analytics']
   ],
+  axios: {
+    // proxyHeaders: false
+  },
   workbox: {
     dev: !isProduction
   },

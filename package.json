@@ -46,11 +46,13 @@
   },
   "dependencies": {
     "@fdaciuk/is": "^1.1.0",
+    "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/pwa": "^2.6.0",
     "axios": "^0.18.0",
     "nuxt": "latest",
-    "source-map-support": "^0.4.15"
+    "source-map-support": "^0.4.15",
+    "vuex": "^3.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

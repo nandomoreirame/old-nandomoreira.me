@@ -7,9 +7,7 @@
 <script>
 export default {
   name: 'Contact',
-  asyncData ({ params, error }) {
-    error({ statusCode: 404, message: 'Oops, nada por aqui' })
-  },
+  asyncData: ({ params, error }) => error({ statusCode: 404, message: 'Oops, nada por aqui' }),
   data: () => ({
     title: `Contato ⎼ ${process.env.baseTitle}`
   }),

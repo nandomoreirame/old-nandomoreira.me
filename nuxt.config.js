@@ -38,12 +38,7 @@ module.exports = {
     link: [
       { rel: 'author', href: `${baseUrl}/humans.txt` },
       { rel: 'index', href: `${baseUrl}/` },
-      { rel: `shortcut icon`, href: `${baseUrl}/favicons/favicon.png`, type: `image/png` },
-      { rel: `apple-touch-icon`, sizes: `180x180`, href: `${baseUrl}/favicons/apple-touch-icon.png` },
-      { rel: `icon`, type: `image/png`, sizes: `32x32`, href: `${baseUrl}/favicons/favicon-32x32.png` },
-      { rel: `icon`, type: `image/png`, sizes: `16x16`, href: `${baseUrl}/favicons/favicon-16x16.png` },
-      { rel: `manifest`, href: `${baseUrl}/favicons/site.webmanifest` },
-      { rel: `mask-icon`, href: `${baseUrl}/favicons/safari-pinned-tab.svg`, color: `#5bbad5` },
+      { rel: `shortcut icon`, href: `${baseUrl}/icon.png`, type: `image/png` },
       { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Montserrat:400,700,800|Source+Sans+Pro:300,400' }
     ],
     script: [
@@ -55,8 +50,12 @@ module.exports = {
     { src: '~/plugins/browser.js', ssr: false }
   ],
   modules: [
+    '@nuxtjs/pwa',
     ['@nuxtjs/google-analytics']
   ],
+  workbox: {
+    dev: !isProduction
+  },
   build: {
     vendor: [],
     plugins: [

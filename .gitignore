@@ -70,4 +70,4 @@ coverage
 sitemap.xml
 browserconfig.xml
 workbox-*
-sw.js
+sw.*

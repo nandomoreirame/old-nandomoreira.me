@@ -20,7 +20,7 @@
 </template>
 
 <script>
-const avatar = require('~/assets/images/avatar.jpg')
+const avatar = require('~/assets/images/avatar.png')
 export default {
   name: 'Hero',
   data () {

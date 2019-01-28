@@ -1,6 +1,6 @@
 <template>
   <footer class="Footer">
-    <p>© 2018/{{ year }} Copyright. Site desenvolvido com <a href="https://nuxtjs.org/" target="_blank">Nuxtjs</a> e hospedado no <a href="https://netlify.com/" target="_blank">Netlify</a>.</p>
+    <p>© 2018/{{ year }} Copyright. Site desenvolvido com o ❤ usando <a href="https://nuxtjs.org/" target="_blank">Nuxtjs</a> e hospedado no <a href="https://netlify.com/" target="_blank">Netlify</a>.</p>
   </footer>
 </template>
 
@@ -19,15 +19,25 @@ export default {
 <style lang="stylus" scoped>
 .Footer
   width 100%
+  padding .625rem /* 10/16 */ .9375rem /* 15/16 */
+  background-color #fff
+  border-top 1px solid rgba(0, 0, 0, .125)
   text-align center
-  animation fadeInBottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 5500ms both
-  +above($tablet)
-    position fixed
-    z-index 100
-    right 0
-    bottom 0
-    left 0
-  p
-    font-size 14px
-    opacity 0.75
+p
+  font-size 14px
+  opacity 0.75
+a
+  text-decoration underline
+</style>
+
+<style lang="stylus">
+body.hasHero
+  .Footer
+    animation fadeInBottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 5500ms both
+    +above($tablet)
+      position fixed
+      z-index 100
+      right 0
+      bottom 0
+      left 0
 </style>

@@ -1,3 +1,22 @@
+.animation
+  animation-duration 1.4s
+  animation-timing-function cubic-bezier(0.250, 0.460, 0.450, 0.940)
+  animation-fill-mode both
+  &--fade-in
+    animation-name fadeIn
+  &--slide-in-top
+    animation-name slideInTop
+  &--tracking-in-expand
+    animation-name trackingInExpand
+  &--fade-in-bottom
+    animation-name fadeInBottom
+
+@keyframes fadeIn
+  0%
+    opacity 0
+  100%
+    opacity 1
+
 @keyframes slideInTop
   0%
     transform translateY(-100px)

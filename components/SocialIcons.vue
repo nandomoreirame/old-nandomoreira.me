@@ -74,7 +74,7 @@ export default {
       margin-right .625rem /* 10/16 */
   &__link
     opacity .8
-    background #f9f9fb
+    background #fff
     border-radius 100%
     display flex
     align-items center
@@ -83,6 +83,7 @@ export default {
     position relative
     text-align center
     width 40px
+    box-shadow 0 0 1px 7px rgba(#000, 0.01)
     &, svg
       transition .2s transform $timingFunction, .2s opacity $timingFunction
       margin 0

@@ -52,7 +52,7 @@ body
   -webkit-text-size-adjust 100%
   -moz-osx-font-smoothing grayscale
   -webkit-font-smoothing antialiased
-  background-color #fff
+  background-color #f5f8fa
   color $secondary-color
 
 a

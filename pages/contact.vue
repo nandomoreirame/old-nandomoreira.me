@@ -1,8 +1,8 @@
 <template>
   <div class="Contact">
     <div class="Contact__inner">
-      <meta-tags :title="title" bodyClass="page-contact hasHero"/>
-      <h1>Olá, terráqueo! 🖖🏼</h1>
+      <meta-tags :title="title" :description="description" bodyClass="page-contact hasHero"/>
+      <h1>Olá, terráqueo! <br/> Nós viemos em paz 🖖🏼</h1>
       <p>Para entrar em contato comigo basta me seguir em qualquer uma das minhas redes sociais e chamar por <abbr title="Mensagem Direta">DM</abbr>.
       <br/>ou enviar um email para <a href="mailto:nandomoreira.me@gmail.com">nandomoreira.me[arroba]gmail.com</a> que é sucesso!</p>
       <div class="Contact__social">
@@ -16,7 +16,8 @@
 export default {
   name: 'Contact',
   data: () => ({
-    title: `Contato ⎼ ${process.env.baseTitle}`
+    title: `Contato ⎼ ${process.env.baseTitle}`,
+    description: `Olá, terráqueo! Nós viemos em paz 🖖🏼 Para entrar em contato comigo basta me seguir em qualquer uma das minhas redes sociais e chamar por DM ou enviar um email para nandomoreira.me[arroba]gmail.com que é sucesso!`
   }),
   components: {
     CSocialIcons: () => import('~/components/SocialIcons'),
@@ -27,12 +28,15 @@ export default {
 
 <style lang="stylus" scoped>
 .Contact
-  display flex
-  align-items center
-  justify-content center
-  height 100%
   width 100%
   text-align center
+  +above($tablet)
+    display flex
+    align-items center
+    justify-content center
+    height 100%
+  &__inner
+    padding 2.5rem /* 40/16 */ 1.875rem /* 30/16 */ 3.125rem /* 50/16 */
   h1
     font-size 2rem /* 32/16 */
     animation-delay 500ms

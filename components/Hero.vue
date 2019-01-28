@@ -3,7 +3,7 @@
     <meta-tags bodyClass="hasHero"/>
     <div class="hero__inner">
       <div class="hero__content">
-        <span class="hero__avatar"><img :src="avatar" alt="Olá! Eu sou um { desenvolvedor web }."/></span>
+        <c-avatar />
         <h2 class="hero__title">
           <span>Olá! Eu sou um</span> <strong>{ desenvolvedor web }.</strong>
           <small>
@@ -22,16 +22,15 @@
 </template>
 
 <script>
-const avatar = require('~/assets/images/avatar.png')
 export default {
   name: 'Hero',
   data () {
     return {
-      avatar
     }
   },
   components: {
     CFooter: () => import('~/components/Footer'),
+    CAvatar: () => import('~/components/Avatar'),
     CSocialIcons: () => import('~/components/SocialIcons'),
     metaTags: () => import('~/components/Meta')
   }
@@ -41,15 +40,16 @@ export default {
 <style lang="stylus">
 .hero
   width 100%
-  height 100%
   padding 0
   background-color #f5f8fa
+  +above($tablet)
+    height 100%
   &__inner
     max-width 53.75rem /* 860/16 */
     text-align center
     margin-right auto
     margin-left auto
-    padding 5rem /* 80/16 */ 0
+    padding 2.5rem /* 40/16 */ .9375rem /* 15/16 */
     +above($tablet)
       height 100%
       padding 0
@@ -82,14 +82,4 @@ export default {
         font-size 1.125rem /* 18/16 */
       a
         font-weight 700
-  &__avatar
-    display block
-    margin-bottom 1.875rem /* 30/16 */
-    img
-      border 4px solid #d20068
-      border-radius 100%
-      box-shadow 0 0 1px 11px rgba(210, 0, 104, 0.15), 0 0 1px 22px rgba(210, 0, 104, 0.1)
-      display inline-block
-      height 130px
-      width 130px
 </style>

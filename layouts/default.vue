@@ -1,7 +1,9 @@
 <template>
   <main class="default">
     <c-header/>
-    <nuxt></nuxt>
+    <transition name="layout" mode="out-in">
+      <nuxt></nuxt>
+    </transition>
     <c-footer/>
   </main>
 </template>
@@ -55,6 +57,9 @@ body
   background-color #f5f8fa
   color $secondary-color
 
+p
+  font-size 1.125rem /* 18/16 */
+
 a
   color $primary-color
   transition color .12s ease-in-out,
@@ -106,4 +111,20 @@ h3, h4
 
 body.hasHero .default
   padding-top 0
+
+.layout
+  &-enter-active,
+  &-leave-active,
+  &-leave-to
+    transition opacity .5s ease-in-out, transform .5s ease-in-out
+    transform translate3d(0, 0, 0)
+    backface-visibility: hidden
+    will-change: opacity
+    opacity: 1
+
+  &-enter,
+  &-leave-to,
+  &-leave-active
+    opacity 0
+    transform translate3d(0, 3%, 0)
 </style>

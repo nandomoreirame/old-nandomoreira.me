@@ -4,7 +4,7 @@
       <meta-tags :title="title" bodyClass="page-about"/>
       <div class="About__content">
         <div class="About__thumb">
-          <img :src="`${require('~/assets/images/avatar.png')}`" alt="Foto de Fernando Moreira" width="200" height="200">
+          <c-avatar />
         </div>
         <div class="About__text">
           <h2>Quem sou eu?</h2>
@@ -58,15 +58,18 @@
 <script>
 const _date = new Date()
 const _year = _date.getFullYear()
+const _age = (_year - 1989)
 
 export default {
   name: 'About',
   data: () => ({
     title: `Sobre ⎼ ${process.env.baseTitle}`,
-    age: (_year - 1989)
+    description: `Meu nome é Fernando Moreira Costa (muito prazer). Tenho ${_age} anos, nasci e cresci em uma cidadezinha do interior de Rondônia chamada Ariquemes, sai de lá com 18 anos para me aventurar em Curitiba/PR onde moro atualmente.`,
+    age: _age
   }),
   components: {
     CSocialIcons: () => import('~/components/SocialIcons'),
+    CAvatar: () => import('~/components/Avatar'),
     metaTags: () => import('~/components/Meta')
   }
 }
@@ -76,6 +79,11 @@ export default {
 .About
   width 100%
   text-align center
+  p
+    opacity .75
+  h2
+    font-size 1.75rem /* 28/16 */
+    margin 0 0 .625rem /* 10/16 */
   +above($tablet)
     display flex
     align-items center
@@ -93,9 +101,4 @@ export default {
     padding-right 1.875rem /* 30/16 */
   &__social
     margin-bottom 30px
-p
-  opacity .75
-h2
-  font-size 1.75rem /* 28/16 */
-  margin 0 0 .625rem /* 10/16 */
 </style>

@@ -21,13 +21,15 @@ module.exports = {
   head: {
     title,
     htmlAttrs: {
-      dir: 'ltr'
+      dir: 'ltr',
+      lang: 'pt-br'
     },
     meta: [
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
-      { hid: 'description', name: 'description', content: description },
+      // { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      // { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
+      // { hid: 'description', name: 'description', content: description },
       { name: 'og:locale', content: 'pt_BR' },
+      { 'http-equiv': 'Content-Language', content: 'pt-br' },
       { name: 'googlebot', content: 'index,follow' },
       { name: 'robots', content: 'index,follow,noodp' },
       { name: 'country', content: 'Brazil' },
@@ -45,7 +47,12 @@ module.exports = {
       // { src: (isProduction ? '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5869919cdfa51391' : ''), async: true }
     ]
   },
-  loading: { color: '#3d5a80' },
+  meta: {
+    // ...
+  },
+  loading: {
+    color: '#5bbc8f'
+  },
   plugins: [
     { src: '~/plugins/browser.js', ssr: false }
   ],
@@ -84,6 +91,10 @@ module.exports = {
         })
       }
     }
+  },
+  layoutTransition: {
+    name: 'layout',
+    mode: 'out-in'
   },
   generate: {
     fallback: true

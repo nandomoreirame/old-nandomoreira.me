@@ -33,7 +33,6 @@ a
 <style lang="stylus">
 body.hasHero
   .Footer
-    animation fadeInBottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 5500ms both
     +above($tablet)
       position fixed
       z-index 100

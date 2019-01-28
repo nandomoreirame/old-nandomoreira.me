@@ -65,8 +65,7 @@ module.exports = {
             use: [ require('rupture')() ],
             preferPathResolver: 'webpack',
             import: [
-              '~assets/stylus/config.styl',
-              '~assets/stylus/animations.styl'
+              '~assets/stylus/config.styl'
             ]
           },
           context: '/'

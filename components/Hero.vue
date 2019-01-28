@@ -3,17 +3,17 @@
     <meta-tags bodyClass="hasHero"/>
     <div class="hero__inner">
       <div class="hero__content">
-        <span class="hero__avatar animation animation--slide-in-top"><img :src="avatar" alt="Olá! Eu sou um { desenvolvedor web }."/></span>
+        <span class="hero__avatar"><img :src="avatar" alt="Olá! Eu sou um { desenvolvedor web }."/></span>
         <h2 class="hero__title">
-          <span class="animation animation--fade-in">Olá! Eu sou um</span> <strong class="animation animation--tracking-in-expand">{ desenvolvedor web }.</strong>
-          <small class="animation animation--fade-in-bottom">
+          <span>Olá! Eu sou um</span> <strong>{ desenvolvedor web }.</strong>
+          <small>
             <a href="http://agencia.nossacausa.com/" target="_blank">Ajudo ONGs</a> e
             pequenas empresas a criar sites personalizados de alta qualidade.
             No meu tempo livre eu <a href="https://blog.nandomoreira.me" target="_blank">escrevo</a>
             e contribuo com projetos <a href="https://github.com/nandomoreirame" target="_blank">open source</a>.
           </small>
         </h2>
-        <div class="hero__social animation animation--fade-in-bottom">
+        <div class="hero__social">
           <c-social-icons iconSize="18"/>
         </div>
       </div>
@@ -66,6 +66,9 @@ export default {
       font-size 2.875rem /* 46/16 */
     a
       text-decoration underline
+    strong
+      display block
+      font-weight 800
     span, small
       font-weight 400
     small
@@ -82,9 +85,6 @@ export default {
   &__avatar
     display block
     margin-bottom 1.875rem /* 30/16 */
-    &.animation--fade-in-top
-      animation-duration 1.2s
-      animation-delay 500ms
     img
       border 4px solid #d20068
       border-radius 100%
@@ -92,20 +92,4 @@ export default {
       display inline-block
       height 130px
       width 130px
-  .animation
-    &--fade-in
-      animation-duration 1.2s
-      animation-delay 1000ms
-    &--tracking-in-expand
-      display block
-      font-weight 900
-      animation-duration 1.2s
-      animation-delay 2000ms
-    &--fade-in-bottom
-      animation-duration 1.2s
-      animation-delay 3000ms
-  &__social
-    &.animation--fade-in-bottom
-      animation-duration 2s
-      animation-delay 4000ms
 </style>

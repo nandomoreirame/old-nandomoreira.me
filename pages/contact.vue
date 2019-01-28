@@ -2,10 +2,10 @@
   <div class="Contact">
     <div class="Contact__inner">
       <meta-tags :title="title" bodyClass="page-contact hasHero"/>
-      <h1 class="animation animation--slide-in-top">Olá, terráqueo! 🖖🏼</h1>
-      <p class="animation animation--fade-in">Para entrar em contato comigo basta me seguir em qualquer uma das minhas redes sociais e chamar por <abbr title="Mensagem Direta">DM</abbr>.</p>
-      <p class="animation animation--fade-in-bottom">ou enviar um email para <a href="mailto:nandomoreira.me@gmail.com">nandomoreira.me[arroba]gmail.com</a> que é sucesso!</p>
-      <div class="Contact__social animation animation--fade-in-bottom">
+      <h1>Olá, terráqueo! 🖖🏼</h1>
+      <p>Para entrar em contato comigo basta me seguir em qualquer uma das minhas redes sociais e chamar por <abbr title="Mensagem Direta">DM</abbr>.
+      <br/>ou enviar um email para <a href="mailto:nandomoreira.me@gmail.com">nandomoreira.me[arroba]gmail.com</a> que é sucesso!</p>
+      <div class="Contact__social">
         <c-social-icons iconSize="18"/>
       </div>
     </div>
@@ -49,13 +49,6 @@ export default {
     margin 0
     +above($tablet)
       font-size 1.375rem /* 22/16 */
-    &.animation--fade-in
-      animation-delay 1500ms
-    &.animation--fade-in-bottom
-      animation-delay 2000ms
   &__social
     margin-top 1.875rem /* 30/16 */
-    &.animation
-      animation-duration 2s
-      animation-delay 4000ms
 </style>

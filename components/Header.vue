@@ -22,6 +22,8 @@ export default {
   background-color #fff
   border-bottom 1px solid rgba(0, 0, 0, .125)
   padding .9375rem /* 15/16 */
+  position relative
+  z-index 100
   +above($tablet)
     display flex
     align-items center

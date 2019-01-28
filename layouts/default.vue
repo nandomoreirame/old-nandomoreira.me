@@ -17,6 +17,11 @@ export default {
 
 <style lang="stylus">
 html,
+body
+  margin 0
+  padding 0
+
+html,
 body,
 #__nuxt,
 #__layout,
@@ -98,4 +103,7 @@ h3, h4
 .default
   +above($tablet)
     padding-top 50px
+
+body.hasHero .default
+  padding-top 0
 </style>

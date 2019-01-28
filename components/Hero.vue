@@ -1,5 +1,6 @@
 <template>
   <section class="hero">
+    <meta-tags bodyClass="hasHero"/>
     <div class="hero__inner">
       <div class="hero__content">
         <span class="hero__avatar"><img :src="avatar" alt="Olá! Eu sou um { desenvolvedor web }."/></span>
@@ -24,14 +25,13 @@ export default {
   name: 'Hero',
   data () {
     return {
-      avatar,
-      triangleOne: false,
-      triangleTwo: false
+      avatar
     }
   },
   components: {
     CFooter: () => import('~/components/Footer'),
-    CSocialIcons: () => import('~/components/SocialIcons')
+    CSocialIcons: () => import('~/components/SocialIcons'),
+    metaTags: () => import('~/components/Meta')
   }
 }
 </script>
@@ -40,7 +40,7 @@ export default {
 .hero
   width 100%
   height 100%
-  padding 30px
+  padding 0
   background-color rgb(245, 248, 250)
   &__inner
     max-width 53.75rem /* 860/16 */

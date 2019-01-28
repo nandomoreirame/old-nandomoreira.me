@@ -3,7 +3,7 @@
     <div class="Contact__inner">
       <meta-tags :title="title" :description="description" bodyClass="page-contact hasHero"/>
       <h1>Olá, terráqueo! <br/> Nós viemos em paz 🖖🏼</h1>
-      <p>Para entrar em contato comigo basta me seguir em qualquer uma das minhas redes sociais e chamar por <abbr title="Mensagem Direta">DM</abbr>.
+      <p>Para entrar em contato comigo basta me seguir em qualquer uma das minhas redes sociais e chamar por <abbr title="Mensagem Direta">DM</abbr>
       <br/>ou enviar um email para <a href="mailto:nandomoreira.me@gmail.com">nandomoreira.me[arroba]gmail.com</a> que é sucesso!</p>
       <div class="Contact__social">
         <c-social-icons iconSize="18"/>

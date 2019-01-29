@@ -14,6 +14,14 @@ export default {
 .brand
   font-size 22px
   margin 0
-  span
-    color $secondary-color
+  &, a
+    span
+      color $secondary-color
+  a
+    color $primary-color
+    &:hover,
+    &:focus
+      color $secondary-color
+      span
+        color $primary-color
 </style>

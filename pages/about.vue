@@ -43,9 +43,17 @@
       </div>
       <div class="About__content">
         <div class="About__text">
-          <h2>Contato</h2>
-          <p>Para entrar em contato comigo basta me seguir em qualquer uma das minhas redes sociais e chamar por <abbr title="Mensagem Direta">DM</abbr>.
-          <br/>ou enviar um email para <a href="mailto:nandomoreira.me@gmail.com">nandomoreira.me[arroba]gmail.com</a> que é sucesso!</p>
+          <h2>Quer mais?</h2>
+          <p>Se você quiser atualizações aleatórias e regulares sobre o que eu ando fazendo da vida, você pode...</p>
+          <ul>
+            <li>... me seguir no Twitter em  <a href="https://twitter.com/oseunando">@oseunando</a></li>
+            <li>Ou seguir no Instagram em  <a href="https://instagram.com/oseunando">@oseunando</a>.</li>
+          </ul>
+          <p>Mas... Se peferir um contato mais direto  pode me chamar no... </p>
+          <ul>
+            <li>... <a href="https://t.me/oseunando" target="_blank">Telegram</a> ou no <a href="https://api.whatsapp.com/send?text=Ol%C3%A1,%20Fernando!%20Encontrei%20seu%20n%C3%BAmero%20no%20site%20nandomoreira.me&phone=5541984401163" target="_blank">WhatsApp</a>.</li>
+            <li>Ou se preferir pode enviar um email para <a href="mailto:nandomoreira.me@gmail.com">nandomoreira.me[arroba]gmail.com</a> que é sucesso!</li>
+          </ul>
         </div>
       </div>
       <div class="About__social">
@@ -79,11 +87,6 @@ export default {
 .About
   width 100%
   text-align center
-  p
-    opacity .75
-  h2
-    font-size 1.75rem /* 28/16 */
-    margin 0 0 .625rem /* 10/16 */
   +above($tablet)
     display flex
     align-items center
@@ -101,4 +104,20 @@ export default {
     padding-right 1.875rem /* 30/16 */
   &__social
     margin-bottom 30px
+h2
+  font-size 1.75rem /* 28/16 */
+  margin 0 0 .625rem /* 10/16 */
+ul
+  list-style none
+  padding 0
+  margin-bottom 1.875rem /* 30/16 */
+  li:before
+    content '🖖🏼'
+    display inline-block
+    margin-right .3125rem /* 5/16 */
+a
+  text-decoration underline
+  &:hover,
+  &:focus
+    text-decoration none
 </style>

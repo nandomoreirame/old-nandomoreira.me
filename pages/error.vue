@@ -1,13 +1,20 @@
 <template>
-  <div class="container">
-    <h1 v-if="error.statusCode === 404">Oops, a página não foi encontrada</h1>
-    <h1 v-else>Oops, um erro aconteceu</h1>
+  <c-hero>
+    <c-meta-tags title="Oops, um erro aconteceu" bodyClass="page-contact hasHero"/>
+    <h1>Oops, um erro aconteceu</h1>
     <nuxt-link to="/">{ home }</nuxt-link>
-  </div>
+    <c-social-icons iconSize="18"/>
+  </c-hero>
 </template>
 
 <script>
 export default {
-  props: ['error']
+  name: 'Error',
+  props: ['error'],
+  components: {
+    CHero: () => import('~/components/Hero'),
+    CSocialIcons: () => import('~/components/SocialIcons'),
+    CMetaTags: () => import('~/components/Meta')
+  }
 }
 </script>

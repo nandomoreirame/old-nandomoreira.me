@@ -1,7 +1,7 @@
 <template>
   <div class="Blog">
     <div class="Blog__last-posts">
-      <meta-tags :title="title" :description="description" bodyClass="page-contact hasHero"/>
+      <c-meta-tags :title="title" :description="description" bodyClass="page-contact hasHero" :url="`${process.env.baseUrl}/blog`"/>
       <!-- <div v-for="(post, k) in lastPosts" :key="k">
         {{ post }}
       </div> -->
@@ -33,7 +33,7 @@ export default {
     // parseRelaxedJSON: str => eval('(_ => (' + str + '))()') // eslint-disable-line
   },
   components: {
-    metaTags: () => import('~/components/Meta')
+    CMetaTags: () => import('~/components/Meta')
   }
 }
 </script>

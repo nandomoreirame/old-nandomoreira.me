@@ -16,9 +16,6 @@
 /projetos/open-source         /                                                               301
 /projetos/experimentos        /                                                               301
 /blog                         /                                                               301
-/contato                      /                                                               301
-/resume                       /                                                               301
-/styleguide                   /                                                               301
 
 /retinapro-com-br             /projetos                                                       301
 /grgit                        /projetos                                                       301
@@ -46,14 +43,19 @@
 /pizzariadetroit              /projetos                                                       301
 /open-source                  /projetos/open-source                                           301
 
-/about                        /sobre                                                          301
-/about/*                      /sobre/:splat                                                   301
-/br/sobre                     /sobre                                                          301
-/pt_br/sobre                  /sobre                                                          301
-/en/about                     /sobre                                                          301
-/cv                           /sobre                                                          301
+/sobre                        /about                                                          301
+/sobre/*                      /about/:splat                                                   301
+/br/sobre                     /about                                                          301
+/pt_br/sobre                  /about                                                          301
+/en/about                     /about                                                          301
+/cv                           /about                                                          301
+/resume                       /about                                                          301
+/styleguide                   /about                                                          301
+
 /sobre/now                    /now                                                            301
 /about/now                    /now                                                            301
+
+/contato                      /contact                                                        301
 
 /experiments                  /projetos/experimentos                                          301
 /experiment/*                 /projetos/experimentos                                          301

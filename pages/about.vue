@@ -9,9 +9,7 @@
         <div class="About__text">
           <h2>Quem sou eu?</h2>
           <p>Meu nome é <strong>Fernando Moreira Costa</strong> (muito prazer). Tenho <span>{{ age }}</span> anos, nasci e cresci em uma cidadezinha do interior de <strong>Rondônia</strong> chamada <strong>Ariquemes</strong>, sai de lá com 18 anos para me aventurar em <strong>Curitiba/PR</strong> onde moro atualmente.</p>
-          <!-- ## O que estou fazendo agora?
-          Uma página tirada da idéia de **Derek Sivers** em _Nownownow_, onde blogueiros e proprietários de sites do mundo compartilham o que eles estão fazendo.
-          Então, aqui é meu _Now_: **[O que estou fazendo agora](/about/now)** -->
+          <p>Sou programador não por formação mas por vocação 💻, vegetariano 🥑, violinista 🎻, piadista 🤔 e fã de beterraba ❤️.</p>
         </div>
       </section>
       <section class="About__content">

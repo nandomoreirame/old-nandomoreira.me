@@ -46,13 +46,13 @@
           <h2>Quer mais?</h2>
           <p>Se você quiser atualizações aleatórias e regulares sobre o que eu ando fazendo da vida, você pode...</p>
           <ul>
-            <li>... me seguir no Twitter em  <a href="https://twitter.com/oseunando">@oseunando</a></li>
-            <li>Ou seguir no Instagram em  <a href="https://instagram.com/oseunando">@oseunando</a>.</li>
+            <li>... me seguir no Twitter em  <a href="https://twitter.com/oseunando" target="_blank">@oseunando</a></li>
+            <li>Ou seguir no Instagram em  <a href="https://instagram.com/oseunando" target="_blank">@oseunando</a>.</li>
           </ul>
           <p>Mas... Se peferir um contato mais direto  pode me chamar no... </p>
           <ul>
             <li>... <a href="https://t.me/oseunando" target="_blank">Telegram</a> ou no <a href="https://api.whatsapp.com/send?text=Ol%C3%A1,%20Fernando!%20Encontrei%20seu%20n%C3%BAmero%20no%20site%20nandomoreira.me&phone=5541984401163" target="_blank">WhatsApp</a>.</li>
-            <li>Ou se preferir pode enviar um email para <a href="mailto:nandomoreira.me@gmail.com">nandomoreira.me[arroba]gmail.com</a> que é sucesso!</li>
+            <li>Ou se preferir pode enviar um email para <a href="mailto:nandomoreira.me@gmail.com" target="_blank">nandomoreira.me[arroba]gmail.com</a> que é sucesso!</li>
           </ul>
         </div>
       </div>

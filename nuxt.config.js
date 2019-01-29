@@ -18,7 +18,8 @@ module.exports = {
     baseUrl,
     baseTitle: title,
     baseDescription: description,
-    baseKeywords: keywords
+    baseKeywords: keywords,
+    imageDefault: `${baseUrl}/share.jpg`
   },
   head: {
     title,

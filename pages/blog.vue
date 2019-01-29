@@ -22,8 +22,8 @@ export default {
   async asyncData ({ store, $axios }) {
     // if (!store.state.lastPosts.length) {
     // const posts = await $axios.$get(process.env.apiUrl)
-    const posts = await $axios.$get('https://blog.nandomoreira.me/api.json')
-    store.commit('SET_POSTS', posts)
+    // const posts = await $axios.$get('https://blog.nandomoreira.me/api.json')
+    store.commit('SET_POSTS', { foo: 'bar' })
     // }
   },
   computed: {

@@ -1,36 +1,29 @@
 const webpack = require('webpack')
 
 const {
-  title,
-  homepage,
-  description,
-  keywords
-} = require('./package.json')
-
-const isProduction = process.env.NODE_ENV === 'production'
-const baseUrl = isProduction ? homepage : 'http://localhost:3000'
-const apiUrl = isProduction ? 'https://blog.nandomoreira.me/api.json' : 'http://127.0.0.1:4000/api.json'
+  GA,
+  env,
+  baseUrl,
+  baseTitle,
+  isProduction,
+  layoutTransition,
+  workbox,
+  AXIOS,
+  I18N
+} = require('./config')
 
 module.exports = {
   dev: !isProduction,
-  env: {
-    apiUrl,
-    baseUrl,
-    baseTitle: title,
-    baseDescription: description,
-    baseKeywords: keywords,
-    imageDefault: `${baseUrl}/share.jpg`
-  },
+  env,
   head: {
-    title,
+    title: baseTitle,
     htmlAttrs: {
       dir: 'ltr',
       lang: 'pt-br'
     },
     meta: [
-      // { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      // { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
-      // { hid: 'description', name: 'description', content: description },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
       { name: 'og:locale', content: 'pt_BR' },
       { 'http-equiv': 'Content-Language', content: 'pt-br' },
       { name: 'googlebot', content: 'index,follow' },
@@ -57,20 +50,18 @@ module.exports = {
     color: '#5bbc8f'
   },
   plugins: [
-    { src: '~/plugins/browser.js', ssr: false },
-    { src: '~/plugins/axios' }
+    { src: '~/plugins/i18n' },
+    { src: '~/plugins/axios' },
+    { src: '~/plugins/browser.js', ssr: false }
   ],
   modules: [
+    ['nuxt-i18n', I18N],
+    ['@nuxtjs/axios', AXIOS],
+    ['@nuxtjs/google-analytics', GA],
     '@nuxtjs/pwa',
-    '@nuxtjs/axios',
-    ['@nuxtjs/google-analytics']
+    '@nuxtjs/axios'
   ],
-  axios: {
-    // proxyHeaders: false
-  },
-  workbox: {
-    dev: !isProduction
-  },
+  workbox,
   build: {
     vendor: [],
     plugins: [
@@ -100,19 +91,6 @@ module.exports = {
       }
     }
   },
-  layoutTransition: {
-    name: 'layout',
-    mode: 'out-in'
-  },
-  generate: {
-    fallback: true
-  },
-  'google-analytics': {
-    id: isProduction ? 'UA-125092358-1' : 'UA-00000000-1',
-    debug: {
-      enabled: !isProduction,
-      track: !isProduction,
-      sendHitTask: isProduction
-    }
-  }
+  layoutTransition,
+  generate: { fallback: true }
 }

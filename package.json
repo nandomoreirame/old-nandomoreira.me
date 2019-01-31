@@ -35,7 +35,7 @@
   },
   "scripts": {
     "watch": "npm run dev",
-    "dev": "nuxt dev",
+    "dev": "NODE_ENV=development nuxt dev",
     "clean": "rimraf .nuxt && rimraf dist",
     "build": "NODE_ENV=production nuxt build",
     "prestart": "npm run build",
@@ -51,8 +51,10 @@
     "@nuxtjs/pwa": "^2.6.0",
     "axios": "^0.18.0",
     "github-repositories": "^3.0.0",
-    "nuxt": "latest",
+    "nuxt": "^2.4.0",
+    "nuxt-i18n": "^5.0.0",
     "source-map-support": "^0.4.15",
+    "vue-i18n": "^8.7.0",
     "vuex": "^3.1.0"
   },
   "devDependencies": {

@@ -1,17 +1,15 @@
-const {
-  title,
-  homepage,
-  description,
-  keywords
-} = require('../package.json')
+const { title, homepage, description, keywords } = require('../package.json')
 
-const baseTitle = title
-const isProduction = process.env.NODE_ENV === 'production'
-const baseUrl = isProduction ? homepage : 'http://localhost:3000'
-const apiUrl = isProduction ? 'https://blog.nandomoreira.me/api.json' : 'http://127.0.0.1:4000/api.json'
-const imageDefault = `${baseUrl}/share.jpg`
+const en = require('../locale/en-US.js')
+const pt = require('../locale/pt-BR.js')
 
-const env = {
+export const baseTitle = title
+export const isProduction = process.env.NODE_ENV === 'production'
+export const baseUrl = isProduction ? homepage : 'http://localhost:3000'
+export const apiUrl = isProduction ? 'https://blog.nandomoreira.me/api.json' : 'http://127.0.0.1:4000/api.json'
+export const imageDefault = `${baseUrl}/share.jpg`
+
+export const env = {
   apiUrl,
   baseUrl,
   baseTitle,
@@ -21,10 +19,7 @@ const env = {
   imageDefault
 }
 
-const en = require('../locale/en-US.js')
-const pt = require('../locale/pt-BR.js')
-
-const I18N = {
+export const I18N = {
   defaultLocale: 'pt',
   locales: [
     { code: 'pt', iso: 'pt-BR', name: 'Português' },
@@ -44,20 +39,53 @@ const I18N = {
   }
 }
 
-const workbox = {
+export const htmlAttrs = {
+  dir: 'ltr',
+  lang: 'pt-br'
+}
+
+export const metaTags = [
+  { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
+  { name: 'og:locale', content: 'pt_BR' },
+  { 'http-equiv': 'Content-Language', content: 'pt-br' },
+  { name: 'googlebot', content: 'index,follow' },
+  { name: 'robots', content: 'index,follow,noodp' },
+  { name: 'country', content: 'Brazil' },
+  { name: 'revisit-after', content: '7 days' },
+  { name: 'mobile-web-app-capable', content: 'yes' },
+  { name: 'generator', content: 'Visual Studio Code - Insiders' }
+]
+
+export const links = [
+  { rel: 'author', href: `${baseUrl}/humans.txt` },
+  { rel: 'index', href: `${baseUrl}/` },
+  { rel: `shortcut icon`, href: `${baseUrl}/icon.png`, type: `image/png` },
+  { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Montserrat:400,700,800|Source+Sans+Pro:300,400' }
+]
+
+export const scripts = [
+  { src: (isProduction ? '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5869919cdfa51391' : ''), async: true }
+]
+
+export const loading = {
+  color: '#5bbc8f'
+}
+
+export const workbox = {
   dev: !isProduction
 }
 
-const layoutTransition = {
+export const layoutTransition = {
   name: 'layout',
   mode: 'out-in'
 }
 
-const AXIOS = {
+export const AXIOS = {
   baseURL: baseUrl
 }
 
-const GA = {
+export const GA = {
   id: isProduction ? 'UA-125092358-1' : 'UA-00000000-1',
   debug: {
     sendHitTask: isProduction
@@ -66,17 +94,15 @@ const GA = {
   }
 }
 
-module.exports = {
-  GA,
-  env,
-  baseUrl,
-  apiUrl,
-  baseTitle,
-  imageDefault,
-  description,
-  keywords,
-  workbox,
-  layoutTransition,
-  AXIOS,
-  I18N
+export const loaderOptions = {
+  options: {
+    stylus: {
+      use: [ require('rupture')() ],
+      preferPathResolver: 'webpack',
+      import: [
+        '~assets/stylus/config.styl'
+      ]
+    },
+    context: '/'
+  }
 }

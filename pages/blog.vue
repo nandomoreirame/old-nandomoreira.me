@@ -1,7 +1,7 @@
 <template>
   <div class="Blog">
     <div class="Blog__last-posts">
-      <c-meta-tags :title="title" :description="description" bodyClass="page-contact hasHero" :url="`${process.env.baseUrl}/blog`"/>
+      <c-meta-tags :title="title" :description="description" bodyClass="page-blog hasHero" :url="url"/>
       <!-- <div v-for="(post, k) in lastPosts" :key="k">
         {{ post }}
       </div> -->
@@ -13,9 +13,10 @@
 import { mapState } from 'vuex'
 
 export default {
-  name: 'Contact',
+  name: 'Blog',
   data: () => ({
     // lastPosts: {},
+    url: `${process.env.baseUrl}/blog`,
     title: `Blog ⎼ ${process.env.baseTitle}`,
     description: ``
   }),

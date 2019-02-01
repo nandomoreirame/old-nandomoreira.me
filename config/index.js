@@ -100,7 +100,10 @@ export const loaderOptions = {
       use: [ require('rupture')() ],
       preferPathResolver: 'webpack',
       import: [
-        '~assets/stylus/config.styl'
+        '~assets/stylus/config.styl',
+        '~assets/stylus/placeholders.styl',
+        '~assets/stylus/mixins.styl',
+        '~assets/stylus/animations.styl'
       ]
     },
     context: '/'

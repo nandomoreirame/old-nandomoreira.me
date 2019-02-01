@@ -1,0 +1,33 @@
+.button
+  display inline-block
+  position relative
+  font-size 1rem /* 16/16 */
+  text-align center
+  text-decoration none
+  cursor pointer
+  vertical-align bottom
+  white-space nowrap
+  appearance none
+  text-rendering auto
+  user-select none
+  box-sizing border-box
+  font-family $font-family-base
+  transition color .12s $timingFunction,
+    background-color .12s $timingFunction
+  padding 6px 20px
+  letter-spacing 0
+  font-weight 700
+  text-transform uppercase
+  font-style normal
+  text-rendering optimizeLegibility
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  -moz-font-feature-settings "liga" on
+
+.button--primary
+  color #fff
+  background $primary-color
+  &:hover,
+  &:focus
+    color #fff
+    background $secondary-color

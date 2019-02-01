@@ -1,12 +1,21 @@
 <template>
   <nav class="Navbar">
     <ul class="Navbar__nav">
-      <li class="Navbar__item"><nuxt-link class="Navbar__link" to="/" title="Página inicial">home</nuxt-link></li>
-      <li class="Navbar__item"><nuxt-link class="Navbar__link" to="/about" title="Sobre min">sobre mim</nuxt-link></li>
-      <li class="Navbar__item"><nuxt-link class="Navbar__link" to="/contact" title="Mande uma mensagem">contato</nuxt-link></li>
+      <li class="Navbar__item">
+        <nuxt-link class="Navbar__link" to="/" title="Página inicial">home</nuxt-link>
+      </li>
+      <li class="Navbar__item">
+        <nuxt-link class="Navbar__link" to="/about" title="Sobre min">sobre mim</nuxt-link>
+      </li>
+      <li class="Navbar__item">
+        <nuxt-link class="Navbar__link" to="/portfolio" title="Veja os projetos feitos por mim">portfolio</nuxt-link>
+      </li>
+      <li class="Navbar__item">
+        <nuxt-link class="Navbar__link" to="/contact" title="Mande uma mensagem">contato</nuxt-link>
+      </li>
       <li class="Navbar__item">
         <a class="Navbar__link" href="https://blog.nandomoreira.me/" target="_blank" title="Meus artigos">
-          blog <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"> <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 16v-2.625s-5.619.005-9 3.625c1.588-6.916 9-8.292 9-8.292v-2.708l5 5.021-5 4.979z"></path> </svg>
+          blog <c-target-icon/>
         </a>
       </li>
     </ul>
@@ -15,6 +24,9 @@
 
 <script>
 export default {
+  components: {
+    CTargetIcon: () => import('~/components/TargetIcon')
+  }
 }
 </script>
 

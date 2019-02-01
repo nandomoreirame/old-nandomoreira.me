@@ -1,6 +1,6 @@
 <template>
-  <figure :class="figureClass">
-    <img :src="imageSrc" :class="imageClass" :alt="imageAlt" :width="imageWidth" :height="imageHeight"/>
+  <figure :class="`Image ${figureClass}`">
+    <img v-lazy="imageSrc" :src="require('~/assets/images/default.png')" :class="`${imageClass}`" :alt="imageAlt" :width="imageWidth" :height="imageHeight"/>
   </figure>
 </template>
 
@@ -9,7 +9,7 @@
     props: {
       figureClass: {
         type: String,
-        default: 'Image'
+        default: ''
       },
       imageSrc: {
         type: String,
@@ -36,12 +36,14 @@
 </script>
 
 <style lang="stylus" scoped>
-figure
-  display inline-block
-  margin 0
+.Image
+  display block
+  width 100%
+  margin 0 0 1.875rem /* 30/16 */
   padding 0
+  text-align center
   img
-    display block
+    display inline-block
     max-width 100%
     height auto
 </style>

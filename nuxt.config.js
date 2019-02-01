@@ -31,7 +31,7 @@ module.exports = {
   plugins: [
     { src: '~/plugins/i18n' },
     { src: '~/plugins/axios' },
-    { src: '~/plugins/browser.js', ssr: false }
+    { src: '~/plugins/client.js', ssr: false }
   ],
   modules: [
     // ['nuxt-i18n', I18N],

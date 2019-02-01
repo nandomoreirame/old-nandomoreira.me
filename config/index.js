@@ -60,8 +60,8 @@ export const metaTags = [
 export const links = [
   { rel: 'author', href: `${baseUrl}/humans.txt` },
   { rel: 'index', href: `${baseUrl}/` },
-  { rel: `shortcut icon`, href: `${baseUrl}/icon.png`, type: `image/png` },
-  { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Montserrat:400,700,800|Source+Sans+Pro:300,400' }
+  { rel: `shortcut icon`, href: `${baseUrl}/icon.png`, type: `image/png` }
+  // { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Montserrat:400,700,800|Source+Sans+Pro:300,400' }
 ]
 
 export const scripts = [

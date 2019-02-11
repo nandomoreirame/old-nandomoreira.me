@@ -35,15 +35,15 @@
   }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 .Image
   display block
   width 100%
-  margin 0 0 1.875rem /* 30/16 */
+  margin 0
   padding 0
   text-align center
   img
-    display inline-block
+    display block
     max-width 100%
     height auto
 </style>

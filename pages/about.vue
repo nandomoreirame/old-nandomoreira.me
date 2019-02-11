@@ -102,15 +102,15 @@ export default {
       display flex
       align-items center
   &__thumb
-    padding-right 1.875rem /* 30/16 */
     display block
     text-align center
+    .Avatar
+      width 290px
+      margin .9375rem /* 15/16 */ auto
     +above($tablet)
+      padding-right 1.875rem /* 30/16 */
       display inline-block
       text-align left
-      .Avatar
-        width 290px
-        margin .9375rem /* 15/16 */ 0
   &__social
     margin-bottom 30px
 h2

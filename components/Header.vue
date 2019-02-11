@@ -20,7 +20,7 @@ export default {
   width 100%
   display block
   background-color #fff
-  border-bottom 1px solid rgba(0, 0, 0, .125)
+  box-shadow 0 2px 3px 0 rgba(#000, .16)
   padding .9375rem /* 15/16 */
   position relative
   z-index 100

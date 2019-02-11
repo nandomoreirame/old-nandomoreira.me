@@ -33,11 +33,11 @@ export default {
 </script>
 
 <style lang="stylus">
-.Avatar
-  display inline-block
+.Avatar.Image
   margin 0 auto 1.875rem /* 30/16 */
   padding .9375rem /* 15/16 */
   img
+    display inline-block
     border 4px solid #d20068
     border-radius 100%
     box-shadow 0 0 1px 11px rgba(210, 0, 104, 0.15), 0 0 1px 22px rgba(210, 0, 104, 0.1)

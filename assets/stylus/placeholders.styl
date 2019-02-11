@@ -14,20 +14,57 @@
   font-family $font-family-base
   transition color .12s $timingFunction,
     background-color .12s $timingFunction
-  padding 6px 20px
+  padding .625rem /* 10/16 */ 1.6875rem /* 27/16 */
   letter-spacing 0
   font-weight 700
+  border-radius 1.6875rem /* 27/16 */
+  border .125rem /* 2/16 */ solid transparent
   text-transform uppercase
   font-style normal
   text-rendering optimizeLegibility
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   -moz-font-feature-settings "liga" on
+  svg
+    fill inherit
 
 .button--primary
-  color #fff
-  background $primary-color
+  color $primary-color
+  background-color transparent
+  border-color $primary-color
+  svg
+    fill $primary-color
   &:hover,
   &:focus
     color #fff
-    background $secondary-color
+    background $primary-color
+    border-color $primary-color
+    svg
+      fill #fff
+
+.button--secondary
+  color #fff
+  background-color $secondary-color
+  border-color $secondary-color
+  svg
+    fill #fff
+  &:hover,
+  &:focus
+    color $secondary-color
+    background transparent
+    border-color lighten($secondary-color, 10%)
+    svg
+      fill $secondary-color
+
+.button--disabled
+  cursor not-allowed
+  color rgba($secondary-color, .4)
+  border-color rgba($secondary-color, .2)
+  svg
+    fill rgba($secondary-color, .4)
+  &:hover,
+  &:focus
+    color rgba($secondary-color, .6)
+    border-color rgba($secondary-color, .4)
+    svg
+      fill rgba($secondary-color, .6)

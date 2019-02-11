@@ -56,6 +56,7 @@
     "source-map-support": "^0.4.15",
     "vue-i18n": "^8.7.0",
     "vue-lazyload": "^1.2.6",
+    "vue-masonry": "^0.11.7",
     "vuex": "^3.1.0",
     "webfontloader": "^1.6.28"
   },

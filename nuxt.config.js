@@ -31,6 +31,7 @@ module.exports = {
   plugins: [
     { src: '~/plugins/i18n' },
     { src: '~/plugins/axios' },
+    { src: '~/plugins/masonry', ssr: false },
     { src: '~/plugins/client.js', ssr: false }
   ],
   modules: [

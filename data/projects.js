@@ -125,8 +125,8 @@ export default [
     name: 'Ferramentas Digital',
     date: '11/2017',
     online: true,
-    opensource: false,
-    repo: '#',
+    opensource: true,
+    repo: 'https://github.com/iFundamental/tools.github.io',
     image: 'ferramentas.digital.png',
     url: 'http://ferramentas.digital',
     description: `Desenhado no Sketch, desenvolvido com Jekyll e hospedado no Netlify, o Growth Tools é um repositório de ferramentas para Growth Hackers.`,
@@ -134,7 +134,9 @@ export default [
       'UXDesign',
       'SketchApp',
       'Jekyll',
-      'FrontEnd'
+      'FrontEnd',
+      'Tools',
+      'OpenSource'
     ]
   },
   {

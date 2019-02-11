@@ -37,9 +37,10 @@ module.exports = {
   modules: [
     // ['nuxt-i18n', I18N],
     ['@nuxtjs/axios', AXIOS],
-    ['@nuxtjs/google-analytics', GA],
+    ['@nuxtjs/google-analytics'],
     '@nuxtjs/pwa'
   ],
+  'google-analytics': GA,
   workbox,
   build: {
     plugins: [

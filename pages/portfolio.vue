@@ -1,6 +1,6 @@
 <template>
   <section class="Portfolio">
-    <c-meta-tags :title="title" :description="description" bodyClass="page-portfolio" :url="url" :image="require(`~/assets/images/projects/vovojuju.nandomoreira.me.png`)"/>
+    <c-meta-tags :title="title" :description="description" bodyClass="page-portfolio" :url="url" :image="shareImage"/>
 
     <header class="Portfolio__header">
       <h1 class="Portfolio__title">Portfolio</h1>
@@ -24,7 +24,8 @@ export default {
   data: () => ({
     url: `${process.env.baseUrl}/portfolio`,
     title: `Portfolio ⎼ ${process.env.baseTitle}`,
-    description: `Projetos de clientes e da comunidade/open-source que trabalhei em toda minha carreira - I ❤️ Open-source!`
+    description: `Projetos de clientes e da comunidade/open-source que trabalhei em toda minha carreira - I ❤️ Open-source!`,
+    shareImage: `${process.env.baseUrl}${require(`~/assets/images/projects/vovojuju.nandomoreira.me.png`)}`
   }),
   async asyncData ({ store }) {
     if (!store.state.projects.length) {

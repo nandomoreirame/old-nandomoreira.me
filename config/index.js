@@ -88,9 +88,9 @@ export const AXIOS = {
 export const GA = {
   id: isProduction ? 'UA-125092358-1' : 'UA-00000000-1',
   debug: {
-    sendHitTask: isProduction
-    // enabled: !isProduction,
-    // track: !isProduction
+    sendHitTask: isProduction,
+    enabled: !isProduction,
+    track: !isProduction
   }
 }
 

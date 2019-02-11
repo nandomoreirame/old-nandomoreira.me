@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const {
   GA,
   env,
+  baseUrl,
   baseTitle,
   htmlAttrs,
   metaTags,
@@ -38,6 +39,7 @@ module.exports = {
     // ['nuxt-i18n', I18N],
     ['@nuxtjs/axios', AXIOS],
     ['@nuxtjs/google-analytics'],
+    '@nuxtjs/sitemap',
     '@nuxtjs/pwa'
   ],
   'google-analytics': GA,
@@ -60,5 +62,14 @@ module.exports = {
     }
   },
   layoutTransition,
-  generate: { fallback: true }
+  generate: { fallback: true },
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: baseUrl,
+    cacheTime: 1000 * 60 * 15,
+    generate: true,
+    gzip: true,
+    exclude: [],
+    routes: []
+  }
 }

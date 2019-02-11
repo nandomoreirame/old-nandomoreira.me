@@ -2,7 +2,7 @@
   <c-hero>
     <c-meta-tags bodyClass="page-home hasHero" :title="title" :description="description" :url="url"/>
     <c-avatar/>
-    <h2 class="home__title">
+    <h2 class="Home__title">
       <span>Olá! Eu sou um</span> <strong>{ desenvolvedor web }.</strong>
       <small>
         <a href="http://agencia.nossacausa.com/" target="_blank">Ajudo ONGs</a> e
@@ -11,7 +11,11 @@
         e contribuo com projetos <a href="https://github.com/nandomoreirame" target="_blank">open source</a>.
       </small>
     </h2>
-    <div class="home__social">
+    <div class="Home__buttons">
+      <nuxt-link to="/portfolio" class="Home__button button button--secondary">Portfolio</nuxt-link>
+      <nuxt-link to="/contact" class="Home__button button button--primary">Contate-me!</nuxt-link>
+    </div>
+    <div class="Home__social">
       <c-social-icons iconSize="18"/>
     </div>
   </c-hero>
@@ -19,6 +23,7 @@
 
 <script>
 export default {
+  name: 'Home',
   data () {
     return {
       title: `Olá! Eu sou um { desenvolvedor web }! ${process.env.baseTitle}`,
@@ -36,7 +41,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.home
+.Home
   &__title
     font-weight 800
     font-size 1.375rem /* 22/16 */
@@ -63,4 +68,12 @@ export default {
         font-size 1.125rem /* 18/16 */
       a
         font-weight 700
+  &__buttons
+    text-align center
+    padding 0 0 .9375rem /* 15/16 */
+    .button
+      display block
+      margin .3125rem /* 5/16 */
+      +above($mobile)
+        display inline-block
 </style>

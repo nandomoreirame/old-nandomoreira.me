@@ -488,11 +488,11 @@ export default [
   {
     name: 'Portal Macuxi.com',
     date: '06/2014',
-    online: true,
+    online: false,
     opensource: false,
     repo: '#',
     image: 'macuxi.com.png',
-    url: 'http://macuxi.com',
+    url: '#',
     description: `Portal Macuxi.com, desenhado no Photoshop e desenvolvido com o CMS WordPress utilizando o recurso WPMU (WordPress Multisites).`,
     tags: [
       'WPPMU',

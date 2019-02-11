@@ -21,7 +21,7 @@
       <a v-if="project.opensource && project.repo !== '#'" class="Project__button Project__button--secondary" :href="project.repo" target="_blank" rel="nofollow">
         <span>Projeto Open-source</span> <c-open-source-icon v-if="(project.url !== '#')"/>
       </a>
-      <a :class="`Project__button Project__button--${(project.url !== '#' ? 'primary' : 'disabled')}`" :href="project.url" :target="project.url !== '#' ? '_blank' : '_self'" rel="nofollow">
+      <a :class="`Project__button Project__button--${(project.url !== '#' ? 'primary' : 'disabled')}`" :href="`${project.url}?ref=nandomoreira.me`" :target="project.url !== '#' ? '_blank' : '_self'" rel="nofollow">
         <span v-if="project.opensource">Ver demonstração</span>
         <span v-else>
           <span v-if="(project.url !== '#')">Ver projeto online</span>

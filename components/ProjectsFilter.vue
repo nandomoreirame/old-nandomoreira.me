@@ -21,7 +21,7 @@
       </label>
       <label class="Filter__radio" for="filterOpenSource">
         <input type="radio" id="filterOpenSource" value="opensource" @change="filter()" v-model="$store.state.filterBy">
-        <span>Open source <small>({{totalOpensource}})</small></span>
+        <span>Open-source <small>({{totalOpensource}})</small></span>
       </label>
     </div>
 

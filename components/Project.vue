@@ -20,14 +20,12 @@
         <a :href="encodeURI(`https://twitter.com/intent/tweet?text=Veja o projeto: ${project.name} feito por @oseunando em:&url=https://nandomoreira.me/projects/&hashtags=${hashtags(project.tags)}`)" target="_blank" v-for="(tag, i) in project.tags" :key="i" v-text="`#${tag} `"/>
       </p>
       <a v-if="project.opensource && project.repo !== '#'" class="Project__button Project__button--secondary" :href="project.repo" target="_blank" rel="nofollow">
-        <span>Projeto Open-source</span> <c-open-source-icon v-if="(project.url !== '#')"/>
+        <span>Open-source</span> <c-open-source-icon v-if="(project.url !== '#')"/>
       </a>
       <a :class="`Project__button Project__button--${(project.url !== '#' ? 'primary' : 'disabled')}`" :href="`${project.url}?ref=nandomoreira.me`" :target="project.url !== '#' ? '_blank' : '_self'" rel="nofollow">
-        <span v-if="project.opensource">Ver demonstração</span>
-        <span v-else>
-          <span v-if="(project.url !== '#')">Ver projeto online</span>
-          <span v-else>Projeto fora do ar ou descontinuado</span>
-        </span> <c-target-icon v-if="(project.url !== '#')"/>
+        <span v-if="(project.url !== '#')">Ver online</span>
+        <span v-else>Projeto está fora do ar ou foi descontinuado</span>
+        <c-target-icon v-if="(project.url !== '#')"/>
       </a>
     </header>
   </div>

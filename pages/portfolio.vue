@@ -5,9 +5,10 @@
     <header class="Portfolio__header">
       <h1 class="Portfolio__title">Portfolio</h1>
       <p class="Portfolio__lead" v-html="description"/>
+      <c-projects-filter/>
     </header>
 
-    <div class="Portfolio__projects" v-masonry transition-duration="0.3s" item-selector=".Portfolio__project">
+    <div class="Portfolio__projects" v-masonry transition-duration="1s" item-selector=".Portfolio__project">
       <article class="Portfolio__project" v-for="(project, k) in projects" :key="k" v-masonry-tile>
         <c-project :item="k" :project="project" />
       </article>
@@ -16,8 +17,11 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
-import _projects from '~/data/projects'
+import { mapState, mapActions } from 'vuex'
+import opensource from '~/data/projects/opensource'
+import clients from '~/data/projects/clients'
+
+let allProjects = [...opensource, ...clients]
 
 export default {
   name: 'Portfolio',
@@ -27,9 +31,11 @@ export default {
     description: `Alguns projetos de clientes e da comunidade/open-source que trabalhei em toda minha carreira - I ❤️ Open-source!`,
     shareImage: `${process.env.baseUrl}${require(`~/assets/images/projects/nandomoreira.me.png`)}`
   }),
-  async asyncData ({ store }) {
+  async asyncData ({ app, store }) {
+    const _projects = await app.shuffleArray(allProjects)
     if (!store.state.projects.length) {
       store.commit('SET_PROJECTS', _projects)
+      store.commit('SET_FILTERBY', 'all')
     }
   },
   computed: {
@@ -38,6 +44,8 @@ export default {
     })
   },
   mounted () {
+    this.toggleLazyImages(true)
+
     if (typeof this.$redrawVueMasonry === 'function') {
       setTimeout(() => {
         this.$redrawVueMasonry()
@@ -45,9 +53,13 @@ export default {
     }
   },
   methods: {
+    ...mapActions([
+      'toggleLazyImages'
+    ])
   },
   components: {
     CProject: () => import('~/components/Project'),
+    CProjectsFilter: () => import('~/components/ProjectsFilter'),
     CMetaTags: () => import('~/components/Meta')
   }
 }
@@ -55,7 +67,7 @@ export default {
 
 <style lang="stylus">
 .Portfolio
-  padding-top 3.75rem /* 60/16 */
+  padding 3.75rem /* 60/16 */ 0
   &__header
     text-align center
     margin 0 0 .9375rem /* 15/16 */

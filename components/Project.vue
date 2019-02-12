@@ -1,6 +1,7 @@
 <template>
   <div v-if="project" :class="`Project Project--${(item%2) === 0 ? 'one' : 'two'}`">
     <c-image
+      :lazy="$store.state.lazyImages"
       figureClass="Project__image"
       :imageSrc="require(`~/assets/images/projects/${project.image}`)"
       :imageAlt="project.description"

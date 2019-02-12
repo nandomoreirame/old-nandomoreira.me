@@ -30,6 +30,7 @@ module.exports = {
   },
   loading,
   plugins: [
+    { src: '~/plugins/helpers' },
     { src: '~/plugins/i18n' },
     { src: '~/plugins/axios' },
     { src: '~/plugins/masonry', ssr: false },

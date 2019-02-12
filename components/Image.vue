@@ -1,12 +1,30 @@
 <template>
   <figure :class="`Image ${figureClass}`">
-    <img v-lazy="imageSrc" :src="require('~/assets/images/default.png')" :class="`${imageClass}`" :alt="imageAlt" :width="imageWidth" :height="imageHeight"/>
+    <img
+      v-if="lazy"
+      v-lazy="imageSrc"
+      :src="require('~/assets/images/default.png')"
+      :class="`${imageClass}`"
+      :alt="imageAlt"
+      :width="imageWidth"
+      :height="imageHeight"/>
+    <img
+      v-else
+      :src="imageSrc"
+      :class="`${imageClass}`"
+      :alt="imageAlt"
+      :width="imageWidth"
+      :height="imageHeight"/>
   </figure>
 </template>
 
 <script>
   export default {
     props: {
+      lazy: {
+        type: Boolean,
+        default: true
+      },
       figureClass: {
         type: String,
         default: ''

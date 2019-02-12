@@ -25,7 +25,7 @@ export default {
     url: `${process.env.baseUrl}/portfolio`,
     title: `Portfolio ⎼ ${process.env.baseTitle}`,
     description: `Alguns projetos de clientes e da comunidade/open-source que trabalhei em toda minha carreira - I ❤️ Open-source!`,
-    shareImage: `${process.env.baseUrl}${require(`~/assets/images/projects/vovojuju.nandomoreira.me.png`)}`
+    shareImage: `${process.env.baseUrl}${require(`~/assets/images/projects/nandomoreira.me.png`)}`
   }),
   async asyncData ({ store }) {
     if (!store.state.projects.length) {

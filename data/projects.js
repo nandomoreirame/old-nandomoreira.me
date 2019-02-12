@@ -53,6 +53,49 @@ export default [
     ]
   },
   {
+    name: 'Underconstruction Static HTML',
+    date: '12/2018',
+    online: true,
+    opensource: true,
+    repo: 'https://github.com/nandomoreirame/underconstruction-static-html',
+    image: 'underconstruction-static-html.png',
+    url: 'https://starter-kit.netlify.com/',
+    description: `Under construction is a free template static html using Gulp starter-kit`,
+    tags: [
+      'Free',
+      'Gulp',
+      'Gulpjs',
+      'Babel',
+      'Pug',
+      'ECMAScript6',
+      'StaticGen',
+      'Stylus',
+      'OpenSource',
+      'Netlify'
+    ]
+  },
+  {
+    name: 'Gulp starter-kit',
+    date: '12/2018',
+    online: true,
+    opensource: true,
+    repo: 'https://github.com/onedevstudio/starter-kit',
+    image: 'starter-kit.png',
+    url: 'https://starter-kit.netlify.com/',
+    description: `Starter Kit is a simple front-end starter-kit with Babel, Gulpjs, Pug and Stylus`,
+    tags: [
+      'Gulp',
+      'Gulpjs',
+      'Babel',
+      'Pug',
+      'ECMAScript6',
+      'StaticGen',
+      'Stylus',
+      'OpenSource',
+      'Netlify'
+    ]
+  },
+  {
     name: 'App WhatsApp URL',
     date: '08/2018',
     online: true,
@@ -67,6 +110,23 @@ export default [
       'Vuex',
       'ECMAScript6',
       'OpenSource',
+      'Netlify'
+    ]
+  },
+  {
+    name: 'Nuxt Brasil',
+    date: '08/2018',
+    online: true,
+    opensource: true,
+    repo: 'https://github.com/nuxtjsbrasil/nuxtjsbrasil.github.io',
+    image: 'nuxt.com.br.png',
+    url: 'https://nuxt.com.br/',
+    description: `Idealizador e mantenedor do grupo de usuários brasileiros Universal Vue.js Applications // Nuxt Brasil`,
+    tags: [
+      'Vue',
+      'Vuejs',
+      'Nuxt',
+      'NuxtBrasil',
       'Netlify'
     ]
   },

@@ -306,6 +306,25 @@ export default [
     ]
   },
   {
+    name: 'end2end - Jekyll Theme ',
+    date: '01/2017',
+    online: true,
+    opensource: true,
+    repo: 'https://github.com/nandomoreirame/end2end',
+    image: 'end2end.png',
+    url: 'https://nandomoreirame.github.io/end2end/',
+    description: `💎 Clean Jekyll theme `,
+    tags: [
+      'Jekyll',
+      'Theme',
+      'JekyllTheme',
+      'Free',
+      'Download',
+      'OpenSource',
+      'FrontEnd'
+    ]
+  },
+  {
     name: 'Middleman blog',
     date: '05/2016',
     online: true,

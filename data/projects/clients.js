@@ -85,41 +85,6 @@ export default [
     ]
   },
   {
-    name: 'Lorem Gemidão do zap ipsum',
-    date: '01/2017',
-    online: true,
-    opensource: false,
-    repo: '#',
-    image: 'lorem-gemidao-do-zap-ipsum.png',
-    url: 'https://lorem-gemidao-do-zap-ipsum.netlify.com',
-    description: `ÕÕÕHH ÕÕÕHH ÕÕÕAHH ÕÕÕAHH ÃÃÃHNN ÃÃÃHNN HÃÃÃÃN ÕÕÕHH ÕÕÕAHH HÃÃÃÃN HÃÃÃÃN ÕÕÕHH. ÕÕÕHH HÃÃÃÃN ÃÃÃHNN HÃÃÃÃN ÃÃÃHNN ÕÕÕHH. 😜😂`,
-    tags: [
-      'VueJS',
-      'VueX',
-      'ECMAScript6',
-      'GithubPages',
-      'OpenSource',
-      'FrontEnd'
-    ]
-  },
-  {
-    name: 'Blog Wilson Luiz Prosdocimo',
-    date: '12/2015',
-    online: true,
-    opensource: false,
-    repo: '#',
-    image: 'wprosdocimo.com.br.png',
-    url: 'http://wprosdocimo.com.br',
-    description: `Desenvolvimento do blog do Wilson Luiz Prosdocimo utilizando a plataforma Jekyll e hospedando no Github pages.`,
-    tags: [
-      'Jekyll',
-      'Blogging',
-      'Blog',
-      'GithubPages',
-      'OpenSource'
-    ]
-  },
-  {
     name: 'Site da Pizzaria Detroit',
     date: '12/2014',
     online: false,

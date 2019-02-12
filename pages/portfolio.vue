@@ -72,7 +72,7 @@ export default {
     +above($tablet)
       font-size 1.375rem /* 22/16 */
   &__projects
-    max-width 78.125rem /* 1250/16 */
+    // max-width 90%
     margin-left auto
     margin-right auto
     +above($tablet)
@@ -81,10 +81,12 @@ export default {
   &__project
     position relative
     min-height 1px
-    padding 1.5625rem /* 25/16 */
+    padding 1.875rem /* 30/16 */
     +above($tablet)
       float left
       width percentage(1/2)
     +above($desktop)
       width percentage(1/3)
+    +above($desktop-lg)
+      width percentage(1/4)
 </style>

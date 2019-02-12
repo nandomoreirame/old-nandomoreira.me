@@ -71,6 +71,24 @@ export default [
     ]
   },
   {
+    name: 'Projeto nandomoreira.me (nuxt theme)',
+    date: '05/2018',
+    online: true,
+    opensource: true,
+    repo: 'https://github.com/nandomoreirame/nandomoreira.me-nuxt-theme',
+    image: 'nandomoreira.me-nuxt-theme.png',
+    url: 'https://nuxt-theme-nandomoreirame.netlify.com/',
+    description: `🏃 My superfast personal SPA blog/site using Vuejs and Nuxt :D -- Projeto escrito em VueJS utilizando NuxtJS para gerar os arquivos estáticos e hospeda-los n0 Netlify. O código é totalmente Open Source sob licença MIT.`,
+    tags: [
+      'VueJS',
+      'Vuex',
+      'NuxtJS',
+      'ECMAScript6',
+      'OpenSource',
+      'Netlify'
+    ]
+  },
+  {
     name: 'Onedev.studio',
     date: '03/2018',
     online: false,
@@ -419,6 +437,25 @@ export default [
       'Photoshop',
       'WordPress',
       'Institucional',
+      'Responsive'
+    ]
+  },
+  {
+    name: 'Site Irmãos Silva - Casas Pré Fabricadas',
+    date: '10/2014',
+    online: false,
+    opensource: false,
+    repo: '#',
+    image: 'casas-irmaos-silva.png',
+    url: '#',
+    description: `Website institucional da empresa Irmãos Silva - Casas Pré Fabricadas, desenhado no Photoshop e desenvolvido com o CMS WordPress.`,
+    tags: [
+      'Photoshop',
+      'UXDesign',
+      'WordPress',
+      'Institucional',
+      'Frontend',
+      'Bootstrap',
       'Responsive'
     ]
   },

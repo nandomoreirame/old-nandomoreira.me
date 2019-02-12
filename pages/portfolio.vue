@@ -24,7 +24,7 @@ export default {
   data: () => ({
     url: `${process.env.baseUrl}/portfolio`,
     title: `Portfolio ⎼ ${process.env.baseTitle}`,
-    description: `Projetos de clientes e da comunidade/open-source que trabalhei em toda minha carreira - I ❤️ Open-source!`,
+    description: `Alguns projetos de clientes e da comunidade/open-source que trabalhei em toda minha carreira - I ❤️ Open-source!`,
     shareImage: `${process.env.baseUrl}${require(`~/assets/images/projects/vovojuju.nandomoreira.me.png`)}`
   }),
   async asyncData ({ store }) {
@@ -62,6 +62,7 @@ export default {
     max-width 47.5rem /* 760/16 */
     margin-left auto
     margin-right auto
+    padding 0 .9375rem /* 15/16 */
   &__title
     margin 0
     font-size 1.75rem /* 28/16 */

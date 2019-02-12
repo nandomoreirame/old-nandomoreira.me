@@ -70,7 +70,7 @@ export default {
   name: 'About',
   data () {
     return {
-      title: `Sobre ⎼ ${process.env.baseTitle}`,
+      title: `Sobre - ${process.env.baseTitle}`,
       description: `Meu nome é Fernando Moreira Costa (muito prazer). Tenho ${_age} anos, nasci e cresci em uma cidadezinha do interior de Rondônia chamada Ariquemes, sai de lá com 18 anos para me aventurar em Curitiba/PR onde moro atualmente.`,
       url: `${process.env.baseUrl}/about`,
       age: _age

@@ -15,7 +15,7 @@ export default {
   name: 'Contact',
   data () {
     return {
-      title: `Contato ⎼ ${process.env.baseTitle}`,
+      title: `Contato - ${process.env.baseTitle}`,
       description: `Olá, terráqueo! Nós viemos em paz 🖖🏼 Para entrar em contato comigo basta me seguir em qualquer uma das minhas redes sociais e chamar por DM ou enviar um email para nandomoreira.me[arroba]gmail.com que é sucesso!`,
       url: `${process.env.baseUrl}/contact`
     }

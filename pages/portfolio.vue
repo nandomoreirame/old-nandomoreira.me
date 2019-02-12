@@ -27,7 +27,7 @@ export default {
   name: 'Portfolio',
   data: () => ({
     url: `${process.env.baseUrl}/portfolio`,
-    title: `Portfolio ⎼ ${process.env.baseTitle}`,
+    title: `Portfolio - ${process.env.baseTitle}`,
     description: `Alguns projetos de clientes e da comunidade/open-source que trabalhei em toda minha carreira - I ❤️ Open-source!`,
     shareImage: `${process.env.baseUrl}${require(`~/assets/images/projects/nandomoreira.me.png`)}`
   }),

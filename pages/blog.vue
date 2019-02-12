@@ -17,7 +17,7 @@ export default {
   data: () => ({
     // lastPosts: {},
     url: `${process.env.baseUrl}/blog`,
-    title: `Blog ⎼ ${process.env.baseTitle}`,
+    title: `Blog - ${process.env.baseTitle}`,
     description: ``
   }),
   async asyncData ({ store, $axios }) {

@@ -49,7 +49,7 @@ export default {
     if (typeof this.$redrawVueMasonry === 'function') {
       setTimeout(() => {
         this.$redrawVueMasonry()
-      }, 1500)
+      }, 500)
     }
   },
   methods: {

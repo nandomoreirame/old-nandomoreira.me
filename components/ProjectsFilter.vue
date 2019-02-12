@@ -57,7 +57,12 @@ export default {
       'setfilterBy',
       'toggleLazyImages'
     ]),
-    order () {
+    redrawMasonry () {
+      if (typeof this.$redrawVueMasonry === 'function') {
+        setTimeout(() => {
+          this.$redrawVueMasonry()
+        }, 300)
+      }
     },
     filter () {
       let _projects = []
@@ -80,6 +85,7 @@ export default {
       this.toggleLazyImages(false)
       this.setfilterBy(_filterBy)
       this.setProjects(_projects)
+      this.redrawMasonry()
     }
   }
 }

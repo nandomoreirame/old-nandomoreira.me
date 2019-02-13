@@ -49,8 +49,8 @@
 /resume                       /about                                                          301
 /styleguide                   /about                                                          301
 
-/sobre/now                    /now                                                            301
-/about/now                    /now                                                            301
+/sobre/now                    /about/now                                                      301
+/now                          /about/now                                                      301
 
 /contato                      /contact                                                        301
 

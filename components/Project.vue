@@ -88,15 +88,15 @@ export default {
     h2
       margin 0
 
-  .Project__image.Image
-    overflow hidden
-    padding 1.25rem /* 20/16 */ 1.25rem /* 20/16 */ 1.25rem /* 20/16 */ 0
-  &--one
-    .Project__image.Image
-      background-color $primary-color
-  &--two
-    .Project__image.Image
-      background-color $secondary-color
+  // .Project__image.Image
+  //   overflow hidden
+  //   padding 1.25rem /* 20/16 */ 1.25rem /* 20/16 */ 1.25rem /* 20/16 */ 0
+  // &--one
+  //   .Project__image.Image
+  //     background-color $primary-color
+  // &--two
+  //   .Project__image.Image
+  //     background-color $secondary-color
 
   &__link
     position relative

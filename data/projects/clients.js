@@ -72,7 +72,7 @@ export default [
     online: true,
     opensource: false,
     repo: '#',
-    image: 'beholddy-app.jpg',
+    image: 'beholddy-app.png',
     url: 'https://beholddy.com',
     description: `Desenvolvimento inicial do front-end do Webapp Beholddy, feito em Ruby on Rails usando Bootstrap, SASS e jQuery.`,
     tags: [

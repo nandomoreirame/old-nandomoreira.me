@@ -3,7 +3,7 @@
     <img
       v-if="lazy"
       v-lazy="imageSrc"
-      :src="require('~/assets/images/default.png')"
+      :src="placeholder"
       :class="`${imageClass}`"
       :alt="imageAlt"
       :width="imageWidth"
@@ -32,6 +32,10 @@
       imageSrc: {
         type: String,
         require: true
+      },
+      placeholder: {
+        type: String,
+        default: require('~/assets/images/default.png')
       },
       imageClass: {
         type: String,

@@ -2,6 +2,7 @@
   <c-image
     v-if="image"
     figureClass="Avatar"
+    :placeholder="require('~/assets/images/default-avatar.png')"
     :imageSrc="image"
     imageAlt="Olá! Eu sou um { desenvolvedor web }."
     imageClass="Avatar__img"
@@ -37,6 +38,8 @@ export default {
   margin 0 auto 1.875rem /* 30/16 */
   padding .9375rem /* 15/16 */
   img
+    width 200px
+    height 200px
     display inline-block
     border 4px solid #d20068
     border-radius 100%

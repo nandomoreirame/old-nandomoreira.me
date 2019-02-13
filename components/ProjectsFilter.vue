@@ -13,15 +13,15 @@
       <label for="filterAll">Filtrar por:</label>
       <label class="Filter__radio" for="filterAll">
         <input type="radio" id="filterAll" value="all" @change="filter()" v-model="$store.state.filterBy" checked>
-        <span>Todos <small>({{total}})</small></span>
+        <span>Todos <small>({{ total }})</small></span>
       </label>
       <label class="Filter__radio" for="filterClients">
         <input type="radio" id="filterClients" value="clients" @change="filter()" v-model="$store.state.filterBy">
-        <span>Clientes <small>({{totalClients}})</small></span>
+        <span>Clientes <small>({{ totalClients }})</small></span>
       </label>
       <label class="Filter__radio" for="filterOpenSource">
         <input type="radio" id="filterOpenSource" value="opensource" @change="filter()" v-model="$store.state.filterBy">
-        <span>Open-source <small>({{totalOpensource}})</small></span>
+        <span>Open-source <small>({{ totalOpensource }})</small></span>
       </label>
     </div>
 

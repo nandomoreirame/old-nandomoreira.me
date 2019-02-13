@@ -84,7 +84,7 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 .About
   width 100%
   text-align center
@@ -101,6 +101,22 @@ export default {
     +above($tablet)
       display flex
       align-items center
+    h2
+      font-size 2rem /* 32/16 */
+      margin 0 0 .625rem /* 10/16 */
+    ul
+      list-style none
+      padding 0
+      margin-bottom 1.875rem /* 30/16 */
+      li:before
+        content '🖖🏼'
+        display inline-block
+        margin-right .3125rem /* 5/16 */
+    a
+      text-decoration underline
+      &:hover,
+      &:focus
+        text-decoration none
   &__thumb
     display block
     text-align center
@@ -113,20 +129,4 @@ export default {
       text-align left
   &__social
     margin-bottom 30px
-h2
-  font-size 1.75rem /* 28/16 */
-  margin 0 0 .625rem /* 10/16 */
-ul
-  list-style none
-  padding 0
-  margin-bottom 1.875rem /* 30/16 */
-  li:before
-    content '🖖🏼'
-    display inline-block
-    margin-right .3125rem /* 5/16 */
-a
-  text-decoration underline
-  &:hover,
-  &:focus
-    text-decoration none
 </style>

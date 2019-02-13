@@ -24,7 +24,7 @@
       <section class="About__content">
         <div class="About__text">
           <h2>O que estou fazendo agora?</h2>
-          <p>Uma página tirada da idéia de <strong>Derek Sivers</strong> em <em>Nownownow</em>, onde blogueiros e proprietários de sites do mundo compartilham o que eles estão fazendo.</p>
+          <p>Uma página tirada da idéia de <strong>Derek Sivers</strong> em <a href="https://nownownow.com/" rel="nofollow" target="_blank"><em>Nownownow.com</em></a>, onde blogueiros e proprietários de sites do mundo compartilham o que eles estão fazendo.</p>
           <p>Então, aqui é meu <em>Now</em>: <nuxt-link to="/about/now">O que estou fazendo agora</nuxt-link></p>
         </div>
       </section>

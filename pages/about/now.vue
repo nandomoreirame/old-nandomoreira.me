@@ -4,7 +4,7 @@
       <c-meta-tags :title="title" :description="description" bodyClass="page-about page-now" :url="url"/>
       <header class="Now__header">
         <h1 class="Now__title">O que estou fazendo agora</h1>
-        <p class="Now__description">Uma página tirada da idéia de <strong>Derek Sivers</strong> em <em>Nownownow</em>, onde blogueiros e proprietários de sites do mundo compartilham o que eles estão fazendo.</p>
+        <p class="Now__description">Uma página tirada da idéia de <strong>Derek Sivers</strong> em <a href="https://nownownow.com/" rel="nofollow" target="_blank"><em>Nownownow.com</em></a>, onde blogueiros e proprietários de sites do mundo compartilham o que eles estão fazendo.</p>
       </header>
       <section class="Now__content">
         <hr/>

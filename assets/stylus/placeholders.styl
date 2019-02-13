@@ -67,3 +67,13 @@
     border-color rgba($secondary-color, .4)
     svg
       fill rgba($secondary-color, .6)
+
+.title
+  margin 0
+  font-size 1.75rem /* 28/16 */
+  &:before
+    content '{ '
+  &:after
+    content ' }'
+  +above($tablet)
+    font-size 2.375rem /* 38/16 */

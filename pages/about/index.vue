@@ -18,10 +18,14 @@
           <p>Eu comecei a <em>"brincar"</em> com códigos em meados de 2009 e trabalhar profissionalmente em uma agência de criação e desenvolvimento web no ano de 2011.</p>
           <p>Em 2010 comecei o curso de web design na Microcamp <strong>Curitiba</strong> e finalizei em 2012, nesta mesma época conclui o curso técnico em informática com ênfase em programação no <a href="http://www.cep.pr.gov.br/pagina-59.html" rel="nofollow" target="_blank">Colégio Estadual do Paraná (CEP)</a>.</p>
           <p>Desde então venho trabalhando com desenvolvimento web, <em>design</em>, <em>Front-end</em> e <em>UX Design</em>.</p>
-          <p>Já passei por algumas tantas empresas, dentre elas <strike><a href="http://www.malapronta.com.br/" rel="nofollow" target="_blank">MalaPronta</a></strike>, <strong><a href="https://www.pipefy.com/" rel="nofollow" target="_blank">Pipefy</a></strong> e <strong><a href="https://www.lojaskd.com.br/" rel="nofollow" target="_blank">LojasKD</a></strong> se destacam por ter trabalhado em um único produto, onde acumulei skylls de <strong><em>Front-end</em></strong> e <strong><em>UX Design</em></strong>.</p>
-          <!-- ## O que estou fazendo agora?
-          Uma página tirada da idéia de **Derek Sivers** em _Nownownow_, onde blogueiros e proprietários de sites do mundo compartilham o que eles estão fazendo.
-          Então, aqui é meu _Now_: **[O que estou fazendo agora](/about/now)** -->
+          <p>Já passei por algumas tantas empresas, dentre elas <strike><a href="http://www.malapronta.com.br/" rel="nofollow" target="_blank">MalaPronta</a></strike>, <strong><a href="https://www.pipefy.com/" rel="nofollow" target="_blank">Pipefy</a></strong> e <strike><a href="https://www.lojaskd.com.br/" rel="nofollow" target="_blank">LojasKD</a></strike> se destacam por ter trabalhado em um único produto, onde acumulei skylls de <strong><em>Front-end</em></strong> e <strong><em>UX Design</em></strong>.</p>
+        </div>
+      </section>
+      <section class="About__content">
+        <div class="About__text">
+          <h2>O que estou fazendo agora?</h2>
+          <p>Uma página tirada da idéia de <strong>Derek Sivers</strong> em <em>Nownownow</em>, onde blogueiros e proprietários de sites do mundo compartilham o que eles estão fazendo.</p>
+          <p>Então, aqui é meu <em>Now</em>: <nuxt-link to="/about/now">O que estou fazendo agora</nuxt-link></p>
         </div>
       </section>
       <section class="About__content">
@@ -70,7 +74,7 @@ export default {
   name: 'About',
   data () {
     return {
-      title: `Sobre - ${process.env.baseTitle}`,
+      title: `Sobre mim - ${process.env.baseTitle}`,
       description: `Meu nome é Fernando Moreira Costa (muito prazer). Tenho ${_age} anos, nasci e cresci em uma cidadezinha do interior de Rondônia chamada Ariquemes, sai de lá com 18 anos para me aventurar em Curitiba/PR onde moro atualmente.`,
       url: `${process.env.baseUrl}/about`,
       age: _age
@@ -102,6 +106,7 @@ export default {
       display flex
       align-items center
     h2
+      @extend .title
       font-size 2rem /* 32/16 */
       margin 0 0 .625rem /* 10/16 */
     ul

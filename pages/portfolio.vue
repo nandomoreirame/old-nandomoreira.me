@@ -76,10 +76,7 @@ export default {
     margin-right auto
     padding 0 .9375rem /* 15/16 */
   &__title
-    margin 0
-    font-size 1.75rem /* 28/16 */
-    +above($tablet)
-      font-size 2.375rem /* 38/16 */
+    @extend .title
   &__lead
     +above($tablet)
       font-size 1.375rem /* 22/16 */

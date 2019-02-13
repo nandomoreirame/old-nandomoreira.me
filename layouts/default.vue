@@ -105,6 +105,13 @@ h1, h2
 h3, h4
   font-weight 700
 
+hr
+  width 100%
+  margin 3.75rem /* 60/16 */ 0
+  display block
+  border none
+  border-bottom 1px solid rgba(#000, .125)
+
 .default
   +above($tablet)
     padding-top 50px

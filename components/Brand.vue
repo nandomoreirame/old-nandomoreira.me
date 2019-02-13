@@ -13,7 +13,15 @@ export default {
 <style lang="stylus">
 .brand
   font-size 22px
-  margin 0
+  margin 0 0 .9375rem /* 15/16 */
+  &:before
+    content '{ '
+    color $primary-color
+  &:after
+    content ' }'
+    color $secondary-color
+  +above($tablet)
+    margin 0
   &, a
     span
       color $secondary-color

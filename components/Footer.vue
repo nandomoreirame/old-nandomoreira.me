@@ -21,7 +21,7 @@ export default {
   width 100%
   padding .625rem /* 10/16 */ .9375rem /* 15/16 */
   background-color #fff
-  border-top 1px solid rgba(0, 0, 0, .125)
+  border-top 1px solid rgba(#000, .125)
   text-align center
 p
   font-size 14px

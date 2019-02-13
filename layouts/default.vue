@@ -54,7 +54,7 @@ body
   -webkit-text-size-adjust 100%
   -moz-osx-font-smoothing grayscale
   -webkit-font-smoothing antialiased
-  background-color #f5f8fa
+  background-color $background-color
   color $secondary-color
 
 p
@@ -113,25 +113,11 @@ hr
   border-bottom 1px solid rgba(#000, .125)
 
 .default
+  background-color $background-color
   +above($tablet)
     padding-top 50px
 
 body.hasHero .default
   padding-top 0
 
-.layout
-  &-enter-active,
-  &-leave-active,
-  &-leave-to
-    transition opacity .5s ease-in-out, transform .5s ease-in-out
-    transform translate3d(0, 0, 0)
-    backface-visibility: hidden
-    will-change: opacity
-    opacity: 1
-
-  &-enter,
-  &-leave-to,
-  &-leave-active
-    opacity 0
-    transform translate3d(0, 3%, 0)
 </style>

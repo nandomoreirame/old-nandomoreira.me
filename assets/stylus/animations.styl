@@ -1,3 +1,19 @@
+.layout
+  &-enter-active,
+  &-leave-active,
+  &-leave-to
+    transition opacity .5s ease-in-out, transform .5s ease-in-out
+    transform translate3d(0, 0, 0)
+    backface-visibility: hidden
+    will-change: opacity
+    opacity: 1
+
+  &-enter,
+  &-leave-to,
+  &-leave-active
+    opacity 0
+    transform translate3d(0, 3%, 0)
+
 .animation
   animation-duration 1.4s
   animation-timing-function cubic-bezier(0.250, 0.460, 0.450, 0.940)

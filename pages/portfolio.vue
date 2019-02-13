@@ -1,17 +1,17 @@
 <template>
   <section class="Portfolio">
     <c-meta-tags :title="title" :description="description" bodyClass="page-portfolio" :url="url" :image="shareImage"/>
-
-    <header class="Portfolio__header">
-      <h1 class="Portfolio__title">Portfolio</h1>
-      <p class="Portfolio__lead" v-html="description"/>
-      <c-projects-filter/>
-    </header>
-
-    <div class="Portfolio__projects" v-masonry transition-duration="1s" item-selector=".Portfolio__project">
-      <article class="Portfolio__project" v-for="(project, k) in projects" :key="k" v-masonry-tile>
-        <c-project :item="k" :project="project" />
-      </article>
+    <div class="Portfolio__inner">
+      <header class="Portfolio__header">
+        <h1 class="Portfolio__title">Portfolio</h1>
+        <p class="Portfolio__lead" v-html="description"/>
+        <c-projects-filter/>
+      </header>
+      <div class="Portfolio__projects" v-masonry transition-duration="1s" item-selector=".Portfolio__project">
+        <article class="Portfolio__project" v-for="(project, k) in projects" :key="k" v-masonry-tile>
+          <c-project :item="k" :project="project" />
+        </article>
+      </div>
     </div>
   </section>
 </template>
@@ -68,6 +68,8 @@ export default {
 <style lang="stylus">
 .Portfolio
   padding 3.75rem /* 60/16 */ 0
+  &__inner
+    padding 0 1.25rem /* 20/16 */
   &__header
     text-align center
     margin 0 0 .9375rem /* 15/16 */
@@ -81,16 +83,13 @@ export default {
     +above($tablet)
       font-size 1.375rem /* 22/16 */
   &__projects
-    // max-width 90%
-    margin-left auto
-    margin-right auto
     +above($tablet)
       display flex
       flex-flow row wrap
   &__project
     position relative
     min-height 1px
-    padding 1.875rem /* 30/16 */
+    padding .9375rem /* 15/16 */
     +above($tablet)
       float left
       width percentage(1/2)

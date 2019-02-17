@@ -1,5 +1,22 @@
 export default [
   {
+    name: 'MotivaAi',
+    date: '02/2018',
+    online: true,
+    opensource: true,
+    repo: 'https://github.com/nandomoreirame/motivaai',
+    image: 'motivaai.png',
+    url: 'https://nandomoreirame.github.io/motivaai/',
+    description: `💪 Uma frase de motivação pra dar um UP no seu dia!`,
+    tags: [
+      'ES6',
+      'ECMAScript6',
+      'OpenSource',
+      'Frontend',
+      'Netlify'
+    ]
+  },
+  {
     name: 'Projeto nandomoreira.me',
     date: 'Em eterna construção...',
     online: true,

@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: 'defaultLayout',
   components: {
     CHeader: () => import('~/components/Header'),
     CFooter: () => import('~/components/Footer')
@@ -18,106 +19,4 @@ export default {
 </script>
 
 <style lang="stylus">
-html,
-body
-  margin 0
-  padding 0
-
-html,
-body,
-#__nuxt,
-#__layout,
-#__layout > div
-.default
-  width 100%
-  height 100%
-
-html
-  font-family sans-serif
-  -webkit-text-size-adjust 100%
-  -ms-text-size-adjust 100%
-  box-sizing border-box
-  overflow-x hidden
-
-*,
-*:before,
-*:after
-  box-sizing inherit
-
-body
-  font-family $font-family-base
-  font-size 16px
-  font-weight 400
-  word-spacing 1px
-  line-height 1.6
-  -ms-text-size-adjust 100%
-  -webkit-text-size-adjust 100%
-  -moz-osx-font-smoothing grayscale
-  -webkit-font-smoothing antialiased
-  background-color $background-color
-  color $secondary-color
-
-p
-  font-size 1.125rem /* 18/16 */
-
-a
-  color $primary-color
-  transition color .12s ease-in-out,
-    border-color .12s ease-in-out
-  text-decoration none
-  &:hover,
-  &:focus
-    color $secondary-color
-
-code,
-pre
-  font-family monospace, serif
-  font-size 1em
-
-pre
-  white-space pre
-  white-space pre-wrap
-  word-wrap break-word
-
-small
-  font-size 80%
-
-button,
-input,
-select,
-textarea
-  font-family inherit
-  font-size 100%
-  margin 0
-
-textarea
-  vertical-align top
-
-h1, h2, h3, h4
-  font-family $font-family-heading
-  line-height 1.3
-  margin 0 0 30px
-  letter-spacing -0.03rem
-
-h1, h2
-  font-weight 800
-
-h3, h4
-  font-weight 700
-
-hr
-  width 100%
-  margin 3.75rem /* 60/16 */ 0
-  display block
-  border none
-  border-bottom 1px solid rgba(#000, .125)
-
-.default
-  background-color $background-color
-  +above($tablet)
-    padding-top 50px
-
-body.hasHero .default
-  padding-top 0
-
 </style>

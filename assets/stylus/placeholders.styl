@@ -77,3 +77,13 @@
     content ' }'
   +above($tablet)
     font-size 2.375rem /* 38/16 */
+
+.divider
+  position relative
+  &:after
+    content ''
+    display block
+    width 2.5rem /* 40/16 */
+    height .25rem /* 4/16 */
+    background-color rgba(#000, .08)
+    margin-top 1.875rem /* 30/16 */

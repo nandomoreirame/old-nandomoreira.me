@@ -103,7 +103,8 @@ export const loaderOptions = {
         '~assets/stylus/config.styl',
         '~assets/stylus/placeholders.styl',
         '~assets/stylus/mixins.styl',
-        '~assets/stylus/animations.styl'
+        '~assets/stylus/animations.styl',
+        '~assets/stylus/base.styl'
       ]
     },
     context: '/'

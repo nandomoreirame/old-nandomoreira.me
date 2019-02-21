@@ -283,7 +283,8 @@ export default {
   .Resume__section.Resume__section--experiments,
   .Resume__social,
   .Resume__quote:before,
-  .Resume__quote:after
+  .Resume__quote:after,
+  .at-expanding-share-button
     display none !important
   .Resume__title
     strong

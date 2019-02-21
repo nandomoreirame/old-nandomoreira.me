@@ -45,9 +45,9 @@
 /br/sobre                     /about                                                          301
 /pt_br/sobre                  /about                                                          301
 /en/about                     /about                                                          301
-/cv                           /about                                                          301
-/resume                       /about                                                          301
 /styleguide                   /about                                                          301
+
+/cv                           /resume                                                         301
 
 /sobre/now                    /about/now                                                      301
 /now                          /about/now                                                      301

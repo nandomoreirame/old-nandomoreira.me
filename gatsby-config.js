@@ -1,34 +1,49 @@
+const rupture = require("rupture")
+const { name, version, title, author, description, homepage } = require('./package.json')
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    name,
+    version,
+    title,
+    altTitle: `${title} | Desenvolvedor front-end e WordPress em Curitiba/PR`,
+    homepage,
+    description,
+    author: `${author.name}`,
+    social: {
+      twitterHandle: `@${author.twitter}`,
+      twitter: `https://twitter.com/${author.twitter}`,
+      linkedin: `https://linkedin.com/in/${author.linkedin}`,
+      github: `https://www.github.com/${author.github}`
+    },
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-stylus`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        use: [ rupture() ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-typography`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        pathToConfigModule: `src/utils/typography.js`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // 'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Montserrat`,
+            variants: [`200`, `800`, `900`]
+          },
+          {
+            family: `Open+Sans`,
+            variants: [`200`, `400`, `700`]
+          },
+        ],
+      },
+    },
   ],
 }

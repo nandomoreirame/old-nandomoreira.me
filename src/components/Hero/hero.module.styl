@@ -1,0 +1,46 @@
+@import '../../assets/stylus/index.styl'
+
+.Hero
+  width 100%
+  position relative
+  +above($tablet)
+    height 100vh
+    display flex
+    align-items center
+    justify-content center
+
+  &__inner
+    padding 15px
+    z-index 1
+    position relative
+    +above($tablet)
+      max-width 1200px
+      margin 0 auto
+
+  &__title
+    font-size 48px
+    line-height .9
+    font-weight 900
+    color #000
+    +above($tablet)
+      font-size 100px
+    span
+      font-weight 200
+      font-size inherit
+      letter-spacing 0
+
+  &__presentation
+    font-size 20px
+    font-weight 200
+    color rgba(#000, .75)
+    +above($tablet)
+      font-size 24px
+    span, a
+      font-weight 500
+
+  .Nav
+    margin-bottom 15px
+
+  .Nav__item
+    font-size 20px
+    text-transform uppercase

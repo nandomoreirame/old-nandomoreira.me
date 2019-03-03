@@ -1,0 +1,23 @@
+@import '../../assets/stylus/index.styl'
+
+.Header
+  text-align center
+  width 100%
+  display block
+  background-color #fff
+  border-bottom 1px solid rgba(#000, .125)
+  position relative
+  z-index 100
+  +above($tablet)
+    position fixed
+    z-index 1000
+    top 0
+    left 0
+    margin 0
+  &__inner
+    padding 10px 15px
+    +above($tablet)
+      padding 15px 30px
+      display flex
+      align-items center
+      justify-content space-between

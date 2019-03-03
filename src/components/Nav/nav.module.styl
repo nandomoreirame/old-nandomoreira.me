@@ -1,0 +1,48 @@
+@import '../../assets/stylus/index.styl'
+
+.Nav
+  position relative
+  padding 0
+
+  &--top
+    display flex
+    justify-content space-between
+    align-items center
+    margin 0 auto 2rem
+    padding 3rem
+    &:after
+      content ''
+      display block
+      position absolute
+      bottom 0
+      height 1px
+      width calc(100% - 3rem)
+      left 1.5rem
+      border-radius 3px
+
+  &__item
+    margin 0
+    text-transform lowercase
+    &:not(:last-child)
+      margin-right 20px
+
+  &__item,
+  &__link
+    display inline-block
+
+  &__link
+    padding 0
+
+  &__list
+    transition all .05s ease-in-out
+    padding 0
+    margin 0
+    +above($tablet)
+      display flex
+      flex-direction column
+      flex-direction row
+      align-items center
+
+  &__toggle,
+  &__close
+    display none

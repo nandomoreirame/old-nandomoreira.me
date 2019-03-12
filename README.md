@@ -1,4 +1,4 @@
-# [nandomoreira.me](http://nandomoreira.me/) [![Netlify Status](https://api.netlify.com/api/v1/badges/b90a4c89-f623-4473-8a9f-d82b764ce9a9/deploy-status)](https://app.netlify.com/sites/nandomoreira/deploys)
+# (discontinued) [nandomoreira.me](http://nandomoreira.me/) [![Netlify Status](https://api.netlify.com/api/v1/badges/b90a4c89-f623-4473-8a9f-d82b764ce9a9/deploy-status)](https://app.netlify.com/sites/nandomoreira/deploys)
 
 > 🏃 My superfast personal SPA blog/site using Vuejs and Nuxt :D
 

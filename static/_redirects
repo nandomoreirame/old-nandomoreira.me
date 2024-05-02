@@ -1,5 +1,1 @@
-http://nandomoreira.netlify.com/*     https://nandomoreira.dev/:splat   301!
-https://nandomoreira.netlify.com/*    https://nandomoreira.dev/:splat   301!
 
-/   https://nandomoreira.dev          301!
-/*  https://nandomoreira.dev/:splat   301!

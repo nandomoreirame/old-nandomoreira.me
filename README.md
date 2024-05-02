@@ -2,6 +2,8 @@
 
 > 🏃 My superfast personal SPA blog/site using Vuejs and Nuxt :D
 
+[https://old-nandomoreirame.netlify.app/](https://old-nandomoreirame.netlify.app/)
+
 ## Build Setup
 
 ``` bash
